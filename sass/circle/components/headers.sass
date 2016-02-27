@@ -1,0 +1,47 @@
+.circle
+  &--header
+    background: $header-color
+    padding: 20px 0
+    margin-bottom: 30px
+    +clearfix
+    h1
+      margin: 0
+    input
+      background: rgba(#fff, .3)
+      border-color: darken($link, 15%)
+      color: #fff
+      +placeholder
+        color: rgba(#fff,.5)
+      &:focus
+        background: rgba(#fff,.35)
+        border-color: darken($link, 20%)
+    nav
+      a
+        color: rgba(#fff, .5)
+        &:hover
+          color: rgba(#fff, 1)
+
+  &--page--header
+    margin-bottom: 30px
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      margin: 0
+
+  &--article
+    &--header
+      margin-bottom: 50px
+      h1
+        margin-bottom: 10px
+      h4
+        margin: 0
+        font-weight: normal
+        color: $color-inactive
+      &--sub
+        margin: 0
+        font-size: 1.6rem
+        color: $color-inactive
+

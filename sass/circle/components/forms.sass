@@ -1,0 +1,46 @@
+.circle
+  &--search
+    position: relative
+    input
+      margin: 0
+    button
+      position: absolute
+      right: 20px
+      top: 16px
+      padding: 0
+      margin: 0
+      box-shadow: none
+    .search
+      width: 20px
+      height: auto
+      fill: rgba(#fff, .5)
+      margin: 0
+  &--textarea
+    &--input
+      height: 50px
+      min-height: 0
+      padding: 11px 15px // Adjustments are to make autogrow work with being the same height as inputs
+
+input
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"]
+  &.circle
+    &--input
+      &--h1,
+      &--h2,
+      &--h3
+        font-weight: bold
+        color: $display-color
+        +placeholder
+          font-weight: bold
+      &--h1
+        font-size: $h1
+      &--h2
+        font-size: $h2
+      &--h3
+        font-size: $h3

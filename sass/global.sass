@@ -1,0 +1,15 @@
+@import "circle/variables"
+@import "circle/core"
+@import "circle/components"
+@import "circle/modules"
+
+.logo
+  width: 28px
+  height: 28px
+  display: inline-block
+  box-shadow: 0 0 0 4px #fff inset
+  border-radius: 50px
+  position: relative
+  +transition(box-shadow .2s)
+  &:hover
+    box-shadow: 0 0 0 15px #fff inset
