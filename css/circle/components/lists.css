@@ -1,34 +1,22 @@
 /*
 Error: Undefined variable: "$display-font".
-        on line 5 of /Users/Tyson/circle/sass/circle/components/lists.sass
+        on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass
 
 1: .circle
-2:   &--nav
-3:     &--inline
-4:       font-size: 1.6rem
-5:       font-family: $display-font
-6:       margin: 0
-7:       a
-8:         display: block
-9:         text-decoration: none
-10:       li
+2:   &--inline
+3:     font-size: 1.6rem
+4:     font-family: $display-font
+5:     margin: 0
+6:     a
+7:       display: block
+8:       text-decoration: none
+9:     li
 
 Backtrace:
-/Users/Tyson/circle/sass/circle/components/lists.sass:5
+/Users/Tyson/circle/sass/circle/components/lists.sass:4
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
@@ -88,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$display-font\".\A         on line 5 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--nav\A 3:     &--inline\A 4:       font-size: 1.6rem\A 5:       font-family: $display-font\A 6:       margin: 0\A 7:       a\A 8:         display: block\A 9:         text-decoration: none\A 10:       li"; }
+  content: "Error: Undefined variable: \"$display-font\".\A         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--inline\A 3:     font-size: 1.6rem\A 4:     font-family: $display-font\A 5:     margin: 0\A 6:     a\A 7:       display: block\A 8:       text-decoration: none\A 9:     li"; }

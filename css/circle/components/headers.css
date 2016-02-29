@@ -8,8 +8,8 @@ Error: Undefined variable: "$header-color".
 4:     padding: 20px 0
 5:     margin-bottom: 30px
 6:     +clearfix
-7:     h1
-8:       margin: 0
+7:     h1,
+8:     h2,
 
 Backtrace:
 /Users/Tyson/circle/sass/circle/components/headers.sass:3
@@ -75,4 +75,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-color\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/headers.sass\A \A 1: .circle\A 2:   &--header\A 3:     background: $header-color\A 4:     padding: 20px 0\A 5:     margin-bottom: 30px\A 6:     +clearfix\A 7:     h1\A 8:       margin: 0"; }
+  content: "Error: Undefined variable: \"$header-color\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/headers.sass\A \A 1: .circle\A 2:   &--header\A 3:     background: $header-color\A 4:     padding: 20px 0\A 5:     margin-bottom: 30px\A 6:     +clearfix\A 7:     h1,\A 8:     h2,"; }

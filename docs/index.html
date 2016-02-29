@@ -20,7 +20,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/docs.css">
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -66,12 +66,13 @@
       </div>
 
       <div class="circle--filter circle--secondary--module">
-        <h4>Modules</h4>
+        <h4>Components</h4>
         <ul class="circle--link--list">
-          <li><a class="selected">Selected</a></li>
-          <li><a>Item</a></li>
-          <li><a>Item</a></li>
-          <li><a>Item</a></li>
+          <li><a href="#component-containers">Fluid Container</a></li>
+          <li><a href="#header">Main Header</a></li>
+          <li><a href="#page-header">Page Header</a></li>
+          <li><a href="#article-header">Article Header</a></li>
+          <li><a href="#component-lists">Lists</a></li>
           <li><a>Item</a></li>
         </ul>
       </div>
@@ -82,6 +83,16 @@
         <h1>Core</h1>
         <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#containers">Containers</a> section of the documentation.</p>
         <hr />
+
+        <article class="docs--article" id="bounds">
+          <h2>Bounds</h2>
+          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>variables.sass</em>.</p>
+<pre class="prettyprint">
+&lt;div class=&quot;bounds&quot;&gt;
+  &lt;!-- Layout goes here --&gt;
+&lt;/div&gt;
+</pre>
+        </article>
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
@@ -586,6 +597,138 @@
         </table>
 
         </article>
+      </section>
+
+      <section>
+        <h1>Components</h1>
+        <p>Circle additionally includes numberous common components for you might want to use. All components use the <code>.circle</code> prefix to deliniate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>global.sass</em>. You can be easily include or exclude these using <code>@import "circle/components"</code>.</p>
+
+        <article class="docs--article" id="header">
+          <h2>Main Header</h2>
+          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>variables.sass</em>.</p>
+          <header class="circle--header">
+            <h1><a>Title</a></h1>
+            <nav>
+              <ul class="circle--inline">
+                <li><a>Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </nav>
+          </header>
+<pre class="prettyprint">
+&lt;header class=&quot;circle--header&quot;&gt;
+  &lt;h1&gt;&lt;a&gt;Title&lt;/a&gt;&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul class=&quot;circle--inline&quot;&gt;
+      &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+</pre>
+        </article>
+
+        <article class="docs--article" id="page-header">
+          <h2>Page Header</h2>
+          <p>For headings that describe a particular page use the <code>.circle--page--header</code> as a container around your <code>&lt;h[#]&gt;</code> tags. Using a container with this class also sets the context for other styling of supporting lines of text. See it <a>in use.</a></p>
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;div class=&quot;circle--page--header&quot;&gt;
+  &lt;h2&gt;Page Title&lt;/h2&gt;
+  &lt;p&gt;Optional supporting text&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <div class="circle--page--header">
+                <h2>Page Title</h2>
+                <p>Optional supporting text</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="docs--article" id="article-header">
+          <h2>Article Header</h2>
+          <p>For article pages you can use the <code>.circle--article--header</code> class. Within this container you can use the <code>.circle--article--section</code> class for the section sub-heading, <code>.circle--article--title</code> for the article title, and <code>.circle--article--byline</code> for by lines. See it <a>in action here</a>.</p>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;div class=&quot;circle--article--header&quot;&gt;
+  &lt;h4 class=&quot;circle--article--section&quot;&gt;Section Title&lt;/h4&gt;
+  &lt;h1 class=&quot;circle--article--title&quot;&gt;Article Title&lt;/h1&gt;
+  &lt;p class=&quot;section--article--byline&quot;&gt;Article by &lt;a&gt;Author Name&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <div class="circle--article--header">
+                <h4 class="circle--article--section">Section Title</h4>
+                <h1 class="circle--article--title">Article Title</h1>
+                <p class="section--article--byline">Article by <a>Author Name</a></p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="docs--article" id="component-fluid-container">
+          <h2>Fluid Sandwich</h2>
+          <p>Circle's fluid sandwich component offers a table layout-like structure for situations where you want two sides of a layout fixed to the width of their contents (the bread) while a middle column flexes to fill the difference (the meat). The group of classes includes <code>.circle--fluid</code> for the parent element, with the <code>.circle--fluid--cell</code> used for each child column, with the modifier class <code>.circle--fluid--primary</code> which can be added to whatever cell you want to be the column to fill in the difference.</p>
+
+          <header class="circle--header">
+            <div class="circle--fluid">
+              <div class="circle--fluid--cell">
+                <h1 class="hide-text circle--logo"><a class="logo">Circle</a></h1>
+              </div>
+
+              <div class="circle--fluid--cell circle--fluid--primary">
+                <input type="text" placeholder="Search" />
+              </div>
+
+              <div class="circle--fluid--cell">
+                <nav>
+                  <ul>
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </header>
+<pre class="prettyprint">
+&lt;header class=&quot;circle--header&quot;&gt;
+  &lt;div class=&quot;circle--fluid&quot;&gt;
+    &lt;div class=&quot;circle--fluid--cell&quot;&gt;
+      &lt;h1 class=&quot;hide-text circle--logo&quot;&gt;&lt;a class=&quot;logo&quot;&gt;Circle&lt;/a&gt;&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;circle--fluid--cell circle--fluid--primary&quot;&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Search&quot; /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;circle--fluid--cell&quot;&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</pre>
+        </article>
+
+        <article class="docs--article" id="component-lists">
+
+        </article>
+
       </section>
 
     </div>

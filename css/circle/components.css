@@ -1,16 +1,17 @@
 /*
-Error: Undefined variable: "$header-color".
-        on line 3 of /Users/Tyson/circle/sass/circle/components/headers.sass
+Error: Undefined variable: "$display-font".
+        on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass
         from line 1 of /Users/Tyson/circle/sass/circle/components.sass
 
-1: @import "components/headers"
-2: @import "components/lists"
+1: @import "components/lists"
+2: @import "components/headers"
 3: @import "components/tables"
 4: @import "components/forms"
 5: @import "components/utilities"
+6: @import "components/containers"
 
 Backtrace:
-/Users/Tyson/circle/sass/circle/components/headers.sass:3
+/Users/Tyson/circle/sass/circle/components/lists.sass:4
 /Users/Tyson/circle/sass/circle/components.sass:1
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
@@ -87,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$header-color\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/headers.sass\A         from line 1 of /Users/Tyson/circle/sass/circle/components.sass\A \A 1: @import \"components/headers\"\A 2: @import \"components/lists\"\A 3: @import \"components/tables\"\A 4: @import \"components/forms\"\A 5: @import \"components/utilities\""; }
+  content: "Error: Undefined variable: \"$display-font\".\A         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass\A         from line 1 of /Users/Tyson/circle/sass/circle/components.sass\A \A 1: @import \"components/lists\"\A 2: @import \"components/headers\"\A 3: @import \"components/tables\"\A 4: @import \"components/forms\"\A 5: @import \"components/utilities\"\A 6: @import \"components/containers\""; }

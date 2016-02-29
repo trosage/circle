@@ -1094,7 +1094,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 /* line 13, ../sass/circle/core/utilities.sass */
 .hide-text {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
 /* line 16, ../sass/circle/core/utilities.sass */
@@ -1124,6 +1124,138 @@ hr {
   border-top: 1px solid #E1E1E1;
 }
 
+/* line 2, ../sass/circle/components/lists.sass */
+.circle--inline, .circle--header ul {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+}
+/* line 6, ../sass/circle/components/lists.sass */
+.circle--inline a, .circle--header ul a {
+  display: block;
+  text-decoration: none;
+}
+/* line 9, ../sass/circle/components/lists.sass */
+.circle--inline li, .circle--header ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+/* line 12, ../sass/circle/components/lists.sass */
+.circle--inline li:first-child, .circle--header ul li:first-child {
+  padding-left: 0;
+}
+/* line 14, ../sass/circle/components/lists.sass */
+.circle--inline li:last-child, .circle--header ul li:last-child {
+  padding-right: 0;
+}
+/* line 18, ../sass/circle/components/lists.sass */
+.circle--link--list {
+  list-style-type: none;
+}
+/* line 20, ../sass/circle/components/lists.sass */
+.circle--link--list a {
+  text-decoration: none;
+}
+/* line 24, ../sass/circle/components/lists.sass */
+.circle--filter--list {
+  list-style-type: none;
+}
+/* line 26, ../sass/circle/components/lists.sass */
+.circle--filter--list a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.5);
+  text-decoration: none;
+}
+/* line 30, ../sass/circle/components/lists.sass */
+.circle--filter--list a:hover {
+  color: #a5c4c2;
+}
+/* line 32, ../sass/circle/components/lists.sass */
+.circle--filter--list a.selected {
+  color: #222;
+  font-weight: bold;
+}
+/* line 37, ../sass/circle/components/lists.sass */
+.circle--group--list {
+  border-top: 1px solid #e1e1e1;
+  list-style: none;
+}
+/* line 40, ../sass/circle/components/lists.sass */
+.circle--group--list li {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 0 2rem 3rem;
+}
+/* line 43, ../sass/circle/components/lists.sass */
+.circle--group--list li:before {
+  content: "";
+  float: left;
+  margin: 10px 0 0 -30px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  display: block;
+}
+/* line 54, ../sass/circle/components/lists.sass */
+.circle--clone--list {
+  list-style-type: none;
+}
+/* line 56, ../sass/circle/components/lists.sass */
+.circle--clone--list a {
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+}
+/* line 60, ../sass/circle/components/lists.sass */
+.circle--clone--add, .circle--clone--remove {
+  cursor: pointer;
+}
+/* line 63, ../sass/circle/components/lists.sass */
+.circle--clone--remove {
+  float: right;
+  color: #a5c4c2;
+}
+/* line 66, ../sass/circle/components/lists.sass */
+.circle--clone--remove:hover {
+  color: #537d7b;
+}
+/* line 68, ../sass/circle/components/lists.sass */
+li:only-child .circle--clone--remove {
+  display: none;
+}
+/* line 72, ../sass/circle/components/lists.sass */
+.circle--pill--list {
+  margin: 0;
+  padding: 0 15px;
+}
+/* line 75, ../sass/circle/components/lists.sass */
+.circle--pill--list li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+/* line 78, ../sass/circle/components/lists.sass */
+.circle--pill--list a {
+  padding: 12px 20px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  color: #222;
+  font-weight: bold;
+  border-radius: 50px;
+  line-height: 1;
+  text-decoration: none;
+}
+/* line 88, ../sass/circle/components/lists.sass */
+.circle--pill--list a:hover {
+  background: #eee;
+}
+/* line 90, ../sass/circle/components/lists.sass */
+.circle--pill--list .selected,
+.circle--pill--list .selected:hover {
+  background: #444;
+  color: #fff;
+}
+
 /* line 2, ../sass/circle/components/headers.sass */
 .circle--header {
   background: #537d7b;
@@ -1140,10 +1272,34 @@ hr {
   clear: both;
 }
 /* line 7, ../sass/circle/components/headers.sass */
-.circle--header h1 {
-  margin: 0;
+.circle--header h1,
+.circle--header h2,
+.circle--header h3,
+.circle--header h4,
+.circle--header h5 {
+  margin: 0 30px 0 0;
+  float: left;
+  line-height: 1;
+  font-size: 2.4rem;
+  color: #fff;
 }
-/* line 9, ../sass/circle/components/headers.sass */
+/* line 17, ../sass/circle/components/headers.sass */
+.circle--header h1 a,
+.circle--header h2 a,
+.circle--header h3 a,
+.circle--header h4 a,
+.circle--header h5 a {
+  color: white;
+}
+/* line 19, ../sass/circle/components/headers.sass */
+.circle--header h1 a:hover,
+.circle--header h2 a:hover,
+.circle--header h3 a:hover,
+.circle--header h4 a:hover,
+.circle--header h5 a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 21, ../sass/circle/components/headers.sass */
 .circle--header input {
   background: rgba(255, 255, 255, 0.3);
   border-color: #496e6c;
@@ -1165,24 +1321,40 @@ hr {
 .circle--header input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 15, ../sass/circle/components/headers.sass */
+/* line 27, ../sass/circle/components/headers.sass */
 .circle--header input:focus {
   background: rgba(255, 255, 255, 0.35);
   border-color: #3f5e5d;
 }
-/* line 19, ../sass/circle/components/headers.sass */
-.circle--header nav a {
+/* line 30, ../sass/circle/components/headers.sass */
+.circle--header .circle--logo {
+  margin-right: 0;
+}
+/* line 34, ../sass/circle/components/headers.sass */
+.circle--header ul li {
+  margin: 0;
+}
+/* line 37, ../sass/circle/components/headers.sass */
+.circle--header .circle--fluid ul {
+  white-space: nowrap;
+}
+/* line 39, ../sass/circle/components/headers.sass */
+.circle--header a {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 21, ../sass/circle/components/headers.sass */
-.circle--header nav a:hover {
+/* line 41, ../sass/circle/components/headers.sass */
+.circle--header a:hover {
   color: white;
 }
-/* line 24, ../sass/circle/components/headers.sass */
+/* line 43, ../sass/circle/components/headers.sass */
+.circle--header nav {
+  display: inline-block;
+}
+/* line 46, ../sass/circle/components/headers.sass */
 .circle--page--header {
   margin-bottom: 30px;
 }
-/* line 26, ../sass/circle/components/headers.sass */
+/* line 48, ../sass/circle/components/headers.sass */
 .circle--page--header h1,
 .circle--page--header h2,
 .circle--page--header h3,
@@ -1191,158 +1363,33 @@ hr {
 .circle--page--header h6 {
   margin: 0;
 }
-/* line 35, ../sass/circle/components/headers.sass */
+/* line 55, ../sass/circle/components/headers.sass */
+.circle--page--header p {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  color: #999;
+  font-size: 1.6rem;
+}
+/* line 62, ../sass/circle/components/headers.sass */
 .circle--article--header {
   margin-bottom: 50px;
 }
-/* line 37, ../sass/circle/components/headers.sass */
+/* line 64, ../sass/circle/components/headers.sass */
 .circle--article--header h1 {
   margin-bottom: 10px;
 }
-/* line 39, ../sass/circle/components/headers.sass */
-.circle--article--header h4 {
+/* line 66, ../sass/circle/components/headers.sass */
+.circle--article--section {
   margin: 0;
   font-weight: normal;
   color: #999;
 }
-/* line 43, ../sass/circle/components/headers.sass */
-.circle--article--header--sub {
+/* line 70, ../sass/circle/components/headers.sass */
+.circle--article--byline {
   margin: 0;
+  line-height: 1;
   font-size: 1.6rem;
   color: #999;
-}
-
-/* line 3, ../sass/circle/components/lists.sass */
-.circle--nav--inline {
-  font-size: 1.6rem;
-  font-family: "Work Sans", sans-serif;
-  margin: 0;
-}
-/* line 7, ../sass/circle/components/lists.sass */
-.circle--nav--inline a {
-  display: block;
-  text-decoration: none;
-}
-/* line 10, ../sass/circle/components/lists.sass */
-.circle--nav--inline li {
-  display: inline-block;
-  padding: 0 15px;
-  margin: 0;
-}
-/* line 14, ../sass/circle/components/lists.sass */
-.circle--nav--inline li:first-child {
-  padding-left: 0;
-}
-/* line 16, ../sass/circle/components/lists.sass */
-.circle--nav--inline li:last-child {
-  padding-right: 0;
-}
-/* line 20, ../sass/circle/components/lists.sass */
-.circle--link--list {
-  list-style-type: none;
-}
-/* line 22, ../sass/circle/components/lists.sass */
-.circle--link--list a {
-  text-decoration: none;
-}
-/* line 26, ../sass/circle/components/lists.sass */
-.circle--filter--list {
-  list-style-type: none;
-}
-/* line 28, ../sass/circle/components/lists.sass */
-.circle--filter--list a {
-  text-decoration: none;
-  color: rgba(34, 34, 34, 0.5);
-  text-decoration: none;
-}
-/* line 32, ../sass/circle/components/lists.sass */
-.circle--filter--list a:hover {
-  color: #a5c4c2;
-}
-/* line 34, ../sass/circle/components/lists.sass */
-.circle--filter--list a.selected {
-  color: #222;
-  font-weight: bold;
-}
-/* line 39, ../sass/circle/components/lists.sass */
-.circle--group--list {
-  border-top: 1px solid #e1e1e1;
-  list-style: none;
-}
-/* line 42, ../sass/circle/components/lists.sass */
-.circle--group--list li {
-  border-bottom: 1px solid #e1e1e1;
-  padding: 2rem 0 2rem 3rem;
-}
-/* line 45, ../sass/circle/components/lists.sass */
-.circle--group--list li:before {
-  content: "";
-  float: left;
-  margin: 10px 0 0 -30px;
-  width: 5px;
-  height: 5px;
-  border: 1px solid #999;
-  border-radius: 10px;
-  display: block;
-}
-/* line 56, ../sass/circle/components/lists.sass */
-.circle--clone--list {
-  list-style-type: none;
-}
-/* line 58, ../sass/circle/components/lists.sass */
-.circle--clone--list a {
-  text-decoration: none;
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-}
-/* line 62, ../sass/circle/components/lists.sass */
-.circle--clone--add, .circle--clone--remove {
-  cursor: pointer;
-}
-/* line 65, ../sass/circle/components/lists.sass */
-.circle--clone--remove {
-  float: right;
-  color: #a5c4c2;
-}
-/* line 68, ../sass/circle/components/lists.sass */
-.circle--clone--remove:hover {
-  color: #537d7b;
-}
-/* line 70, ../sass/circle/components/lists.sass */
-li:only-child .circle--clone--remove {
-  display: none;
-}
-/* line 74, ../sass/circle/components/lists.sass */
-.circle--pill--list {
-  margin: 0;
-  padding: 0 15px;
-}
-/* line 77, ../sass/circle/components/lists.sass */
-.circle--pill--list li {
-  display: inline-block;
-  margin: 0 15px 0 0;
-}
-/* line 80, ../sass/circle/components/lists.sass */
-.circle--pill--list a {
-  padding: 12px 20px;
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.6rem;
-  display: inline-block;
-  color: #222;
-  font-weight: bold;
-  border-radius: 50px;
-  line-height: 1;
-  text-decoration: none;
-}
-/* line 90, ../sass/circle/components/lists.sass */
-.circle--pill--list a:hover {
-  background: #eee;
-}
-/* line 92, ../sass/circle/components/lists.sass */
-.circle--pill--list .selected,
-.circle--pill--list .selected:hover {
-  background: #444;
-  color: #fff;
 }
 
 /* line 2, ../sass/circle/components/tables.sass */
@@ -1467,36 +1514,43 @@ input.circle--input--h3 {
   color: #b1a5c4;
 }
 
-/* line 2, ../sass/circle/modules/containers.sass */
+/* line 2, ../sass/circle/components/containers.sass */
 .circle--fluid {
   display: table;
   width: 100%;
 }
-/* line 5, ../sass/circle/modules/containers.sass */
+/* line 5, ../sass/circle/components/containers.sass */
 .circle--fluid--cell {
   display: table-cell;
   padding: 0 15px;
   vertical-align: middle;
   box-sizing: border-box;
 }
-/* line 10, ../sass/circle/modules/containers.sass */
+/* line 10, ../sass/circle/components/containers.sass */
 .circle--fluid--cell input {
   margin: 0;
 }
-/* line 12, ../sass/circle/modules/containers.sass */
+/* line 12, ../sass/circle/components/containers.sass */
 .circle--fluid--cell .button {
   margin: 0;
 }
-/* line 14, ../sass/circle/modules/containers.sass */
+/* line 14, ../sass/circle/components/containers.sass */
+.circle--fluid--cell ul {
+  white-space: nowrap;
+}
+/* line 16, ../sass/circle/components/containers.sass */
 .circle--fluid--primary {
   width: 100%;
 }
-/* line 16, ../sass/circle/modules/containers.sass */
+/* line 18, ../sass/circle/components/containers.sass */
+.circle--fluid--primary ul {
+  white-space: wrap;
+}
+/* line 20, ../sass/circle/components/containers.sass */
 .circle--fluid--secondary {
   text-align: right;
-  white-space: nowrap;
 }
-/* line 21, ../sass/circle/modules/containers.sass */
+/* line 24, ../sass/circle/components/containers.sass */
 .circle--secondary--module {
   margin-bottom: 50px;
 }
@@ -1509,7 +1563,7 @@ input.circle--input--h3 {
 .circle--secondary--module:after {
   clear: both;
 }
-/* line 24, ../sass/circle/modules/containers.sass */
+/* line 27, ../sass/circle/components/containers.sass */
 .circle--secondary--module > h1,
 .circle--secondary--module > h2,
 .circle--secondary--module > h3,
@@ -1521,7 +1575,7 @@ input.circle--input--h3 {
   font-size: 1.4rem;
   font-weight: normal;
 }
-/* line 34, ../sass/circle/modules/containers.sass */
+/* line 37, ../sass/circle/components/containers.sass */
 .circle--secondary--module > h1 a,
 .circle--secondary--module > h2 a,
 .circle--secondary--module > h3 a,
@@ -1530,26 +1584,26 @@ input.circle--input--h3 {
 .circle--secondary--module > h6 a {
   color: #a5c4c2;
 }
-/* line 36, ../sass/circle/modules/containers.sass */
+/* line 39, ../sass/circle/components/containers.sass */
 .circle--secondary--module p {
   font-size: 1.4rem;
   color: #999999;
 }
-/* line 40, ../sass/circle/modules/containers.sass */
+/* line 43, ../sass/circle/components/containers.sass */
 .circle--secondary--module .circle--clone--list li {
   margin-bottom: 30px;
 }
-/* line 42, ../sass/circle/modules/containers.sass */
+/* line 45, ../sass/circle/components/containers.sass */
 .circle--secondary--module textarea,
 .circle--secondary--module input,
 .circle--secondary--module select {
   font-size: 1.4rem;
 }
-/* line 46, ../sass/circle/modules/containers.sass */
+/* line 49, ../sass/circle/components/containers.sass */
 .circle--secondary--module .circle--textarea--input {
   height: 48px;
 }
-/* line 49, ../sass/circle/modules/containers.sass */
+/* line 52, ../sass/circle/components/containers.sass */
 .circle--page {
   margin-bottom: 100px;
 }
@@ -1562,16 +1616,16 @@ input.circle--input--h3 {
 .circle--page:after {
   clear: both;
 }
-/* line 53, ../sass/circle/modules/containers.sass */
+/* line 56, ../sass/circle/components/containers.sass */
 .circle--article {
   padding-top: 30px;
 }
-/* line 55, ../sass/circle/modules/containers.sass */
+/* line 58, ../sass/circle/components/containers.sass */
 .circle--article--body {
   line-height: 1.8;
   margin-bottom: 50px;
 }
-/* line 60, ../sass/circle/modules/containers.sass */
+/* line 63, ../sass/circle/components/containers.sass */
 .circle--actions--bar {
   margin: -30px 0 30px;
   background: #f9f9f9;
@@ -1586,11 +1640,11 @@ input.circle--input--h3 {
 .circle--actions--bar:after {
   clear: both;
 }
-/* line 65, ../sass/circle/modules/containers.sass */
+/* line 68, ../sass/circle/components/containers.sass */
 .circle--actions--bar .button {
   margin-bottom: 0;
 }
-/* line 69, ../sass/circle/modules/containers.sass */
+/* line 72, ../sass/circle/components/containers.sass */
 .circle--primary--avatar {
   width: 100%;
   border-radius: 8px;
@@ -1616,7 +1670,7 @@ input.circle--input--h3 {
   right: 0;
   bottom: 0;
 }
-/* line 78, ../sass/circle/modules/containers.sass */
+/* line 81, ../sass/circle/components/containers.sass */
 .circle--primary--avatar .button {
   position: absolute;
   left: 50%;
@@ -1627,7 +1681,7 @@ input.circle--input--h3 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 85, ../sass/circle/modules/containers.sass */
+/* line 88, ../sass/circle/components/containers.sass */
 .circle--section > p {
   font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
@@ -1635,6 +1689,11 @@ input.circle--input--h3 {
 }
 
 /* line 6, ../sass/global.sass */
+.circle--header h1 {
+  margin: 0;
+}
+
+/* line 9, ../sass/global.sass */
 .logo {
   width: 28px;
   height: 28px;
@@ -1648,7 +1707,7 @@ input.circle--input--h3 {
   -o-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
-/* line 14, ../sass/global.sass */
+/* line 17, ../sass/global.sass */
 .logo:hover {
   box-shadow: 0 0 0 15px #fff inset;
 }

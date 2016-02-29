@@ -13,7 +13,7 @@
 
 /* line 13, ../../../sass/circle/core/utilities.sass */
 .hide-text {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
 /* line 16, ../../../sass/circle/core/utilities.sass */

@@ -1,13 +1,23 @@
 /*
 Error: Undefined mixin 'clearfix'.
-        on line 23 of /Users/Tyson/circle/sass/circle/modules/containers.sass, in `clearfix'
-        from line 23 of /Users/Tyson/circle/sass/circle/modules/containers.sass
-        from line 1 of /Users/Tyson/circle/sass/circle/modules.sass
+        on line 26 of /Users/Tyson/circle/sass/circle/components/containers.sass, in `clearfix'
+        from line 26 of /Users/Tyson/circle/sass/circle/components/containers.sass
+
+21:       text-align: right
+22: 
+23:   &--secondary
+24:     &--module
+25:       margin-bottom: 50px
+26:       +clearfix
+27:       > h1,
+28:       > h2,
+29:       > h3,
+30:       > h4,
+31:       > h5,
 
 Backtrace:
-/Users/Tyson/circle/sass/circle/modules/containers.sass:23:in `clearfix'
-/Users/Tyson/circle/sass/circle/modules/containers.sass:23
-/Users/Tyson/circle/sass/circle/modules.sass:1
+/Users/Tyson/circle/sass/circle/components/containers.sass:26:in `clearfix'
+/Users/Tyson/circle/sass/circle/components/containers.sass:26
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
@@ -52,19 +62,6 @@ Backtrace:
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
-/Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
@@ -96,4 +93,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'clearfix'.\A         on line 23 of /Users/Tyson/circle/sass/circle/modules/containers.sass, in `clearfix'\A         from line 23 of /Users/Tyson/circle/sass/circle/modules/containers.sass\A         from line 1 of /Users/Tyson/circle/sass/circle/modules.sass"; }
+  content: "Error: Undefined mixin 'clearfix'.\A         on line 26 of /Users/Tyson/circle/sass/circle/components/containers.sass, in `clearfix'\A         from line 26 of /Users/Tyson/circle/sass/circle/components/containers.sass\A \A 21:       text-align: right\A 22: \A 23:   &--secondary\A 24:     &--module\A 25:       margin-bottom: 50px\A 26:       +clearfix\A 27:       > h1,\A 28:       > h2,\A 29:       > h3,\A 30:       > h4,\A 31:       > h5,"; }
