@@ -709,8 +709,8 @@ input[type="button"] svg {
   fill: #689b98;
   width: auto;
   height: 13px;
+  position: relative;
   float: left;
-  margin: 1px 0 -3px 0;
 }
 /* line 40, ../../../sass/circle/core/buttons.sass */
 .button.icon-on-left svg,
@@ -718,23 +718,28 @@ button.icon-on-left svg,
 input[type="submit"].icon-on-left svg,
 input[type="reset"].icon-on-left svg,
 input[type="button"].icon-on-left svg {
-  margin: 1px 10px -3px -5px;
+  top: 1px;
+  left: -10px;
+  bottom: -3px;
 }
-/* line 42, ../../../sass/circle/core/buttons.sass */
+/* line 44, ../../../sass/circle/core/buttons.sass */
 .button.icon-on-right svg,
 button.icon-on-right svg,
 input[type="submit"].icon-on-right svg,
 input[type="reset"].icon-on-right svg,
 input[type="button"].icon-on-right svg {
-  margin: 1px -5px -3px 10px;
+  top: 1px;
+  right: -10px;
+  bottom: -3px;
+  margin-left: 5px;
   float: right;
 }
 
-/* line 47, ../../../sass/circle/core/buttons.sass */
+/* line 52, ../../../sass/circle/core/buttons.sass */
 .button {
   cursor: pointer;
 }
-/* line 49, ../../../sass/circle/core/buttons.sass */
+/* line 54, ../../../sass/circle/core/buttons.sass */
 .button input[type="file"] {
   opacity: 0;
   padding: 0;
@@ -747,7 +752,7 @@ input[type="button"].icon-on-right svg {
   cursor: pointer;
 }
 
-/* line 62, ../../../sass/circle/core/buttons.sass */
+/* line 67, ../../../sass/circle/core/buttons.sass */
 .button.button-primary, input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary,
@@ -755,14 +760,14 @@ button.button-primary {
   color: #fff;
   background-color: #689b98;
 }
-/* line 66, ../../../sass/circle/core/buttons.sass */
+/* line 71, ../../../sass/circle/core/buttons.sass */
 .button.button-primary svg, input[type="submit"].button-primary svg,
 input[type="reset"].button-primary svg,
 input[type="button"].button-primary svg,
 button.button-primary svg {
   fill: #fff;
 }
-/* line 68, ../../../sass/circle/core/buttons.sass */
+/* line 73, ../../../sass/circle/core/buttons.sass */
 .button.button-primary:hover, input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover, input[type="submit"].button-primary:focus,
@@ -775,7 +780,7 @@ button.button-primary:focus {
   background-color: #537d7b;
 }
 
-/* line 82, ../../../sass/circle/core/buttons.sass */
+/* line 87, ../../../sass/circle/core/buttons.sass */
 .button.button-inactive, .button.button-inactive:hover, .button.button-inactive:focus,
 button.button-inactive:hover,
 button.button-inactive:focus, input[type="submit"].button-inactive,
@@ -790,7 +795,7 @@ button.button-inactive {
   background-color: #cccccc;
   box-shadow: none;
 }
-/* line 87, ../../../sass/circle/core/buttons.sass */
+/* line 92, ../../../sass/circle/core/buttons.sass */
 .button.button-inactive svg, .button.button-inactive:hover svg, .button.button-inactive:focus svg,
 button.button-inactive:hover svg,
 button.button-inactive:focus svg, input[type="submit"].button-inactive svg,
@@ -804,7 +809,7 @@ button.button-inactive svg {
   fill: #fff;
 }
 
-/* line 103, ../../../sass/circle/core/buttons.sass */
+/* line 108, ../../../sass/circle/core/buttons.sass */
 .button.button-text, input[type="submit"].button-text,
 input[type="reset"].button-text,
 input[type="button"].button-text, input[type="submit"].button-text:hover, input[type="submit"].button-text:focus,
@@ -818,7 +823,7 @@ button.button-text {
   padding: 18px 15px;
   color: #a5c4c2;
 }
-/* line 109, ../../../sass/circle/core/buttons.sass */
+/* line 114, ../../../sass/circle/core/buttons.sass */
 .button.button-text:hover, input[type="submit"].button-text:hover,
 input[type="reset"].button-text:hover,
 input[type="button"].button-text:hover, .button.button-text:focus, input[type="submit"].button-text:focus,
@@ -1125,67 +1130,68 @@ hr {
 }
 
 /* line 2, ../../../sass/circle/components/lists.sass */
-.circle--inline, .circle--header ul {
+.circle--inline--list, .circle--header ul {
   font-size: 1.6rem;
   font-family: "Work Sans", sans-serif;
   margin: 0;
+  white-space: nowrap;
 }
-/* line 6, ../../../sass/circle/components/lists.sass */
-.circle--inline a, .circle--header ul a {
+/* line 7, ../../../sass/circle/components/lists.sass */
+.circle--inline--list a, .circle--header ul a {
   display: block;
   text-decoration: none;
 }
-/* line 9, ../../../sass/circle/components/lists.sass */
-.circle--inline li, .circle--header ul li {
+/* line 10, ../../../sass/circle/components/lists.sass */
+.circle--inline--list li, .circle--header ul li {
   display: inline-block;
   padding: 0 15px;
 }
-/* line 12, ../../../sass/circle/components/lists.sass */
-.circle--inline li:first-child, .circle--header ul li:first-child {
+/* line 13, ../../../sass/circle/components/lists.sass */
+.circle--inline--list li:first-child, .circle--header ul li:first-child {
   padding-left: 0;
 }
-/* line 14, ../../../sass/circle/components/lists.sass */
-.circle--inline li:last-child, .circle--header ul li:last-child {
+/* line 15, ../../../sass/circle/components/lists.sass */
+.circle--inline--list li:last-child, .circle--header ul li:last-child {
   padding-right: 0;
 }
-/* line 18, ../../../sass/circle/components/lists.sass */
+/* line 19, ../../../sass/circle/components/lists.sass */
 .circle--link--list {
   list-style-type: none;
 }
-/* line 20, ../../../sass/circle/components/lists.sass */
+/* line 21, ../../../sass/circle/components/lists.sass */
 .circle--link--list a {
   text-decoration: none;
 }
-/* line 24, ../../../sass/circle/components/lists.sass */
+/* line 25, ../../../sass/circle/components/lists.sass */
 .circle--filter--list {
   list-style-type: none;
 }
-/* line 26, ../../../sass/circle/components/lists.sass */
+/* line 27, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.5);
   text-decoration: none;
 }
-/* line 30, ../../../sass/circle/components/lists.sass */
+/* line 31, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a:hover {
   color: #a5c4c2;
 }
-/* line 32, ../../../sass/circle/components/lists.sass */
+/* line 33, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a.selected {
   color: #222;
   font-weight: bold;
 }
-/* line 37, ../../../sass/circle/components/lists.sass */
+/* line 38, ../../../sass/circle/components/lists.sass */
 .circle--group--list {
   border-top: 1px solid #e1e1e1;
   list-style: none;
 }
-/* line 40, ../../../sass/circle/components/lists.sass */
+/* line 41, ../../../sass/circle/components/lists.sass */
 .circle--group--list li {
   border-bottom: 1px solid #e1e1e1;
   padding: 2rem 0 2rem 3rem;
 }
-/* line 43, ../../../sass/circle/components/lists.sass */
+/* line 44, ../../../sass/circle/components/lists.sass */
 .circle--group--list li:before {
   content: "";
   float: left;
@@ -1196,44 +1202,44 @@ hr {
   border-radius: 10px;
   display: block;
 }
-/* line 54, ../../../sass/circle/components/lists.sass */
+/* line 55, ../../../sass/circle/components/lists.sass */
 .circle--clone--list {
   list-style-type: none;
 }
-/* line 56, ../../../sass/circle/components/lists.sass */
+/* line 57, ../../../sass/circle/components/lists.sass */
 .circle--clone--list a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
 }
-/* line 60, ../../../sass/circle/components/lists.sass */
+/* line 61, ../../../sass/circle/components/lists.sass */
 .circle--clone--add, .circle--clone--remove {
   cursor: pointer;
 }
-/* line 63, ../../../sass/circle/components/lists.sass */
+/* line 64, ../../../sass/circle/components/lists.sass */
 .circle--clone--remove {
   float: right;
   color: #a5c4c2;
 }
-/* line 66, ../../../sass/circle/components/lists.sass */
+/* line 67, ../../../sass/circle/components/lists.sass */
 .circle--clone--remove:hover {
   color: #537d7b;
 }
-/* line 68, ../../../sass/circle/components/lists.sass */
+/* line 69, ../../../sass/circle/components/lists.sass */
 li:only-child .circle--clone--remove {
   display: none;
 }
-/* line 72, ../../../sass/circle/components/lists.sass */
+/* line 73, ../../../sass/circle/components/lists.sass */
 .circle--pill--list {
   margin: 0;
   padding: 0 15px;
 }
-/* line 75, ../../../sass/circle/components/lists.sass */
+/* line 76, ../../../sass/circle/components/lists.sass */
 .circle--pill--list li {
   display: inline-block;
   margin: 0 15px 0 0;
 }
-/* line 78, ../../../sass/circle/components/lists.sass */
+/* line 79, ../../../sass/circle/components/lists.sass */
 .circle--pill--list a {
   padding: 12px 20px;
   font-family: "Work Sans", sans-serif;
@@ -1245,11 +1251,11 @@ li:only-child .circle--clone--remove {
   line-height: 1;
   text-decoration: none;
 }
-/* line 88, ../../../sass/circle/components/lists.sass */
+/* line 89, ../../../sass/circle/components/lists.sass */
 .circle--pill--list a:hover {
   background: #eee;
 }
-/* line 90, ../../../sass/circle/components/lists.sass */
+/* line 91, ../../../sass/circle/components/lists.sass */
 .circle--pill--list .selected,
 .circle--pill--list .selected:hover {
   background: #444;

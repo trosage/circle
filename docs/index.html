@@ -80,7 +80,7 @@
     <div class="grid-70 grid-right">
       <section class="circle--section">
         <h1>Core</h1>
-        <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#containers">Containers</a> section of the documentation.</p>
+        <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#components">Components</a> section of the documentation.</p>
         <hr />
 
         <article class="docs--article" id="bounds">
@@ -598,9 +598,9 @@
         </article>
       </section>
 
-      <section>
+      <section id="components">
         <h1>Components</h1>
-        <p>Circle additionally includes numberous common components for you might want to use. All components use the <code>.circle</code> prefix to deliniate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>global.sass</em>. You can be easily include or exclude these using <code>@import "circle/components"</code>.</p>
+        <p>Circle additionally includes numberous common components for you might want to use. All components use the <code>.circle</code> prefix to deliniate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>sass/global.sass</em>. You can be easily include or exclude these using <code>@import "circle/components"</code>.</p>
 
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
@@ -725,6 +725,53 @@
         </article>
 
         <article class="docs--article" id="component-lists">
+          <h3>Lists</h3>
+          <p>Circle components include some variations on lists you might find useful for your applications.</p>
+
+          <h4>Inline Lists</h4>
+          <p>Using the <code>.circle--inline--list</code> class on lists removes the default list styling and places items inline.</p>
+
+          <div class="grid-parent">
+           <div class="grid-60">
+<pre class="prettyprint">
+&lt;ul class=&quot;circle--inline--list&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <ul class="circle--inline--list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Filter Lists</h4>
+          <p>Filter lists is a styling used for if you have a list of filter options and need to deliniate an item as the selected filter from the rest.</p>
+                    <div class="grid-parent">
+           <div class="grid-60">
+<pre class="prettyprint">
+&lt;ul class=&quot;circle--filter--list&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <ul class="circle--filter--list">
+                <li><a class="selected">Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
 
         </article>
 

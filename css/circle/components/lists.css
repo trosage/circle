@@ -3,14 +3,14 @@ Error: Undefined variable: "$display-font".
         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass
 
 1: .circle
-2:   &--inline
+2:   &--inline--list
 3:     font-size: 1.6rem
 4:     font-family: $display-font
 5:     margin: 0
-6:     a
-7:       display: block
-8:       text-decoration: none
-9:     li
+6:     white-space: nowrap
+7:     a
+8:       display: block
+9:       text-decoration: none
 
 Backtrace:
 /Users/Tyson/circle/sass/circle/components/lists.sass:4
@@ -76,4 +76,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$display-font\".\A         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--inline\A 3:     font-size: 1.6rem\A 4:     font-family: $display-font\A 5:     margin: 0\A 6:     a\A 7:       display: block\A 8:       text-decoration: none\A 9:     li"; }
+  content: "Error: Undefined variable: \"$display-font\".\A         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--inline--list\A 3:     font-size: 1.6rem\A 4:     font-family: $display-font\A 5:     margin: 0\A 6:     white-space: nowrap\A 7:     a\A 8:       display: block\A 9:       text-decoration: none"; }
