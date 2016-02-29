@@ -28,7 +28,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="../css/circle/core/docs.css">
 
 </head>
 <body>
@@ -85,7 +85,7 @@
 
         <article class="docs--article" id="bounds">
           <h2>Bounds</h2>
-          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>variables.sass</em>.</p>
+          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/variables.sass</em>.</p>
 <pre class="prettyprint">
 &lt;div class=&quot;bounds&quot;&gt;
   &lt;!-- Layout goes here --&gt;
@@ -95,7 +95,7 @@
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
-          <p>Circle's grid system is based on percentage widths columns available in incriments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can easily be modified by changing the variable <code>$gutter-width</code> in the <em>variables.sass</em> file.</p>
+          <p>Circle's grid system is based on percentage widths columns available in incriments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can easily be modified by changing the variable <code>$gutter-width</code> in the <em>sass/variables.sass</em> file.</p>
           <p>Columns in the grid system follow the following class naming pattern:</p>
 <pre class="prettyprint">
 // Pattern
@@ -211,9 +211,9 @@
           <h2>Typography</h2>
           <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. By default Circle never changes the <html> font-size, but it's there in case you need it for your project. All measurements are base 10 though so, an <code>&lt;h1&gt;</code> with <code>3.8rem</code> font-size just means <code>38px</code>.</p>
 
-          <p>The default typefaces used for Circle are <a>Cousine</a> for the default body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
+          <p>The default typefaces used for Circle are <a>Cousine</a> for the default body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
 
-          <p>Additionally, each heading's font size is defined by a variable in <em>variables.sass</em> for easy modification. Default sizes are as follows.</p>
+          <p>Additionally, each heading's font size is defined by a variable in <em>sass/variables.sass</em> for easy modification. Default sizes are as follows.</p>
           <div class="grid-parent">
             <div class="grid-60">
               <table class="full-width">
@@ -291,7 +291,7 @@
 
         <article class="docs--article" id="buttons">
           <h2>Buttons</h2>
-          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button is can be edited using the <code>$button-color</code> variable in <em>variables.sass</em></p>
+          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button is can be edited using the <code>$button-color</code> variable in <em>sass/variables.sass</em></p>
 
           <div class="grid-parent">
 
@@ -604,7 +604,7 @@
 
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
-          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>variables.sass</em>.</p>
+          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>sass/variables.sass</em>.</p>
           <header class="circle--header">
             <h1><a>Title</a></h1>
             <nav>
