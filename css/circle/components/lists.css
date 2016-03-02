@@ -1,19 +1,18 @@
 /*
 Error: Undefined variable: "$display-font".
-        on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass
+        on line 3 of /Users/Tyson/circle/sass/circle/components/lists.sass
 
 1: .circle
 2:   &--inline--list
-3:     font-size: 1.6rem
-4:     font-family: $display-font
-5:     margin: 0
+3:     font-family: $display-font
+4:     margin: 0
+5:     font-size: 0
 6:     white-space: nowrap
 7:     a
 8:       display: block
-9:       text-decoration: none
 
 Backtrace:
-/Users/Tyson/circle/sass/circle/components/lists.sass:4
+/Users/Tyson/circle/sass/circle/components/lists.sass:3
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/Tyson/.rvm/gems/ruby-2.1.5/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -76,4 +75,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$display-font\".\A         on line 4 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--inline--list\A 3:     font-size: 1.6rem\A 4:     font-family: $display-font\A 5:     margin: 0\A 6:     white-space: nowrap\A 7:     a\A 8:       display: block\A 9:       text-decoration: none"; }
+  content: "Error: Undefined variable: \"$display-font\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/lists.sass\A \A 1: .circle\A 2:   &--inline--list\A 3:     font-family: $display-font\A 4:     margin: 0\A 5:     font-size: 0\A 6:     white-space: nowrap\A 7:     a\A 8:       display: block"; }

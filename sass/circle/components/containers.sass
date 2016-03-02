@@ -24,18 +24,14 @@
     &--module
       margin-bottom: 50px
       +clearfix
-      > h1,
-      > h2,
-      > h3,
-      > h4,
-      > h5,
-      > h6
-        font-family: $body-font
-        color: rgba(#222, .3)
-        font-size: 1.4rem
-        font-weight: normal
-        a
-          color: lighten($link, 20%)
+      >
+        #{$headers}
+          font-family: $body-font
+          color: rgba(#222, .3)
+          font-size: 1.4rem
+          font-weight: normal
+          a
+            color: lighten($link, 20%)
       p
         font-size: 1.4rem
         color: lighten($body-color, 20%)

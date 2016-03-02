@@ -1,11 +1,7 @@
 .circle
   &--table
     width: 100%
-    h1,
-    h2,
-    h3,
-    h4,
-    h5
+    #{$headers}
       margin: 0
     p
       margin: 10px 0 0 0
@@ -17,14 +13,11 @@
     td
       padding: 25px 0
 
-    .clickable-row
-      cursor: pointer
-      color: $link-secondary
-      h3
-        color: $link
+.clickable-row
+  td
+    cursor: pointer
+    color: $link-secondary
+  h3
+    color: $link
 
-
-  &--cell
-    &--right
-      text-align: right
 

@@ -72,12 +72,20 @@
           <li><a href="#page-header">Page Header</a></li>
           <li><a href="#article-header">Article Header</a></li>
           <li><a href="#component-lists">Lists</a></li>
-          <li><a>Item</a></li>
+          <li><a href="#component-tables">Tables</a></li>
+        </ul>
+      </div>
+
+      <div class="circle--filter circle--secondary--module">
+        <h4>Examples</h4>
+        <ul class="circle--link--list">
+          <li><a href="examples/project.html">Project</a></li>
+          <li><a href="examples/project_edit.html">Edit Project</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="grid-70 grid-right">
+    <div class="grid-70 grid-push-5">
       <section class="circle--section">
         <h1>Core</h1>
         <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#components">Components</a> section of the documentation.</p>
@@ -525,7 +533,7 @@
                 <td>67</td>
                 <td>Edinburgh, Scotland</td>
               </tr>
-              <tr class="clickable-row" data-href="http://www.wikipedia.com" data-target="_blank">
+              <tr class="clickable-row" data-href="https://en.wikipedia.org/wiki/Friedrich_Hayek" data-target="_blank">
                 <td>Friedrich Hayek</td>
                 <td>92</td>
                 <td>London, England</td>
@@ -534,7 +542,8 @@
           </table>
 
           <h3>Row Linking</h3>
-          <p>If you would like to make an entire <code>&lt;tr&gt;</code> link to a particular <code>URL</code>, apply the <code>.clickable-row</code> class to the table row along with the <code>data-href</code> attrubute with a value of the desired <code>URL</code>. The option to set a target for the link is also available by applying the <code>data-target</code> attribute with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target">appropriate value</a>.</p>
+          <p>Circle offers the ability to easily make entire table rows linkable to specific <code>URL</code>. Just add the <code>.clickable-row</code> along with the <code>data-href</code> attrubute with your <code>URL</code> to the <code>&lt;tr&gt;</code> tag. Optionally, you can also add the <code>data-target</code> attribute that acts identically to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target">target attribute</a> used in <code>&lt;a&gt;</code> tags.</p>
+
 <pre class="prettyprint">
 &lt;tr class=&quot;clickable-row&quot; data-href=&quot;http://www.wikipedia.com&quot; data-target=&quot;_blank&quot;&gt;
   &lt;td&gt;Wikipedia&lt;/td&gt;
@@ -553,7 +562,7 @@
         <h2>Utilities</h2>
         <p>The following are some basic utlity momdifier classes that be helpful in a number of situations.</p>
 
-        <table class="full-width">
+        <table class="full-width align-top">
           <thead>
             <th>Class</th>
             <th>Description</th>
@@ -586,11 +595,19 @@
             </tr>
             <tr>
               <td><code>.align-top</code></td>
-              <td>Aligns text to the top of the <code>td</code> when applied on a <code>table</code>.</td>
+              <td>Aligns text to the top of the <code>&lt;td&gt;</code> when applied on a <code>&lt;table&gt;</code> or <code>&lt;td&gt;</code>.</td>
             </tr>
             <tr>
               <td><code>.align-right</code></td>
-              <td>Aligns text to the top when used on a <code>table</code>.</td>
+              <td>Aligns text to the right.</td>
+            </tr>
+            <tr>
+              <td><code>.positive</code></td>
+              <td>Assigns color to text that conveys a positive connotation (default color is <span class="positive">green</span>). This color can be globally defined by editing the value for the <code>$positive</code> variable in <em>variables.sass</em></td>
+            </tr>
+            <tr>
+              <td><code>.negative</code></td>
+              <td>Assigns color to text that conveys a negative connotation (default color is <span class="negative">red</span>). This color can be globally defined by editing the value for the <code>$negative</code> variable in <em>variables.sass</em>.</td>
             </tr>
           </tbody>
         </table>
@@ -601,7 +618,7 @@
       <section id="components">
         <h1>Components</h1>
         <p>Circle additionally includes numberous common components for you might want to use. All components use the <code>.circle</code> prefix to deliniate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>sass/global.sass</em>. You can be easily include or exclude these using <code>@import "circle/components"</code>.</p>
-
+        <hr />
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
           <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>sass/variables.sass</em>.</p>
@@ -722,13 +739,14 @@
   &lt;/div&gt;
 &lt;/header&gt;
 </pre>
+
         </article>
 
         <article class="docs--article" id="component-lists">
-          <h3>Lists</h3>
+          <h2>Lists</h2>
           <p>Circle components include some variations on lists you might find useful for your applications.</p>
 
-          <h4>Inline Lists</h4>
+          <h3>Inline Lists</h3>
           <p>Using the <code>.circle--inline--list</code> class on lists removes the default list styling and places items inline.</p>
 
           <div class="grid-parent">
@@ -751,16 +769,15 @@
             </div>
           </div>
 
-          <h4>Filter Lists</h4>
+          <h3>Filter Lists</h3>
           <p>Filter lists is a styling used for if you have a list of filter options and need to deliniate an item as the selected filter from the rest.</p>
                     <div class="grid-parent">
            <div class="grid-60">
 <pre class="prettyprint">
 &lt;ul class=&quot;circle--filter--list&quot;&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;selected&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </pre>
             </div>
@@ -773,6 +790,178 @@
             </div>
           </div>
 
+          <h3>Clone Lists</h3>
+          <p>Clone lists are lists that provide the functionality to add and/or remove list items. Common use cases are with forms where you have a form that builds lists item by item. Clone lists use the <code>.circle--clone--list</code> class applied to a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>. Additionally, an anchor with the class <code>.circle--clone--add</code> needs to be nested inside the children <code>&lt;li&gt;</code> elements. Optionally, there can be an achor to remove the list item using the <code>.circle--clone--remove</code> class. Remove links are hidden by default in the case that there is only one list item.</p>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;ul class=&quot;circle--clone--list&quot;&gt;
+  &lt;li&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Item&quot; /&gt;
+    &lt;a class=&quot;circle--clone--add&quot;&gt;Add&lt;/a&gt;
+    &lt;a class=&quot;circle--clone--remove&quot;&gt;Remove&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <ul class="circle--clone--list">
+                <li>
+                  <input type="text" placeholder="Item" />
+                  <a class="circle--clone--add">Add</a>
+                  <a class="circle--clone--remove">Remove</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Pilled List</h3>
+          <p>Pilled lists are lists of links which one item has a selected state. Common uses could be page tabs or filters.</p>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;ul class=&quot;circle--clone--list&quot;&gt;
+  &lt;li&gt;&lt;a class=&quot;selected&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <ul class="circle--pill--list">
+                <li><a class="selected">Item 1</a></li>
+                <li><a>Item 2</a></li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="docs--article" id="component-tables">
+          <h2>Tables</h2>
+          <p>Circle provides alternate styling for tables used for results listing.</p>
+
+<pre class="prettyprint">
+&lt;table class=&quot;circle--table&quot;&gt;
+  &lt;thead&gt;
+    &lt;th&gt;Account&lt;/th&gt;
+    &lt;th class=&quot;align-right&quot;&gt;Balance&lt;/th&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+      &lt;h3&gt;Checking&lt;/h3&gt;
+      &lt;p&gt;#346698-09&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;align-right&quot;&gt;
+        &lt;h3&gt;$5984.23&lt;/h3&gt;
+        &lt;p&gt;USD&lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- The .align-right class is a generic utility class that aligns text to the right --&gt;
+&lt;!-- The .positive and .negative classes are generic utility classes for assigning colors --&gt;
+</pre>
+
+          <table class="circle--table">
+            <thead>
+              <th>Account</th>
+              <th class="align-right">Balance</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h3>Checking</h3>
+                  <p>#346698-09</p>
+                </td>
+                <td class="align-right">
+                  <h3 class="positive">$5,984.23</h3>
+                  <p>USD</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>Savings</h3>
+                  <p>#346698-09</p>
+                </td>
+                <td class="align-right">
+                  <h3 class="positive">$21,481.03</h3>
+                  <p>USD</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>Visa Card</h3>
+                  <p>#346698-09</p>
+                </td>
+                <td class="align-right">
+                  <h3 class="negative">-$85.17</h3>
+                  <p>USD</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="docs--article" id="component-forms">
+          <h2>Forms</h2>
+          <p>Circle offers some basic sizing and grouping components for form elements.</p>
+
+          <h3>Field Classes</h3>
+          <p>For cases where you want your form fields contents to take on the styling that immitates the output use the following classes.</p>
+          <table class="full-width">
+            <thead>
+              <th>Class</th>
+              <th>Description</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.circle--input--h1</code></td>
+                <td>Contents take on the styling of the <code>&lt;h1&gt;</code> tag.</td>
+              </tr>
+              <tr>
+                <td><code>.circle--input--h2</code></td>
+                <td>Contents take on the styling of the <code>&lt;h2&gt;</code> tag.</td>
+              </tr>
+              <tr>
+                <td><code>.circle--input--h3</code></td>
+                <td>Contents take on the styling of the <code>&lt;h3&gt;</code> tag.</td>
+              </tr>
+              <tr>
+                <td><code>.circle--input--h4</code></td>
+                <td>Contents take on the styling of the <code>&lt;h4&gt;</code> tag.</td>
+              </tr>
+              <tr>
+                <td><code>.circle--input--h5</code></td>
+                <td>Contents take on the styling of the <code>&lt;h5&gt;</code> tag.</td>
+              </tr>
+              <tr>
+                <td><code>.circle--input--h6</code></td>
+                <td>Contents take on the styling of the <code>&lt;h6&gt;</code> tag.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Textareas</h3>
+          <p>By default, <code>&lt;textarea&gt;</code> do not allow for scrolling. Instead, textareas automatically grow to fit the content written within. In terms of styling empty textareas, Circle provides the <code>.circle--input--textarea</code> class in the case that you want the default height of a textarea to be equal to the height of a standard text <code>&lt;input&gt;</code>.</p>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;textarea placeholder=&quot;Title&quot; class=&quot;circle--textarea--input circle--input--h2&quot;&gt;&lt;/textarea&gt;
+
+&lt;textarea placeholder=&quot;Description&quot;&gt;&lt;/textarea&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <textarea placeholder="Title" class="circle--textarea--input circle--input--h2"></textarea>
+
+              <textarea placeholder="Description"></textarea>
+            </div>
+          </div>
         </article>
 
       </section>

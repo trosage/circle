@@ -1,185 +1,43 @@
 $column-padding: $gutter-width / 2
+$columns: 5, 10, 15, 20, 25, 30, 33.333, 35, 40, 45, 50, 55, 60, 65, 66.666, 70, 75, 80, 90, 95, 100
+
 
 // Grid
-
 .bounds
   max-width: $layout-bounds
   margin: 0 auto
 
 .grid
   float: left
-  padding: 0 $column-padding
   box-sizing: border-box
   position: relative
-  &-right
-    float: right
+
+  @each $proportion in $columns
+    &-#{floor(nth($proportion, 1))}
+      width: percentage($proportion/100)
+      padding: 0 $column-padding
+
+    // Pull
+    &-pull
+      &-#{floor(nth($proportion, 1))}
+        left: -#{percentage($proportion/100)}
+
+    // Push
+    &-push
+      &-#{floor(nth($proportion, 1))}
+        left: #{percentage($proportion/100)}
+
+    // Grid Breakpoint
+    &-#{floor(nth($proportion, 1))}
+      @extend .grid
+      @media screen and (max-width: $mobile-breakpoint)
+        width: 100%
+        left: 0
+
   &-parent
     margin: 0
     margin-right: -$column-padding
     margin-left: -$column-padding
     +clearfix
 
-  // Grid Widths
-  &-5
-    width: 5%
-  &-10
-    width: 10%
-  &-15
-    width: 15%
-  &-20
-    width: 20%
-  &-25
-    width: 25%
-  &-30
-    width: 30%
-  &-35
-    width: 35%
-  &-33
-    width: 33.333%
-  &-40
-    width: 40%
-  &-45
-    width: 45%
-  &-50
-    width: 50%
-  &-55
-    width: 55%
-  &-60
-    width: 60%
-  &-65
-    width: 65%
-  &-66
-    width: 66.666%
-  &-70
-    width: 70%
-  &-75
-    width: 75%
-  &-80
-    width: 80%
-  &-85
-    width: 85%
-  &-90
-    width: 90%
-  &-95
-    width: 95%
-  &-100
-    width: 100%
 
-  // Pull / Push
-  &-pull
-    &-5
-      left: -5%
-    &-10
-      left: -10%
-    &-15
-      left: -15%
-    &-20
-      left: -20%
-    &-25
-      left: -25%
-    &-30
-      left: -30%
-    &-35
-      left: -35%
-    &-33
-      left: -33.3%
-    &-40
-      left: -40%
-    &-45
-      left: -45%
-    &-50
-      left: -50%
-    &-55
-      left: -55%
-    &-60
-      left: -60%
-    &-65
-      left: -65%
-    &-66
-      left: -66.6%
-    &-70
-      left: -70%
-    &-75
-      left: -75%
-    &-80
-      left: -80%
-    &-85
-      left: -85%
-    &-90
-      left: -90%
-    &-95
-      left: -95%
-    &-100
-      left: -100%
-
-  &-push
-    &-5
-      left: 5%
-    &-10
-      left: 10%
-    &-15
-      left: 15%
-    &-20
-      left: 20%
-    &-25
-      left: 25%
-    &-30
-      left: 30%
-    &-35
-      left: 35%
-    &-33
-      left: 33.3%
-    &-40
-      left: 40%
-    &-45
-      left: 45%
-    &-50
-      left: 50%
-    &-55
-      left: 55%
-    &-60
-      left: 60%
-    &-65
-      left: 65%
-    &-66
-      left: 66.6%
-    &-70
-      left: 70%
-    &-75
-      left: 75%
-    &-80
-      left: 80%
-    &-85
-      left: 85%
-    &-90
-      left: 90%
-    &-95
-      left: 95%
-
-  // Grid Breakpoint
-  &-5,
-  &-10,
-  &-15,
-  &-20,
-  &-25,
-  &-30,
-  &-35,
-  &-33,
-  &-40,
-  &-45,
-  &-50,
-  &-55,
-  &-60,
-  &-65,
-  &-66,
-  &-70,
-  &-75,
-  &-80,
-  &-85,
-  &-90,
-  &-95,
-  &-100
-    @extend .grid
-    @media screen and (max-width: $mobile-breakpoint)
-      width: 100%
-      left: 0

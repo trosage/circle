@@ -17,6 +17,12 @@ $( document ).ready(function() {
     parent.remove();
   });
 
+  // Adds class to selected item
+  $(".circle--pill--list a").click(function() {
+    $(".circle--pill--list a").removeClass("selected");
+    $(this).addClass("selected");
+  });
+
   // Adds class to parent div of select menu
   $(".circle--select select").focus(function(){
    $(this).parent().addClass("focus");
@@ -39,7 +45,6 @@ $( document ).ready(function() {
   input.wrap(function() {
     return "<a class='button " + state + "'>" + text + "</div>";
   });
-
 
 
 

@@ -247,24 +247,439 @@ body {
   color: #666;
 }
 
-/* line 5, ../../../sass/circle/core/layout.sass */
+/* line 6, ../../../sass/circle/core/layout.sass */
 .bounds {
   max-width: 1080px;
   margin: 0 auto;
 }
 
-/* line 9, ../../../sass/circle/core/layout.sass */
-.grid, .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, .grid-30, .grid-35, .grid-33, .grid-40, .grid-45, .grid-50, .grid-55, .grid-60, .grid-65, .grid-66, .grid-70, .grid-75, .grid-80, .grid-85, .grid-90, .grid-95, .grid-100 {
+/* line 10, ../../../sass/circle/core/layout.sass */
+.grid, .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, .grid-30, .grid-33, .grid-35, .grid-40, .grid-45, .grid-50, .grid-55, .grid-60, .grid-65, .grid-66, .grid-70, .grid-75, .grid-80, .grid-90, .grid-95, .grid-100 {
   float: left;
-  padding: 0 15px;
   box-sizing: border-box;
   position: relative;
 }
-/* line 14, ../../../sass/circle/core/layout.sass */
-.grid-right {
-  float: right;
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-5 {
+  width: 5%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-5 {
+  left: -5%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-5 {
+  left: 5%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-5 {
+    width: 100%;
+    left: 0;
+  }
 }
 /* line 16, ../../../sass/circle/core/layout.sass */
+.grid-10 {
+  width: 10%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-10 {
+  left: -10%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-10 {
+  left: 10%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-10 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-15 {
+  width: 15%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-15 {
+  left: -15%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-15 {
+  left: 15%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-15 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-20 {
+  width: 20%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-20 {
+  left: -20%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-20 {
+  left: 20%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-20 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-25 {
+  left: -25%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-25 {
+  left: 25%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-25 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-30 {
+  width: 30%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-30 {
+  left: -30%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-30 {
+  left: 30%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-30 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-33 {
+  width: 33.333%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-33 {
+  left: -33.333%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-33 {
+  left: 33.333%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-33 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-35 {
+  width: 35%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-35 {
+  left: -35%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-35 {
+  left: 35%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-35 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-40 {
+  width: 40%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-40 {
+  left: -40%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-40 {
+  left: 40%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-40 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-45 {
+  width: 45%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-45 {
+  left: -45%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-45 {
+  left: 45%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-45 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-50 {
+  width: 50%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-50 {
+  left: -50%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-50 {
+  left: 50%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-50 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-55 {
+  width: 55%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-55 {
+  left: -55%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-55 {
+  left: 55%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-55 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-60 {
+  width: 60%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-60 {
+  left: -60%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-60 {
+  left: 60%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-60 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-65 {
+  width: 65%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-65 {
+  left: -65%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-65 {
+  left: 65%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-65 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-66 {
+  width: 66.666%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-66 {
+  left: -66.666%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-66 {
+  left: 66.666%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-66 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-70 {
+  width: 70%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-70 {
+  left: -70%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-70 {
+  left: 70%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-70 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-75 {
+  width: 75%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-75 {
+  left: -75%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-75 {
+  left: 75%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-75 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-80 {
+  width: 80%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-80 {
+  left: -80%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-80 {
+  left: 80%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-80 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-90 {
+  width: 90%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-90 {
+  left: -90%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-90 {
+  left: 90%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-90 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-95 {
+  width: 95%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-95 {
+  left: -95%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-95 {
+  left: 95%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-95 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 16, ../../../sass/circle/core/layout.sass */
+.grid-100 {
+  width: 100%;
+  padding: 0 15px;
+}
+/* line 22, ../../../sass/circle/core/layout.sass */
+.grid-pull-100 {
+  left: -100%;
+}
+/* line 27, ../../../sass/circle/core/layout.sass */
+.grid-push-100 {
+  left: 100%;
+}
+@media screen and (max-width: 640px) {
+  /* line 31, ../../../sass/circle/core/layout.sass */
+  .grid-100 {
+    width: 100%;
+    left: 0;
+  }
+}
+/* line 37, ../../../sass/circle/core/layout.sass */
 .grid-parent {
   margin: 0;
   margin-right: -15px;
@@ -278,273 +693,6 @@ body {
 /* line 5, ../../../sass/circle/core/mixins.sass */
 .grid-parent:after {
   clear: both;
-}
-/* line 23, ../../../sass/circle/core/layout.sass */
-.grid-5 {
-  width: 5%;
-}
-/* line 25, ../../../sass/circle/core/layout.sass */
-.grid-10 {
-  width: 10%;
-}
-/* line 27, ../../../sass/circle/core/layout.sass */
-.grid-15 {
-  width: 15%;
-}
-/* line 29, ../../../sass/circle/core/layout.sass */
-.grid-20 {
-  width: 20%;
-}
-/* line 31, ../../../sass/circle/core/layout.sass */
-.grid-25 {
-  width: 25%;
-}
-/* line 33, ../../../sass/circle/core/layout.sass */
-.grid-30 {
-  width: 30%;
-}
-/* line 35, ../../../sass/circle/core/layout.sass */
-.grid-35 {
-  width: 35%;
-}
-/* line 37, ../../../sass/circle/core/layout.sass */
-.grid-33 {
-  width: 33.333%;
-}
-/* line 39, ../../../sass/circle/core/layout.sass */
-.grid-40 {
-  width: 40%;
-}
-/* line 41, ../../../sass/circle/core/layout.sass */
-.grid-45 {
-  width: 45%;
-}
-/* line 43, ../../../sass/circle/core/layout.sass */
-.grid-50 {
-  width: 50%;
-}
-/* line 45, ../../../sass/circle/core/layout.sass */
-.grid-55 {
-  width: 55%;
-}
-/* line 47, ../../../sass/circle/core/layout.sass */
-.grid-60 {
-  width: 60%;
-}
-/* line 49, ../../../sass/circle/core/layout.sass */
-.grid-65 {
-  width: 65%;
-}
-/* line 51, ../../../sass/circle/core/layout.sass */
-.grid-66 {
-  width: 66.666%;
-}
-/* line 53, ../../../sass/circle/core/layout.sass */
-.grid-70 {
-  width: 70%;
-}
-/* line 55, ../../../sass/circle/core/layout.sass */
-.grid-75 {
-  width: 75%;
-}
-/* line 57, ../../../sass/circle/core/layout.sass */
-.grid-80 {
-  width: 80%;
-}
-/* line 59, ../../../sass/circle/core/layout.sass */
-.grid-85 {
-  width: 85%;
-}
-/* line 61, ../../../sass/circle/core/layout.sass */
-.grid-90 {
-  width: 90%;
-}
-/* line 63, ../../../sass/circle/core/layout.sass */
-.grid-95 {
-  width: 95%;
-}
-/* line 65, ../../../sass/circle/core/layout.sass */
-.grid-100 {
-  width: 100%;
-}
-/* line 70, ../../../sass/circle/core/layout.sass */
-.grid-pull-5 {
-  left: -5%;
-}
-/* line 72, ../../../sass/circle/core/layout.sass */
-.grid-pull-10 {
-  left: -10%;
-}
-/* line 74, ../../../sass/circle/core/layout.sass */
-.grid-pull-15 {
-  left: -15%;
-}
-/* line 76, ../../../sass/circle/core/layout.sass */
-.grid-pull-20 {
-  left: -20%;
-}
-/* line 78, ../../../sass/circle/core/layout.sass */
-.grid-pull-25 {
-  left: -25%;
-}
-/* line 80, ../../../sass/circle/core/layout.sass */
-.grid-pull-30 {
-  left: -30%;
-}
-/* line 82, ../../../sass/circle/core/layout.sass */
-.grid-pull-35 {
-  left: -35%;
-}
-/* line 84, ../../../sass/circle/core/layout.sass */
-.grid-pull-33 {
-  left: -33.3%;
-}
-/* line 86, ../../../sass/circle/core/layout.sass */
-.grid-pull-40 {
-  left: -40%;
-}
-/* line 88, ../../../sass/circle/core/layout.sass */
-.grid-pull-45 {
-  left: -45%;
-}
-/* line 90, ../../../sass/circle/core/layout.sass */
-.grid-pull-50 {
-  left: -50%;
-}
-/* line 92, ../../../sass/circle/core/layout.sass */
-.grid-pull-55 {
-  left: -55%;
-}
-/* line 94, ../../../sass/circle/core/layout.sass */
-.grid-pull-60 {
-  left: -60%;
-}
-/* line 96, ../../../sass/circle/core/layout.sass */
-.grid-pull-65 {
-  left: -65%;
-}
-/* line 98, ../../../sass/circle/core/layout.sass */
-.grid-pull-66 {
-  left: -66.6%;
-}
-/* line 100, ../../../sass/circle/core/layout.sass */
-.grid-pull-70 {
-  left: -70%;
-}
-/* line 102, ../../../sass/circle/core/layout.sass */
-.grid-pull-75 {
-  left: -75%;
-}
-/* line 104, ../../../sass/circle/core/layout.sass */
-.grid-pull-80 {
-  left: -80%;
-}
-/* line 106, ../../../sass/circle/core/layout.sass */
-.grid-pull-85 {
-  left: -85%;
-}
-/* line 108, ../../../sass/circle/core/layout.sass */
-.grid-pull-90 {
-  left: -90%;
-}
-/* line 110, ../../../sass/circle/core/layout.sass */
-.grid-pull-95 {
-  left: -95%;
-}
-/* line 112, ../../../sass/circle/core/layout.sass */
-.grid-pull-100 {
-  left: -100%;
-}
-/* line 116, ../../../sass/circle/core/layout.sass */
-.grid-push-5 {
-  left: 5%;
-}
-/* line 118, ../../../sass/circle/core/layout.sass */
-.grid-push-10 {
-  left: 10%;
-}
-/* line 120, ../../../sass/circle/core/layout.sass */
-.grid-push-15 {
-  left: 15%;
-}
-/* line 122, ../../../sass/circle/core/layout.sass */
-.grid-push-20 {
-  left: 20%;
-}
-/* line 124, ../../../sass/circle/core/layout.sass */
-.grid-push-25 {
-  left: 25%;
-}
-/* line 126, ../../../sass/circle/core/layout.sass */
-.grid-push-30 {
-  left: 30%;
-}
-/* line 128, ../../../sass/circle/core/layout.sass */
-.grid-push-35 {
-  left: 35%;
-}
-/* line 130, ../../../sass/circle/core/layout.sass */
-.grid-push-33 {
-  left: 33.3%;
-}
-/* line 132, ../../../sass/circle/core/layout.sass */
-.grid-push-40 {
-  left: 40%;
-}
-/* line 134, ../../../sass/circle/core/layout.sass */
-.grid-push-45 {
-  left: 45%;
-}
-/* line 136, ../../../sass/circle/core/layout.sass */
-.grid-push-50 {
-  left: 50%;
-}
-/* line 138, ../../../sass/circle/core/layout.sass */
-.grid-push-55 {
-  left: 55%;
-}
-/* line 140, ../../../sass/circle/core/layout.sass */
-.grid-push-60 {
-  left: 60%;
-}
-/* line 142, ../../../sass/circle/core/layout.sass */
-.grid-push-65 {
-  left: 65%;
-}
-/* line 144, ../../../sass/circle/core/layout.sass */
-.grid-push-66 {
-  left: 66.6%;
-}
-/* line 146, ../../../sass/circle/core/layout.sass */
-.grid-push-70 {
-  left: 70%;
-}
-/* line 148, ../../../sass/circle/core/layout.sass */
-.grid-push-75 {
-  left: 75%;
-}
-/* line 150, ../../../sass/circle/core/layout.sass */
-.grid-push-80 {
-  left: 80%;
-}
-/* line 152, ../../../sass/circle/core/layout.sass */
-.grid-push-85 {
-  left: 85%;
-}
-/* line 154, ../../../sass/circle/core/layout.sass */
-.grid-push-90 {
-  left: 90%;
-}
-/* line 156, ../../../sass/circle/core/layout.sass */
-.grid-push-95 {
-  left: 95%;
-}
-@media screen and (max-width: 640px) {
-  /* line 160, ../../../sass/circle/core/layout.sass */
-  .grid-5, .grid-10, .grid-15, .grid-20, .grid-25, .grid-30, .grid-35, .grid-33, .grid-40, .grid-45, .grid-50, .grid-55, .grid-60, .grid-65, .grid-66, .grid-70, .grid-75, .grid-80, .grid-85, .grid-90, .grid-95, .grid-100 {
-    width: 100%;
-    left: 0;
-  }
 }
 
 /* line 4, ../../../sass/circle/core/type.sass */
@@ -710,36 +858,33 @@ input[type="button"] svg {
   width: auto;
   height: 13px;
   position: relative;
-  float: left;
+  display: inline-block;
+  margin: 0;
+  top: 1px;
+  bottom: -3px;
 }
-/* line 40, ../../../sass/circle/core/buttons.sass */
+/* line 43, ../../../sass/circle/core/buttons.sass */
 .button.icon-on-left svg,
 button.icon-on-left svg,
 input[type="submit"].icon-on-left svg,
 input[type="reset"].icon-on-left svg,
 input[type="button"].icon-on-left svg {
-  top: 1px;
-  left: -10px;
-  bottom: -3px;
+  left: -5px;
 }
-/* line 44, ../../../sass/circle/core/buttons.sass */
+/* line 45, ../../../sass/circle/core/buttons.sass */
 .button.icon-on-right svg,
 button.icon-on-right svg,
 input[type="submit"].icon-on-right svg,
 input[type="reset"].icon-on-right svg,
 input[type="button"].icon-on-right svg {
-  top: 1px;
-  right: -10px;
-  bottom: -3px;
-  margin-left: 5px;
-  float: right;
+  right: -5px;
 }
 
-/* line 52, ../../../sass/circle/core/buttons.sass */
+/* line 49, ../../../sass/circle/core/buttons.sass */
 .button {
   cursor: pointer;
 }
-/* line 54, ../../../sass/circle/core/buttons.sass */
+/* line 51, ../../../sass/circle/core/buttons.sass */
 .button input[type="file"] {
   opacity: 0;
   padding: 0;
@@ -752,7 +897,7 @@ input[type="button"].icon-on-right svg {
   cursor: pointer;
 }
 
-/* line 67, ../../../sass/circle/core/buttons.sass */
+/* line 64, ../../../sass/circle/core/buttons.sass */
 .button.button-primary, input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary,
@@ -760,14 +905,14 @@ button.button-primary {
   color: #fff;
   background-color: #689b98;
 }
-/* line 71, ../../../sass/circle/core/buttons.sass */
+/* line 68, ../../../sass/circle/core/buttons.sass */
 .button.button-primary svg, input[type="submit"].button-primary svg,
 input[type="reset"].button-primary svg,
 input[type="button"].button-primary svg,
 button.button-primary svg {
   fill: #fff;
 }
-/* line 73, ../../../sass/circle/core/buttons.sass */
+/* line 70, ../../../sass/circle/core/buttons.sass */
 .button.button-primary:hover, input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover, input[type="submit"].button-primary:focus,
@@ -780,7 +925,7 @@ button.button-primary:focus {
   background-color: #537d7b;
 }
 
-/* line 87, ../../../sass/circle/core/buttons.sass */
+/* line 84, ../../../sass/circle/core/buttons.sass */
 .button.button-inactive, .button.button-inactive:hover, .button.button-inactive:focus,
 button.button-inactive:hover,
 button.button-inactive:focus, input[type="submit"].button-inactive,
@@ -795,7 +940,7 @@ button.button-inactive {
   background-color: #cccccc;
   box-shadow: none;
 }
-/* line 92, ../../../sass/circle/core/buttons.sass */
+/* line 89, ../../../sass/circle/core/buttons.sass */
 .button.button-inactive svg, .button.button-inactive:hover svg, .button.button-inactive:focus svg,
 button.button-inactive:hover svg,
 button.button-inactive:focus svg, input[type="submit"].button-inactive svg,
@@ -809,7 +954,7 @@ button.button-inactive svg {
   fill: #fff;
 }
 
-/* line 108, ../../../sass/circle/core/buttons.sass */
+/* line 105, ../../../sass/circle/core/buttons.sass */
 .button.button-text, input[type="submit"].button-text,
 input[type="reset"].button-text,
 input[type="button"].button-text, input[type="submit"].button-text:hover, input[type="submit"].button-text:focus,
@@ -823,7 +968,7 @@ button.button-text {
   padding: 18px 15px;
   color: #a5c4c2;
 }
-/* line 114, ../../../sass/circle/core/buttons.sass */
+/* line 111, ../../../sass/circle/core/buttons.sass */
 .button.button-text:hover, input[type="submit"].button-text:hover,
 input[type="reset"].button-text:hover,
 input[type="button"].button-text:hover, .button.button-text:focus, input[type="submit"].button-text:focus,
@@ -1122,6 +1267,16 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 }
 
 /* line 30, ../../../sass/circle/core/utilities.sass */
+.positive {
+  color: #54b26c;
+}
+
+/* line 33, ../../../sass/circle/core/utilities.sass */
+.negative {
+  color: #ed5a5a;
+}
+
+/* line 36, ../../../sass/circle/core/utilities.sass */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -1131,9 +1286,9 @@ hr {
 
 /* line 2, ../../../sass/circle/components/lists.sass */
 .circle--inline--list, .circle--header ul {
-  font-size: 1.6rem;
   font-family: "Work Sans", sans-serif;
   margin: 0;
+  font-size: 0;
   white-space: nowrap;
 }
 /* line 7, ../../../sass/circle/components/lists.sass */
@@ -1145,53 +1300,54 @@ hr {
 .circle--inline--list li, .circle--header ul li {
   display: inline-block;
   padding: 0 15px;
+  font-size: 1.6rem;
 }
-/* line 13, ../../../sass/circle/components/lists.sass */
+/* line 14, ../../../sass/circle/components/lists.sass */
 .circle--inline--list li:first-child, .circle--header ul li:first-child {
   padding-left: 0;
 }
-/* line 15, ../../../sass/circle/components/lists.sass */
+/* line 16, ../../../sass/circle/components/lists.sass */
 .circle--inline--list li:last-child, .circle--header ul li:last-child {
   padding-right: 0;
 }
-/* line 19, ../../../sass/circle/components/lists.sass */
+/* line 20, ../../../sass/circle/components/lists.sass */
 .circle--link--list {
   list-style-type: none;
 }
-/* line 21, ../../../sass/circle/components/lists.sass */
+/* line 22, ../../../sass/circle/components/lists.sass */
 .circle--link--list a {
   text-decoration: none;
 }
-/* line 25, ../../../sass/circle/components/lists.sass */
+/* line 26, ../../../sass/circle/components/lists.sass */
 .circle--filter--list {
   list-style-type: none;
 }
-/* line 27, ../../../sass/circle/components/lists.sass */
+/* line 28, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.5);
   text-decoration: none;
 }
-/* line 31, ../../../sass/circle/components/lists.sass */
+/* line 32, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a:hover {
   color: #a5c4c2;
 }
-/* line 33, ../../../sass/circle/components/lists.sass */
+/* line 34, ../../../sass/circle/components/lists.sass */
 .circle--filter--list a.selected {
   color: #222;
   font-weight: bold;
 }
-/* line 38, ../../../sass/circle/components/lists.sass */
+/* line 39, ../../../sass/circle/components/lists.sass */
 .circle--group--list {
   border-top: 1px solid #e1e1e1;
   list-style: none;
 }
-/* line 41, ../../../sass/circle/components/lists.sass */
+/* line 42, ../../../sass/circle/components/lists.sass */
 .circle--group--list li {
   border-bottom: 1px solid #e1e1e1;
   padding: 2rem 0 2rem 3rem;
 }
-/* line 44, ../../../sass/circle/components/lists.sass */
+/* line 45, ../../../sass/circle/components/lists.sass */
 .circle--group--list li:before {
   content: "";
   float: left;
@@ -1202,44 +1358,45 @@ hr {
   border-radius: 10px;
   display: block;
 }
-/* line 55, ../../../sass/circle/components/lists.sass */
+/* line 56, ../../../sass/circle/components/lists.sass */
 .circle--clone--list {
   list-style-type: none;
 }
-/* line 57, ../../../sass/circle/components/lists.sass */
+/* line 58, ../../../sass/circle/components/lists.sass */
 .circle--clone--list a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
 }
-/* line 61, ../../../sass/circle/components/lists.sass */
+/* line 62, ../../../sass/circle/components/lists.sass */
 .circle--clone--add, .circle--clone--remove {
   cursor: pointer;
 }
-/* line 64, ../../../sass/circle/components/lists.sass */
+/* line 65, ../../../sass/circle/components/lists.sass */
 .circle--clone--remove {
   float: right;
   color: #a5c4c2;
 }
-/* line 67, ../../../sass/circle/components/lists.sass */
+/* line 68, ../../../sass/circle/components/lists.sass */
 .circle--clone--remove:hover {
   color: #537d7b;
 }
-/* line 69, ../../../sass/circle/components/lists.sass */
+/* line 70, ../../../sass/circle/components/lists.sass */
 li:only-child .circle--clone--remove {
   display: none;
 }
-/* line 73, ../../../sass/circle/components/lists.sass */
+/* line 74, ../../../sass/circle/components/lists.sass */
 .circle--pill--list {
   margin: 0;
+  white-space: nowrap;
   padding: 0 15px;
 }
-/* line 76, ../../../sass/circle/components/lists.sass */
+/* line 78, ../../../sass/circle/components/lists.sass */
 .circle--pill--list li {
   display: inline-block;
   margin: 0 15px 0 0;
 }
-/* line 79, ../../../sass/circle/components/lists.sass */
+/* line 81, ../../../sass/circle/components/lists.sass */
 .circle--pill--list a {
   padding: 12px 20px;
   font-family: "Work Sans", sans-serif;
@@ -1250,12 +1407,22 @@ li:only-child .circle--clone--remove {
   border-radius: 50px;
   line-height: 1;
   text-decoration: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
-/* line 89, ../../../sass/circle/components/lists.sass */
+/* line 92, ../../../sass/circle/components/lists.sass */
 .circle--pill--list a:hover {
   background: #eee;
 }
-/* line 91, ../../../sass/circle/components/lists.sass */
+/* line 94, ../../../sass/circle/components/lists.sass */
+.circle--pill--list a:active {
+  background: #444;
+}
+/* line 96, ../../../sass/circle/components/lists.sass */
+.circle--pill--list a:active,
 .circle--pill--list .selected,
 .circle--pill--list .selected:hover {
   background: #444;
@@ -1278,34 +1445,22 @@ li:only-child .circle--clone--remove {
   clear: both;
 }
 /* line 7, ../../../sass/circle/components/headers.sass */
-.circle--header h1,
-.circle--header h2,
-.circle--header h3,
-.circle--header h4,
-.circle--header h5 {
+.circle--header h1, .circle--header h2, .circle--header h3, .circle--header h4, .circle--header h5, .circle--header h6 {
   margin: 0 30px 0 0;
   float: left;
   line-height: 1;
   font-size: 2.4rem;
   color: #fff;
 }
-/* line 17, ../../../sass/circle/components/headers.sass */
-.circle--header h1 a,
-.circle--header h2 a,
-.circle--header h3 a,
-.circle--header h4 a,
-.circle--header h5 a {
+/* line 13, ../../../sass/circle/components/headers.sass */
+.circle--header h1 a, .circle--header h2 a, .circle--header h3 a, .circle--header h4 a, .circle--header h5 a, .circle--header h6 a {
   color: white;
 }
-/* line 19, ../../../sass/circle/components/headers.sass */
-.circle--header h1 a:hover,
-.circle--header h2 a:hover,
-.circle--header h3 a:hover,
-.circle--header h4 a:hover,
-.circle--header h5 a:hover {
+/* line 15, ../../../sass/circle/components/headers.sass */
+.circle--header h1 a:hover, .circle--header h2 a:hover, .circle--header h3 a:hover, .circle--header h4 a:hover, .circle--header h5 a:hover, .circle--header h6 a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 21, ../../../sass/circle/components/headers.sass */
+/* line 17, ../../../sass/circle/components/headers.sass */
 .circle--header input {
   background: rgba(255, 255, 255, 0.3);
   border-color: #496e6c;
@@ -1327,70 +1482,65 @@ li:only-child .circle--clone--remove {
 .circle--header input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 27, ../../../sass/circle/components/headers.sass */
+/* line 23, ../../../sass/circle/components/headers.sass */
 .circle--header input:focus {
   background: rgba(255, 255, 255, 0.35);
   border-color: #3f5e5d;
 }
-/* line 30, ../../../sass/circle/components/headers.sass */
+/* line 26, ../../../sass/circle/components/headers.sass */
 .circle--header .circle--logo {
   margin-right: 0;
 }
-/* line 34, ../../../sass/circle/components/headers.sass */
+/* line 30, ../../../sass/circle/components/headers.sass */
 .circle--header ul li {
   margin: 0;
 }
-/* line 37, ../../../sass/circle/components/headers.sass */
+/* line 33, ../../../sass/circle/components/headers.sass */
 .circle--header .circle--fluid ul {
   white-space: nowrap;
 }
-/* line 39, ../../../sass/circle/components/headers.sass */
+/* line 35, ../../../sass/circle/components/headers.sass */
 .circle--header a {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 41, ../../../sass/circle/components/headers.sass */
+/* line 37, ../../../sass/circle/components/headers.sass */
 .circle--header a:hover {
   color: white;
 }
-/* line 43, ../../../sass/circle/components/headers.sass */
+/* line 39, ../../../sass/circle/components/headers.sass */
 .circle--header nav {
   display: inline-block;
 }
-/* line 46, ../../../sass/circle/components/headers.sass */
+/* line 42, ../../../sass/circle/components/headers.sass */
 .circle--page--header {
   margin-bottom: 30px;
 }
-/* line 48, ../../../sass/circle/components/headers.sass */
-.circle--page--header h1,
-.circle--page--header h2,
-.circle--page--header h3,
-.circle--page--header h4,
-.circle--page--header h5,
-.circle--page--header h6 {
+/* line 44, ../../../sass/circle/components/headers.sass */
+.circle--page--header h1, .circle--page--header h2, .circle--page--header h3, .circle--page--header h4, .circle--page--header h5, .circle--page--header h6 {
   margin: 0;
 }
-/* line 55, ../../../sass/circle/components/headers.sass */
+/* line 46, ../../../sass/circle/components/headers.sass */
 .circle--page--header p {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   color: #999;
   font-size: 1.6rem;
 }
-/* line 62, ../../../sass/circle/components/headers.sass */
+/* line 53, ../../../sass/circle/components/headers.sass */
 .circle--article--header {
   margin-bottom: 50px;
 }
-/* line 64, ../../../sass/circle/components/headers.sass */
+/* line 55, ../../../sass/circle/components/headers.sass */
 .circle--article--header h1 {
   margin-bottom: 10px;
 }
-/* line 66, ../../../sass/circle/components/headers.sass */
+/* line 57, ../../../sass/circle/components/headers.sass */
 .circle--article--section {
   margin: 0;
   font-weight: normal;
   color: #999;
 }
-/* line 70, ../../../sass/circle/components/headers.sass */
+/* line 61, ../../../sass/circle/components/headers.sass */
 .circle--article--byline {
   margin: 0;
   line-height: 1;
@@ -1403,42 +1553,35 @@ li:only-child .circle--clone--remove {
   width: 100%;
 }
 /* line 4, ../../../sass/circle/components/tables.sass */
-.circle--table h1,
-.circle--table h2,
-.circle--table h3,
-.circle--table h4,
-.circle--table h5 {
+.circle--table h1, .circle--table h2, .circle--table h3, .circle--table h4, .circle--table h5, .circle--table h6 {
   margin: 0;
 }
-/* line 10, ../../../sass/circle/components/tables.sass */
+/* line 6, ../../../sass/circle/components/tables.sass */
 .circle--table p {
   margin: 10px 0 0 0;
 }
-/* line 12, ../../../sass/circle/components/tables.sass */
+/* line 8, ../../../sass/circle/components/tables.sass */
 .circle--table th,
 .circle--table td {
   line-height: 1;
 }
-/* line 15, ../../../sass/circle/components/tables.sass */
+/* line 11, ../../../sass/circle/components/tables.sass */
 .circle--table th {
   padding: 0 0 15px 0;
 }
-/* line 17, ../../../sass/circle/components/tables.sass */
+/* line 13, ../../../sass/circle/components/tables.sass */
 .circle--table td {
   padding: 25px 0;
 }
-/* line 20, ../../../sass/circle/components/tables.sass */
-.circle--table .clickable-row {
+
+/* line 17, ../../../sass/circle/components/tables.sass */
+.clickable-row td {
   cursor: pointer;
   color: #a5c4c2;
 }
-/* line 23, ../../../sass/circle/components/tables.sass */
-.circle--table .clickable-row h3 {
+/* line 20, ../../../sass/circle/components/tables.sass */
+.clickable-row h3 {
   color: #689b98;
-}
-/* line 28, ../../../sass/circle/components/tables.sass */
-.circle--cell--right {
-  text-align: right;
 }
 
 /* line 2, ../../../sass/circle/components/forms.sass */
@@ -1451,6 +1594,7 @@ li:only-child .circle--clone--remove {
 }
 /* line 6, ../../../sass/circle/components/forms.sass */
 .circle--search button {
+  height: 20px;
   position: absolute;
   right: 20px;
   top: 16px;
@@ -1458,52 +1602,311 @@ li:only-child .circle--clone--remove {
   margin: 0;
   box-shadow: none;
 }
-/* line 13, ../../../sass/circle/components/forms.sass */
+/* line 14, ../../../sass/circle/components/forms.sass */
 .circle--search .search {
   width: 20px;
   height: auto;
   fill: rgba(255, 255, 255, 0.5);
   margin: 0;
+  top: 0;
+  bottom: 0;
 }
-/* line 19, ../../../sass/circle/components/forms.sass */
-.circle--textarea--input {
+/* line 22, ../../../sass/circle/components/forms.sass */
+.circle--textarea--inputn mnn {
   height: 50px;
   min-height: 0;
   padding: 11px 15px;
 }
-
-/* line 34, ../../../sass/circle/components/forms.sass */
-input.circle--input--h1, input.circle--input--h2, input.circle--input--h3 {
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h1, input[type="email"].circle--input--h1, input[type="number"].circle--input--h1, input[type="search"].circle--input--h1, input[type="text"].circle--input--h1, select.circle--input--h1, input[type="tel"].circle--input--h1, input[type="url"].circle--input--h1, input[type="password"].circle--input--h1, input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2, input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3, input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4, input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5, input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
   font-weight: bold;
   color: #222;
+  font-family: "Work Sans", sans-serif;
 }
 /* line 62, ../../../sass/circle/core/mixins.sass */
-input.circle--input--h1::-webkit-input-placeholder, input.circle--input--h2::-webkit-input-placeholder, input.circle--input--h3::-webkit-input-placeholder {
+.circle--input--h1::-webkit-input-placeholder, input[type="email"].circle--input--h1::-webkit-input-placeholder, input[type="number"].circle--input--h1::-webkit-input-placeholder, input[type="search"].circle--input--h1::-webkit-input-placeholder, input[type="text"].circle--input--h1::-webkit-input-placeholder, select.circle--input--h1::-webkit-input-placeholder, input[type="tel"].circle--input--h1::-webkit-input-placeholder, input[type="url"].circle--input--h1::-webkit-input-placeholder, input[type="password"].circle--input--h1::-webkit-input-placeholder, input[type="email"].circle--input--h2::-webkit-input-placeholder, input[type="number"].circle--input--h2::-webkit-input-placeholder, input[type="search"].circle--input--h2::-webkit-input-placeholder, input[type="text"].circle--input--h2::-webkit-input-placeholder, select.circle--input--h2::-webkit-input-placeholder, input[type="tel"].circle--input--h2::-webkit-input-placeholder, input[type="url"].circle--input--h2::-webkit-input-placeholder, input[type="password"].circle--input--h2::-webkit-input-placeholder, input[type="email"].circle--input--h3::-webkit-input-placeholder, input[type="number"].circle--input--h3::-webkit-input-placeholder, input[type="search"].circle--input--h3::-webkit-input-placeholder, input[type="text"].circle--input--h3::-webkit-input-placeholder, select.circle--input--h3::-webkit-input-placeholder, input[type="tel"].circle--input--h3::-webkit-input-placeholder, input[type="url"].circle--input--h3::-webkit-input-placeholder, input[type="password"].circle--input--h3::-webkit-input-placeholder, input[type="email"].circle--input--h4::-webkit-input-placeholder, input[type="number"].circle--input--h4::-webkit-input-placeholder, input[type="search"].circle--input--h4::-webkit-input-placeholder, input[type="text"].circle--input--h4::-webkit-input-placeholder, select.circle--input--h4::-webkit-input-placeholder, input[type="tel"].circle--input--h4::-webkit-input-placeholder, input[type="url"].circle--input--h4::-webkit-input-placeholder, input[type="password"].circle--input--h4::-webkit-input-placeholder, input[type="email"].circle--input--h5::-webkit-input-placeholder, input[type="number"].circle--input--h5::-webkit-input-placeholder, input[type="search"].circle--input--h5::-webkit-input-placeholder, input[type="text"].circle--input--h5::-webkit-input-placeholder, select.circle--input--h5::-webkit-input-placeholder, input[type="tel"].circle--input--h5::-webkit-input-placeholder, input[type="url"].circle--input--h5::-webkit-input-placeholder, input[type="password"].circle--input--h5::-webkit-input-placeholder, input[type="email"].circle--input--h6::-webkit-input-placeholder, input[type="number"].circle--input--h6::-webkit-input-placeholder, input[type="search"].circle--input--h6::-webkit-input-placeholder, input[type="text"].circle--input--h6::-webkit-input-placeholder, select.circle--input--h6::-webkit-input-placeholder, input[type="tel"].circle--input--h6::-webkit-input-placeholder, input[type="url"].circle--input--h6::-webkit-input-placeholder, input[type="password"].circle--input--h6::-webkit-input-placeholder {
   font-weight: bold;
 }
 /* line 64, ../../../sass/circle/core/mixins.sass */
-input.circle--input--h1:-moz-placeholder, input.circle--input--h2:-moz-placeholder, input.circle--input--h3:-moz-placeholder {
+.circle--input--h1:-moz-placeholder, input[type="email"].circle--input--h1:-moz-placeholder, input[type="number"].circle--input--h1:-moz-placeholder, input[type="search"].circle--input--h1:-moz-placeholder, input[type="text"].circle--input--h1:-moz-placeholder, select.circle--input--h1:-moz-placeholder, input[type="tel"].circle--input--h1:-moz-placeholder, input[type="url"].circle--input--h1:-moz-placeholder, input[type="password"].circle--input--h1:-moz-placeholder, input[type="email"].circle--input--h2:-moz-placeholder, input[type="number"].circle--input--h2:-moz-placeholder, input[type="search"].circle--input--h2:-moz-placeholder, input[type="text"].circle--input--h2:-moz-placeholder, select.circle--input--h2:-moz-placeholder, input[type="tel"].circle--input--h2:-moz-placeholder, input[type="url"].circle--input--h2:-moz-placeholder, input[type="password"].circle--input--h2:-moz-placeholder, input[type="email"].circle--input--h3:-moz-placeholder, input[type="number"].circle--input--h3:-moz-placeholder, input[type="search"].circle--input--h3:-moz-placeholder, input[type="text"].circle--input--h3:-moz-placeholder, select.circle--input--h3:-moz-placeholder, input[type="tel"].circle--input--h3:-moz-placeholder, input[type="url"].circle--input--h3:-moz-placeholder, input[type="password"].circle--input--h3:-moz-placeholder, input[type="email"].circle--input--h4:-moz-placeholder, input[type="number"].circle--input--h4:-moz-placeholder, input[type="search"].circle--input--h4:-moz-placeholder, input[type="text"].circle--input--h4:-moz-placeholder, select.circle--input--h4:-moz-placeholder, input[type="tel"].circle--input--h4:-moz-placeholder, input[type="url"].circle--input--h4:-moz-placeholder, input[type="password"].circle--input--h4:-moz-placeholder, input[type="email"].circle--input--h5:-moz-placeholder, input[type="number"].circle--input--h5:-moz-placeholder, input[type="search"].circle--input--h5:-moz-placeholder, input[type="text"].circle--input--h5:-moz-placeholder, select.circle--input--h5:-moz-placeholder, input[type="tel"].circle--input--h5:-moz-placeholder, input[type="url"].circle--input--h5:-moz-placeholder, input[type="password"].circle--input--h5:-moz-placeholder, input[type="email"].circle--input--h6:-moz-placeholder, input[type="number"].circle--input--h6:-moz-placeholder, input[type="search"].circle--input--h6:-moz-placeholder, input[type="text"].circle--input--h6:-moz-placeholder, select.circle--input--h6:-moz-placeholder, input[type="tel"].circle--input--h6:-moz-placeholder, input[type="url"].circle--input--h6:-moz-placeholder, input[type="password"].circle--input--h6:-moz-placeholder {
   font-weight: bold;
 }
 /* line 66, ../../../sass/circle/core/mixins.sass */
-input.circle--input--h1::-moz-placeholder, input.circle--input--h2::-moz-placeholder, input.circle--input--h3::-moz-placeholder {
+.circle--input--h1::-moz-placeholder, input[type="email"].circle--input--h1::-moz-placeholder, input[type="number"].circle--input--h1::-moz-placeholder, input[type="search"].circle--input--h1::-moz-placeholder, input[type="text"].circle--input--h1::-moz-placeholder, select.circle--input--h1::-moz-placeholder, input[type="tel"].circle--input--h1::-moz-placeholder, input[type="url"].circle--input--h1::-moz-placeholder, input[type="password"].circle--input--h1::-moz-placeholder, input[type="email"].circle--input--h2::-moz-placeholder, input[type="number"].circle--input--h2::-moz-placeholder, input[type="search"].circle--input--h2::-moz-placeholder, input[type="text"].circle--input--h2::-moz-placeholder, select.circle--input--h2::-moz-placeholder, input[type="tel"].circle--input--h2::-moz-placeholder, input[type="url"].circle--input--h2::-moz-placeholder, input[type="password"].circle--input--h2::-moz-placeholder, input[type="email"].circle--input--h3::-moz-placeholder, input[type="number"].circle--input--h3::-moz-placeholder, input[type="search"].circle--input--h3::-moz-placeholder, input[type="text"].circle--input--h3::-moz-placeholder, select.circle--input--h3::-moz-placeholder, input[type="tel"].circle--input--h3::-moz-placeholder, input[type="url"].circle--input--h3::-moz-placeholder, input[type="password"].circle--input--h3::-moz-placeholder, input[type="email"].circle--input--h4::-moz-placeholder, input[type="number"].circle--input--h4::-moz-placeholder, input[type="search"].circle--input--h4::-moz-placeholder, input[type="text"].circle--input--h4::-moz-placeholder, select.circle--input--h4::-moz-placeholder, input[type="tel"].circle--input--h4::-moz-placeholder, input[type="url"].circle--input--h4::-moz-placeholder, input[type="password"].circle--input--h4::-moz-placeholder, input[type="email"].circle--input--h5::-moz-placeholder, input[type="number"].circle--input--h5::-moz-placeholder, input[type="search"].circle--input--h5::-moz-placeholder, input[type="text"].circle--input--h5::-moz-placeholder, select.circle--input--h5::-moz-placeholder, input[type="tel"].circle--input--h5::-moz-placeholder, input[type="url"].circle--input--h5::-moz-placeholder, input[type="password"].circle--input--h5::-moz-placeholder, input[type="email"].circle--input--h6::-moz-placeholder, input[type="number"].circle--input--h6::-moz-placeholder, input[type="search"].circle--input--h6::-moz-placeholder, input[type="text"].circle--input--h6::-moz-placeholder, select.circle--input--h6::-moz-placeholder, input[type="tel"].circle--input--h6::-moz-placeholder, input[type="url"].circle--input--h6::-moz-placeholder, input[type="password"].circle--input--h6::-moz-placeholder {
   font-weight: bold;
 }
 /* line 68, ../../../sass/circle/core/mixins.sass */
-input.circle--input--h1:-ms-input-placeholder, input.circle--input--h2:-ms-input-placeholder, input.circle--input--h3:-ms-input-placeholder {
+.circle--input--h1:-ms-input-placeholder, input[type="email"].circle--input--h1:-ms-input-placeholder, input[type="number"].circle--input--h1:-ms-input-placeholder, input[type="search"].circle--input--h1:-ms-input-placeholder, input[type="text"].circle--input--h1:-ms-input-placeholder, select.circle--input--h1:-ms-input-placeholder, input[type="tel"].circle--input--h1:-ms-input-placeholder, input[type="url"].circle--input--h1:-ms-input-placeholder, input[type="password"].circle--input--h1:-ms-input-placeholder, input[type="email"].circle--input--h2:-ms-input-placeholder, input[type="number"].circle--input--h2:-ms-input-placeholder, input[type="search"].circle--input--h2:-ms-input-placeholder, input[type="text"].circle--input--h2:-ms-input-placeholder, select.circle--input--h2:-ms-input-placeholder, input[type="tel"].circle--input--h2:-ms-input-placeholder, input[type="url"].circle--input--h2:-ms-input-placeholder, input[type="password"].circle--input--h2:-ms-input-placeholder, input[type="email"].circle--input--h3:-ms-input-placeholder, input[type="number"].circle--input--h3:-ms-input-placeholder, input[type="search"].circle--input--h3:-ms-input-placeholder, input[type="text"].circle--input--h3:-ms-input-placeholder, select.circle--input--h3:-ms-input-placeholder, input[type="tel"].circle--input--h3:-ms-input-placeholder, input[type="url"].circle--input--h3:-ms-input-placeholder, input[type="password"].circle--input--h3:-ms-input-placeholder, input[type="email"].circle--input--h4:-ms-input-placeholder, input[type="number"].circle--input--h4:-ms-input-placeholder, input[type="search"].circle--input--h4:-ms-input-placeholder, input[type="text"].circle--input--h4:-ms-input-placeholder, select.circle--input--h4:-ms-input-placeholder, input[type="tel"].circle--input--h4:-ms-input-placeholder, input[type="url"].circle--input--h4:-ms-input-placeholder, input[type="password"].circle--input--h4:-ms-input-placeholder, input[type="email"].circle--input--h5:-ms-input-placeholder, input[type="number"].circle--input--h5:-ms-input-placeholder, input[type="search"].circle--input--h5:-ms-input-placeholder, input[type="text"].circle--input--h5:-ms-input-placeholder, select.circle--input--h5:-ms-input-placeholder, input[type="tel"].circle--input--h5:-ms-input-placeholder, input[type="url"].circle--input--h5:-ms-input-placeholder, input[type="password"].circle--input--h5:-ms-input-placeholder, input[type="email"].circle--input--h6:-ms-input-placeholder, input[type="number"].circle--input--h6:-ms-input-placeholder, input[type="search"].circle--input--h6:-ms-input-placeholder, input[type="text"].circle--input--h6:-ms-input-placeholder, select.circle--input--h6:-ms-input-placeholder, input[type="tel"].circle--input--h6:-ms-input-placeholder, input[type="url"].circle--input--h6:-ms-input-placeholder, input[type="password"].circle--input--h6:-ms-input-placeholder {
   font-weight: bold;
 }
-/* line 41, ../../../sass/circle/components/forms.sass */
-input.circle--input--h1 {
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h2 {
+  font-weight: bold;
+  color: #222;
+  font-family: "Work Sans", sans-serif;
+}
+/* line 62, ../../../sass/circle/core/mixins.sass */
+.circle--input--h2::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* line 64, ../../../sass/circle/core/mixins.sass */
+.circle--input--h2:-moz-placeholder {
+  font-weight: bold;
+}
+/* line 66, ../../../sass/circle/core/mixins.sass */
+.circle--input--h2::-moz-placeholder {
+  font-weight: bold;
+}
+/* line 68, ../../../sass/circle/core/mixins.sass */
+.circle--input--h2:-ms-input-placeholder {
+  font-weight: bold;
+}
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h3 {
+  font-weight: bold;
+  color: #222;
+  font-family: "Work Sans", sans-serif;
+}
+/* line 62, ../../../sass/circle/core/mixins.sass */
+.circle--input--h3::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* line 64, ../../../sass/circle/core/mixins.sass */
+.circle--input--h3:-moz-placeholder {
+  font-weight: bold;
+}
+/* line 66, ../../../sass/circle/core/mixins.sass */
+.circle--input--h3::-moz-placeholder {
+  font-weight: bold;
+}
+/* line 68, ../../../sass/circle/core/mixins.sass */
+.circle--input--h3:-ms-input-placeholder {
+  font-weight: bold;
+}
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h4 {
+  font-weight: bold;
+  color: #222;
+  font-family: "Work Sans", sans-serif;
+}
+/* line 62, ../../../sass/circle/core/mixins.sass */
+.circle--input--h4::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* line 64, ../../../sass/circle/core/mixins.sass */
+.circle--input--h4:-moz-placeholder {
+  font-weight: bold;
+}
+/* line 66, ../../../sass/circle/core/mixins.sass */
+.circle--input--h4::-moz-placeholder {
+  font-weight: bold;
+}
+/* line 68, ../../../sass/circle/core/mixins.sass */
+.circle--input--h4:-ms-input-placeholder {
+  font-weight: bold;
+}
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h5 {
+  font-weight: bold;
+  color: #222;
+  font-family: "Work Sans", sans-serif;
+}
+/* line 62, ../../../sass/circle/core/mixins.sass */
+.circle--input--h5::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* line 64, ../../../sass/circle/core/mixins.sass */
+.circle--input--h5:-moz-placeholder {
+  font-weight: bold;
+}
+/* line 66, ../../../sass/circle/core/mixins.sass */
+.circle--input--h5::-moz-placeholder {
+  font-weight: bold;
+}
+/* line 68, ../../../sass/circle/core/mixins.sass */
+.circle--input--h5:-ms-input-placeholder {
+  font-weight: bold;
+}
+/* line 29, ../../../sass/circle/components/forms.sass */
+.circle--input--h6 {
+  font-weight: bold;
+  color: #222;
+  font-family: "Work Sans", sans-serif;
+}
+/* line 62, ../../../sass/circle/core/mixins.sass */
+.circle--input--h6::-webkit-input-placeholder {
+  font-weight: bold;
+}
+/* line 64, ../../../sass/circle/core/mixins.sass */
+.circle--input--h6:-moz-placeholder {
+  font-weight: bold;
+}
+/* line 66, ../../../sass/circle/core/mixins.sass */
+.circle--input--h6::-moz-placeholder {
+  font-weight: bold;
+}
+/* line 68, ../../../sass/circle/core/mixins.sass */
+.circle--input--h6:-ms-input-placeholder {
+  font-weight: bold;
+}
+/* line 35, ../../../sass/circle/components/forms.sass */
+.circle--input--h1, input[type="email"].circle--input--h1, input[type="number"].circle--input--h1, input[type="search"].circle--input--h1, input[type="text"].circle--input--h1, select.circle--input--h1, input[type="tel"].circle--input--h1, input[type="url"].circle--input--h1, input[type="password"].circle--input--h1, input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2, input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3, input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4, input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5, input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
   font-size: 3.8rem;
 }
-/* line 43, ../../../sass/circle/components/forms.sass */
-input.circle--input--h2 {
+/* line 37, ../../../sass/circle/components/forms.sass */
+.circle--input--h2 {
   font-size: 2.4rem;
 }
-/* line 45, ../../../sass/circle/components/forms.sass */
-input.circle--input--h3 {
+/* line 39, ../../../sass/circle/components/forms.sass */
+.circle--input--h3 {
   font-size: 1.8rem;
+}
+/* line 41, ../../../sass/circle/components/forms.sass */
+.circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 43, ../../../sass/circle/components/forms.sass */
+.circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 45, ../../../sass/circle/components/forms.sass */
+.circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
+}
+/* line 63, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h2, input[type="number"].circle--input--h2, input[type="search"].circle--input--h2, input[type="text"].circle--input--h2, select.circle--input--h2, input[type="tel"].circle--input--h2, input[type="url"].circle--input--h2, input[type="password"].circle--input--h2 {
+  font-size: 2.4rem;
+}
+/* line 65, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h3, input[type="number"].circle--input--h3, input[type="search"].circle--input--h3, input[type="text"].circle--input--h3, select.circle--input--h3, input[type="tel"].circle--input--h3, input[type="url"].circle--input--h3, input[type="password"].circle--input--h3 {
+  font-size: 1.8rem;
+}
+/* line 67, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h4, input[type="number"].circle--input--h4, input[type="search"].circle--input--h4, input[type="text"].circle--input--h4, select.circle--input--h4, input[type="tel"].circle--input--h4, input[type="url"].circle--input--h4, input[type="password"].circle--input--h4 {
+  font-size: 1.6rem;
+}
+/* line 69, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h5, input[type="number"].circle--input--h5, input[type="search"].circle--input--h5, input[type="text"].circle--input--h5, select.circle--input--h5, input[type="tel"].circle--input--h5, input[type="url"].circle--input--h5, input[type="password"].circle--input--h5 {
+  font-size: 1.4rem;
+}
+/* line 71, ../../../sass/circle/components/forms.sass */
+input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, input[type="search"].circle--input--h6, input[type="text"].circle--input--h6, select.circle--input--h6, input[type="tel"].circle--input--h6, input[type="url"].circle--input--h6, input[type="password"].circle--input--h6 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #999;
 }
 
 /* line 4, ../../../sass/circle/components/utilities.sass */
@@ -1569,47 +1972,37 @@ input.circle--input--h3 {
 .circle--secondary--module:after {
   clear: both;
 }
-/* line 27, ../../../sass/circle/components/containers.sass */
-.circle--secondary--module > h1,
-.circle--secondary--module > h2,
-.circle--secondary--module > h3,
-.circle--secondary--module > h4,
-.circle--secondary--module > h5,
-.circle--secondary--module > h6 {
+/* line 28, ../../../sass/circle/components/containers.sass */
+.circle--secondary--module > h1, .circle--secondary--module > h2, .circle--secondary--module > h3, .circle--secondary--module > h4, .circle--secondary--module > h5, .circle--secondary--module > h6 {
   font-family: "Cousine";
   color: rgba(34, 34, 34, 0.3);
   font-size: 1.4rem;
   font-weight: normal;
 }
-/* line 37, ../../../sass/circle/components/containers.sass */
-.circle--secondary--module > h1 a,
-.circle--secondary--module > h2 a,
-.circle--secondary--module > h3 a,
-.circle--secondary--module > h4 a,
-.circle--secondary--module > h5 a,
-.circle--secondary--module > h6 a {
+/* line 33, ../../../sass/circle/components/containers.sass */
+.circle--secondary--module > h1 a, .circle--secondary--module > h2 a, .circle--secondary--module > h3 a, .circle--secondary--module > h4 a, .circle--secondary--module > h5 a, .circle--secondary--module > h6 a {
   color: #a5c4c2;
 }
-/* line 39, ../../../sass/circle/components/containers.sass */
+/* line 35, ../../../sass/circle/components/containers.sass */
 .circle--secondary--module p {
   font-size: 1.4rem;
   color: #999999;
 }
-/* line 43, ../../../sass/circle/components/containers.sass */
+/* line 39, ../../../sass/circle/components/containers.sass */
 .circle--secondary--module .circle--clone--list li {
   margin-bottom: 30px;
 }
-/* line 45, ../../../sass/circle/components/containers.sass */
+/* line 41, ../../../sass/circle/components/containers.sass */
 .circle--secondary--module textarea,
 .circle--secondary--module input,
 .circle--secondary--module select {
   font-size: 1.4rem;
 }
-/* line 49, ../../../sass/circle/components/containers.sass */
+/* line 45, ../../../sass/circle/components/containers.sass */
 .circle--secondary--module .circle--textarea--input {
   height: 48px;
 }
-/* line 52, ../../../sass/circle/components/containers.sass */
+/* line 48, ../../../sass/circle/components/containers.sass */
 .circle--page {
   margin-bottom: 100px;
 }
@@ -1622,16 +2015,16 @@ input.circle--input--h3 {
 .circle--page:after {
   clear: both;
 }
-/* line 56, ../../../sass/circle/components/containers.sass */
+/* line 52, ../../../sass/circle/components/containers.sass */
 .circle--article {
   padding-top: 30px;
 }
-/* line 58, ../../../sass/circle/components/containers.sass */
+/* line 54, ../../../sass/circle/components/containers.sass */
 .circle--article--body {
   line-height: 1.8;
   margin-bottom: 50px;
 }
-/* line 63, ../../../sass/circle/components/containers.sass */
+/* line 59, ../../../sass/circle/components/containers.sass */
 .circle--actions--bar {
   margin: -30px 0 30px;
   background: #f9f9f9;
@@ -1646,11 +2039,11 @@ input.circle--input--h3 {
 .circle--actions--bar:after {
   clear: both;
 }
-/* line 68, ../../../sass/circle/components/containers.sass */
+/* line 64, ../../../sass/circle/components/containers.sass */
 .circle--actions--bar .button {
   margin-bottom: 0;
 }
-/* line 72, ../../../sass/circle/components/containers.sass */
+/* line 68, ../../../sass/circle/components/containers.sass */
 .circle--primary--avatar {
   width: 100%;
   border-radius: 8px;
@@ -1676,7 +2069,7 @@ input.circle--input--h3 {
   right: 0;
   bottom: 0;
 }
-/* line 81, ../../../sass/circle/components/containers.sass */
+/* line 77, ../../../sass/circle/components/containers.sass */
 .circle--primary--avatar .button {
   position: absolute;
   left: 50%;
@@ -1687,7 +2080,7 @@ input.circle--input--h3 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 88, ../../../sass/circle/components/containers.sass */
+/* line 84, ../../../sass/circle/components/containers.sass */
 .circle--section > p {
   font-size: 1.8rem;
   font-family: "Work Sans", sans-serif;
