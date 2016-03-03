@@ -869,7 +869,7 @@ button.icon-on-left svg,
 input[type="submit"].icon-on-left svg,
 input[type="reset"].icon-on-left svg,
 input[type="button"].icon-on-left svg {
-  right: -5px;
+  left: -5px;
 }
 /* line 45, ../sass/circle/core/buttons.sass */
 .button.icon-on-right svg,
@@ -877,7 +877,7 @@ button.icon-on-right svg,
 input[type="submit"].icon-on-right svg,
 input[type="reset"].icon-on-right svg,
 input[type="button"].icon-on-right svg {
-  left: -5px;
+  right: -5px;
 }
 
 /* line 49, ../sass/circle/core/buttons.sass */
