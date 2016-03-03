@@ -1517,35 +1517,43 @@ li:only-child .circle--clone--remove {
   display: inline-block;
 }
 /* line 42, ../../../sass/circle/components/headers.sass */
+.circle--header strong {
+  color: white;
+}
+/* line 44, ../../../sass/circle/components/headers.sass */
+.circle--header a strong:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 47, ../../../sass/circle/components/headers.sass */
 .circle--page--header {
   margin-bottom: 30px;
 }
-/* line 44, ../../../sass/circle/components/headers.sass */
+/* line 49, ../../../sass/circle/components/headers.sass */
 .circle--page--header h1, .circle--page--header h2, .circle--page--header h3, .circle--page--header h4, .circle--page--header h5, .circle--page--header h6 {
   margin: 0;
 }
-/* line 46, ../../../sass/circle/components/headers.sass */
+/* line 51, ../../../sass/circle/components/headers.sass */
 .circle--page--header p {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   color: #999;
   font-size: 1.6rem;
 }
-/* line 53, ../../../sass/circle/components/headers.sass */
+/* line 58, ../../../sass/circle/components/headers.sass */
 .circle--article--header {
   margin-bottom: 50px;
 }
-/* line 55, ../../../sass/circle/components/headers.sass */
+/* line 60, ../../../sass/circle/components/headers.sass */
 .circle--article--header h1 {
   margin-bottom: 10px;
 }
-/* line 57, ../../../sass/circle/components/headers.sass */
+/* line 62, ../../../sass/circle/components/headers.sass */
 .circle--article--section {
   margin: 0;
   font-weight: normal;
   color: #999;
 }
-/* line 61, ../../../sass/circle/components/headers.sass */
+/* line 66, ../../../sass/circle/components/headers.sass */
 .circle--article--byline {
   margin: 0;
   line-height: 1;
