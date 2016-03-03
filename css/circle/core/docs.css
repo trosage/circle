@@ -869,7 +869,7 @@ button.icon-on-left svg,
 input[type="submit"].icon-on-left svg,
 input[type="reset"].icon-on-left svg,
 input[type="button"].icon-on-left svg {
-  left: -5px;
+  right: -5px;
 }
 /* line 45, ../../../sass/circle/core/buttons.sass */
 .button.icon-on-right svg,
@@ -877,7 +877,7 @@ button.icon-on-right svg,
 input[type="submit"].icon-on-right svg,
 input[type="reset"].icon-on-right svg,
 input[type="button"].icon-on-right svg {
-  right: -5px;
+  left: -5px;
 }
 
 /* line 49, ../../../sass/circle/core/buttons.sass */
@@ -1277,6 +1277,11 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 }
 
 /* line 36, ../../../sass/circle/core/utilities.sass */
+.secondary-label {
+  color: #b1a5c4;
+}
+
+/* line 39, ../../../sass/circle/core/utilities.sass */
 hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -1907,20 +1912,6 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
   font-size: 1.4rem;
   font-weight: normal;
   color: #999;
-}
-
-/* line 4, ../../../sass/circle/components/utilities.sass */
-.circle--secondary--label {
-  color: #b1a5c4;
-}
-/* line 8, ../../../sass/circle/components/utilities.sass */
-.circle--header--sub {
-  color: #999;
-  margin: 5px 0 0 0;
-}
-/* line 11, ../../../sass/circle/components/utilities.sass */
-.circle--header--sub span {
-  color: #b1a5c4;
 }
 
 /* line 2, ../../../sass/circle/components/containers.sass */

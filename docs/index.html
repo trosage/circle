@@ -609,6 +609,10 @@
               <td><code>.negative</code></td>
               <td>Assigns color to text that conveys a negative connotation (default color is <span class="negative">red</span>). This color can be globally defined by editing the value for the <code>$negative</code> variable in <em>variables.sass</em>.</td>
             </tr>
+            <tr>
+              <td><code>.secondary-label</code></td>
+              <td>Assigns color to text that conveys secondary or of complimentary importance (default color is <span class="secondary-label">light purple</span>). This color can be globally defined by editing the value for the <code>$secondary-label</code> variable in <em>variables.sass</em>.</td>
+            </tr>
           </tbody>
         </table>
 
@@ -648,7 +652,7 @@
 
         <article class="docs--article" id="page-header">
           <h2>Page Header</h2>
-          <p>For headings that describe a particular page use the <code>.circle--page--header</code> as a container around your <code>&lt;h[#]&gt;</code> tags. Using a container with this class also sets the context for other styling of supporting lines of text. See it <a>in use.</a></p>
+          <p>For headings that describe a particular page use the <code>.circle--page--header</code> as a container around your <code>&lt;h[#]&gt;</code> tags. Using a container with this class also sets the context for other styling of supporting lines of text. See it <a href="examples/search.html">in action here</a>.</p>
           <div class="grid-parent">
             <div class="grid-60">
 <pre class="prettyprint">
@@ -669,7 +673,7 @@
 
         <article class="docs--article" id="article-header">
           <h2>Article Header</h2>
-          <p>For article pages you can use the <code>.circle--article--header</code> class. Within this container you can use the <code>.circle--article--section</code> class for the section sub-heading, <code>.circle--article--title</code> for the article title, and <code>.circle--article--byline</code> for by lines. See it <a>in action here</a>.</p>
+          <p>For article pages you can use the <code>.circle--article--header</code> class. Within this container you can use the <code>.circle--article--section</code> class for the section sub-heading, <code>.circle--article--title</code> for the article title, and <code>.circle--article--byline</code> for by lines. See it <a href="examples/index.html">in action here</a>.</p>
 
           <div class="grid-parent">
             <div class="grid-60">
@@ -852,11 +856,31 @@
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;
-      &lt;h3&gt;Checking&lt;/h3&gt;
-      &lt;p&gt;#346698-09&lt;/p&gt;
+        &lt;h3&gt;Checking&lt;/h3&gt;
+        &lt;p&gt;#346698-09&lt;/p&gt;
       &lt;/td&gt;
       &lt;td class=&quot;align-right&quot;&gt;
-        &lt;h3&gt;$5984.23&lt;/h3&gt;
+        &lt;h3 class=&quot;positive&quot;&gt;$5,984.23&lt;/h3&gt;
+        &lt;p&gt;USD&lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;h3&gt;Savings&lt;/h3&gt;
+        &lt;p&gt;#346698-09&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;align-right&quot;&gt;
+        &lt;h3 class=&quot;positive&quot;&gt;$21,481.03&lt;/h3&gt;
+        &lt;p&gt;USD&lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;h3&gt;Visa Card&lt;/h3&gt;
+        &lt;p&gt;#346698-09&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;align-right&quot;&gt;
+        &lt;h3 class=&quot;negative&quot;&gt;-$85.17&lt;/h3&gt;
         &lt;p&gt;USD&lt;/p&gt;
       &lt;/td&gt;
     &lt;/tr&gt;
