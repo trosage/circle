@@ -35,7 +35,12 @@ $( document ).ready(function() {
       var link = $(this).data("href");
       var target = $(this).data("target");
 
-      window.open(link, target);
+      if ($(this).attr("data-target")) {
+        window.open(link, target);
+      }
+      else {
+        window.open(link, "_self");
+      }
   });
 
   // Custom File Inputs
