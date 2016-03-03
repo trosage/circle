@@ -7,8 +7,7 @@ Error: Undefined variable: "$display-font".
 2: @import "components/headers"
 3: @import "components/tables"
 4: @import "components/forms"
-5: @import "components/utilities"
-6: @import "components/containers"
+5: @import "components/containers"
 
 Backtrace:
 /Users/Tyson/circle/sass/circle/components/lists.sass:3
@@ -88,4 +87,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$display-font\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/lists.sass\A         from line 1 of /Users/Tyson/circle/sass/circle/components.sass\A \A 1: @import \"components/lists\"\A 2: @import \"components/headers\"\A 3: @import \"components/tables\"\A 4: @import \"components/forms\"\A 5: @import \"components/utilities\"\A 6: @import \"components/containers\""; }
+  content: "Error: Undefined variable: \"$display-font\".\A         on line 3 of /Users/Tyson/circle/sass/circle/components/lists.sass\A         from line 1 of /Users/Tyson/circle/sass/circle/components.sass\A \A 1: @import \"components/lists\"\A 2: @import \"components/headers\"\A 3: @import \"components/tables\"\A 4: @import \"components/forms\"\A 5: @import \"components/containers\""; }
