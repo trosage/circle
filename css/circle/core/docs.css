@@ -1625,7 +1625,7 @@ li:only-child .circle--clone--remove {
   bottom: 0;
 }
 /* line 22, ../../../sass/circle/components/forms.sass */
-.circle--textarea--inputn mnn {
+.circle--textarea--input {
   height: 50px;
   min-height: 0;
   padding: 11px 15px;
