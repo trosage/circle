@@ -1290,29 +1290,29 @@ hr {
 }
 
 /* line 2, ../../../sass/circle/components/lists.sass */
-.circle--inline--list, .circle--header ul {
+.circle--list--inline, .circle--header ul {
   font-family: "Work Sans", sans-serif;
   margin: 0;
   font-size: 0;
   white-space: nowrap;
 }
 /* line 7, ../../../sass/circle/components/lists.sass */
-.circle--inline--list a, .circle--header ul a {
+.circle--list--inline a, .circle--header ul a {
   display: block;
   text-decoration: none;
 }
 /* line 10, ../../../sass/circle/components/lists.sass */
-.circle--inline--list li, .circle--header ul li {
+.circle--list--inline li, .circle--header ul li {
   display: inline-block;
   padding: 0 15px;
   font-size: 1.6rem;
 }
 /* line 14, ../../../sass/circle/components/lists.sass */
-.circle--inline--list li:first-child, .circle--header ul li:first-child {
+.circle--list--inline li:first-child, .circle--header ul li:first-child {
   padding-left: 0;
 }
 /* line 16, ../../../sass/circle/components/lists.sass */
-.circle--inline--list li:last-child, .circle--header ul li:last-child {
+.circle--list--inline li:last-child, .circle--header ul li:last-child {
   padding-right: 0;
 }
 /* line 20, ../../../sass/circle/components/lists.sass */
