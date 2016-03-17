@@ -75,12 +75,13 @@
       <div class="circle--filter circle--secondary--module">
         <h4>Components</h4>
         <ul class="circle--link--list">
-          <li><a href="#component-containers">Fluid Container</a></li>
+          <li><a href="#component-fluid-sandwich">Fluid Sandwich</a></li>
           <li><a href="#header">Main Header</a></li>
           <li><a href="#page-header">Page Header</a></li>
           <li><a href="#article-header">Article Header</a></li>
           <li><a href="#component-lists">Lists</a></li>
           <li><a href="#component-tables">Tables</a></li>
+          <li><a href="#component-icons">Icons</a></li>
         </ul>
       </div>
 
@@ -341,25 +342,21 @@
           </div>
 
           <h3>Buttons with Icons</h3>
-          <p>If you wish to put an icon inside your button you can add the <code>.icon-on-left</code> or <code>.icon-on-right</code> classes to the button to properly size and position the icon within. By default icons are sized based on a height of <code>13px</code>.</p>
+          <p>If you wish to put an icon inside your button you can add the <code>.position-icon-left</code> or <code>.position-icon-right</code> classes to the button to properly size and position the icon within.</p>
 
           <div class="grid-parent">
             <div class="grid-60">
 <pre class="prettyprint">
-&lt;a class=&quot;button button-primary icon-on-left&quot;&gt;
-  &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 13 13&quot; style=&quot;enable-background:new 0 0 13 13;&quot; xml:space=&quot;preserve&quot; class=&quot;add&quot;&gt;
-    &lt;polygon points=&quot;7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 &quot;/&gt;
-  &lt;/svg&gt;
+&lt;a class=&quot;button button-primary position-icon-left&quot;&gt;
+  &lt;span class=&quot;icon-plus&quot;&gt;&lt;/span&gt;
   New Project
 &lt;/a&gt;
 </pre>
             </div>
 
             <div class="grid-40">
-              <a class="button button-primary icon-on-left">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve" class="add">
-                  <polygon points="7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 "/>
-                </svg>
+              <a class="button button-primary position-icon-left">
+                <span class="icon-plus"></span>
                 New Project
               </a>
             </div>
@@ -368,21 +365,17 @@
           <div class="grid-parent">
             <div class="grid-60">
 <pre class="prettyprint">
-&lt;a class=&quot;button button-primary icon-on-right&quot;&gt;
+&lt;a class=&quot;button button-primary position-icon-right&quot;&gt;
   New Project
-  &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 13 13&quot; style=&quot;enable-background:new 0 0 13 13;&quot; xml:space=&quot;preserve&quot; class=&quot;add&quot;&gt;
-    &lt;polygon points=&quot;7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 &quot;/&gt;
-  &lt;/svg&gt;
+  &lt;span class=&quot;icon-plus&quot;&gt;&lt;/span&gt;
 &lt;/a&gt;
 </pre>
             </div>
 
             <div class="grid-40">
-              <a class="button button-primary icon-on-right">
+              <a class="button button-primary position-icon-right">
                 New Project
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve" class="add">
-                  <polygon points="7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 "/>
-                </svg>
+                <span class="icon-plus"></span>
               </a>
             </div>
           </div>
@@ -444,7 +437,7 @@
 </pre>
 
           <h3>Custom Select Menu</h3>
-          <p>If you wish to style <code>select</code> menus beyond whats possible with CSS alone, Circle provides an the following syntax. </p>
+          <p>If you wish to style <code>select</code> menus beyond whats possible with CSS alone, Circle provides an the following syntax. Simply wrap any select menu in an element with the <code>.circle-select</code> class.</p>
           <div class="grid-parent">
             <div class="grid-60">
               <pre class="prettyprint">
@@ -454,9 +447,6 @@
     &lt;option&gt;Option 2&lt;/option&gt;
     &lt;option&gt;Option 3&lt;/option&gt;
   &lt;/select&gt;
-  &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 0 8 13&quot; xml:space=&quot;preserve&quot; class=&quot;chevron&quot;&gt;
-    &lt;polygon points=&quot;1.4,13 0,11.6 5.2,6.5 0,1.4 1.4,0 8,6.5  &quot;/&gt;
-  &lt;/svg&gt;
 &lt;/div&gt;
             </pre>
           </div>
@@ -467,9 +457,6 @@
                 <option>Option 2</option>
                 <option>Option 3</option>
               </select>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 13" xml:space="preserve" class="chevron">
-                <polygon points="1.4,13 0,11.6 5.2,6.5 0,1.4 1.4,0 8,6.5  "/>
-              </svg>
             </div>
           </div>
         </div>
@@ -501,24 +488,20 @@
 
         <div class="grid-parent">
           <div class="grid-60">
-            <pre class="prettyprint">
-&lt;div class=&quot;button icon-on-left&quot;&gt;
-  &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 13 13&quot; style=&quot;enable-background:new 0 0 13 13;&quot; xml:space=&quot;preserve&quot; class=&quot;add&quot;&gt;
-    &lt;polygon points=&quot;7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 &quot;/&gt;
-  &lt;/svg&gt;
+<pre class="prettyprint">
+&lt;div class=&quot;button position-icon-left&quot;&gt;
+  &lt;span class=&quot;icon-plus&quot;&gt;&lt;/span&gt;
   Add Files
   &lt;input type=&quot;file&quot; /&gt;
 &lt;/div&gt;
-            </pre>
+</pre>
           </div>
           <div class="grid-40">
-            <a class="button icon-on-left">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve" class="add">
-                <polygon points="7,6 7,0 6,0 6,6 0,6 0,7 6,7 6,13 7,13 7,7 13,7 13,6 "/>
-              </svg>
+            <div class="button position-icon-left">
+              <span class="icon-plus"></span>
               Add Files
               <input type="file" />
-            </a>
+            </div>
           </div>
         </div>
 
@@ -611,15 +594,15 @@
             </tr>
             <tr>
               <td><code>.positive</code></td>
-              <td>Assigns color to text that conveys a positive connotation (default color is <span class="positive">green</span>). This color can be globally defined by editing the value for the <code>$positive</code> variable in <em>variables.sass</em></td>
+              <td>Assigns color to text that conveys a positive connotation (default color is <span class="positive">green</span>). This color can be globally defined by editing the value for the <code>$positive</code> variable in <em>_variables.sass</em></td>
             </tr>
             <tr>
               <td><code>.negative</code></td>
-              <td>Assigns color to text that conveys a negative connotation (default color is <span class="negative">red</span>). This color can be globally defined by editing the value for the <code>$negative</code> variable in <em>variables.sass</em>.</td>
+              <td>Assigns color to text that conveys a negative connotation (default color is <span class="negative">red</span>). This color can be globally defined by editing the value for the <code>$negative</code> variable in <em>_variables.sass</em>.</td>
             </tr>
             <tr>
               <td><code>.secondary-label</code></td>
-              <td>Assigns color to text that conveys secondary or of complimentary importance (default color is <span class="secondary-label">light purple</span>). This color can be globally defined by editing the value for the <code>$secondary-label</code> variable in <em>variables.sass</em>.</td>
+              <td>Assigns color to text that conveys secondary or of complimentary importance (default color is <span class="secondary-label">light purple</span>). This color can be globally defined by editing the value for the <code>$secondary-label</code> variable in <em>_variables.sass</em>.</td>
             </tr>
           </tbody>
         </table>
@@ -703,7 +686,7 @@
           </div>
         </article>
 
-        <article class="docs--article" id="component-fluid-container">
+        <article class="docs--article" id="component-fluid-sandwich">
           <h2>Fluid Sandwich</h2>
           <p>Circle's fluid sandwich component offers a table layout-like structure for situations where you want two sides of a layout fixed to the width of their contents (the bread) while a middle column flexes to fill the difference (the meat). The group of classes includes <code>.circle--fluid</code> for the parent element, with the <code>.circle--fluid--cell</code> used for each child column, with the modifier class <code>.circle--fluid--primary</code> which can be added to whatever cell you want to be the column to fill in the difference.</p>
 
@@ -849,6 +832,51 @@
               </ul>
             </div>
           </div>
+
+
+          <h3>Conversation</h3>
+          <p>Circle provides styling for lists of messages for instances where you might want to display a chat.</p>
+
+          <div class="icon" data-icon="*"></div>
+
+          <ul class="circle--message--list">
+            <li class="circle--message">
+              <div class="circle--avatar">
+                <img src="../images/f-spore.png" />
+              </div>
+              <p class="circle--message--text">How are things?</p>
+              <p class="circle--message--timestamp">3 hours ago</p>
+            </li>
+
+            <li class="circle--message circle--message--author">
+              <div class="circle--avatar">
+                <img src="../images/m-spore.png" />
+              </div>
+              <p class="circle--message--text">Great! How are things? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="circle--message--timestamp">3 hours ago</p>
+            </li>
+          </ul>
+
+<pre class="prettyprint">
+&lt;ul class=&quot;circle--message--list&quot;&gt;
+  &lt;li class=&quot;circle--message&quot;&gt;
+    &lt;div class=&quot;circle--avatar&quot;&gt;
+      &lt;img src=&quot;../images/f-spore.png&quot; /&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;circle--message--text&quot;&gt;How are things?&lt;/p&gt;
+    &lt;p class=&quot;circle--message--timestamp&quot;&gt;3 hours ago&lt;/p&gt;
+  &lt;/li&gt;
+
+  &lt;li class=&quot;circle--message circle--message--author&quot;&gt;
+    &lt;div class=&quot;circle--avatar&quot;&gt;
+      &lt;img src=&quot;../images/m-spore.png&quot; /&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;circle--message--text&quot;&gt;Great! How are things? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+    &lt;p class=&quot;circle--message--timestamp&quot;&gt;3 hours ago&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
         </article>
 
         <article class="docs--article" id="component-tables">
@@ -943,7 +971,7 @@
           <p>Circle offers some basic sizing and grouping components for form elements.</p>
 
           <h3>Field Classes</h3>
-          <p>For cases where you want your form fields contents to take on the styling that immitates the output use the following classes.</p>
+          <p>For cases where you want your form fields contents to take on the styling that immitates the output, use the following classes.</p>
           <table class="full-width">
             <thead>
               <th>Class</th>
@@ -994,6 +1022,242 @@
               <textarea placeholder="Description"></textarea>
             </div>
           </div>
+
+          <h3>Search Input</h3>
+          <p>Circle offers a component for search fields with an combined button.</p>
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;div class=&quot;circle--search&quot;&gt;
+  &lt;input type=&quot;search&quot; placeholder=&quot;Search...&quot; /&gt;
+  &lt;button class=&quot;icon-search&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <div class="circle--search">
+                <input type="search" placeholder="Search..." />
+                <button class="icon-search"></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="docs--article" id="component-icons">
+          <h2>Icons</h2>
+          <p>Circle uses an icon set based on <a href="http://colebemis.com/feather/">Feather</a> with some custom additions. Icons are embedded as a font so they can be used in CSS or embedded directly into HTML using the appropriate class. The following table supplies the Sass variables, which map to the character codes for each icon, and classes you'll need for depending on which method you choose. All the Sass variables for icons can be found in <em>_variables.sass</em></p>
+
+          <h3>CSS Embedding</h3>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+.box
+  padding: 15px
+  border-radius: 8px
+  border: 2px solid #eee
+  &amp;:after
+    font-size: 19px
+    font-family: $icon-font
+    content: $icon-arrow-right
+    color: $link
+</pre>
+            </div>
+            <div class="grid-40">
+              <div class="box">
+
+              </div>
+            </div>
+          </div>
+
+          <h3>Direct Embedding</h3>
+
+          <div class="grid-parent">
+            <div class="grid-60">
+<pre class="prettyprint">
+&lt;span class=&quot;icon-arrow-right&quot;&gt;&lt;/span&gt;
+</pre>
+            </div>
+            <div class="grid-40">
+              <span class="icon-arrow-right"></span>
+            </div>
+          </div>
+
+          <table class="full-width">
+            <thead>
+              <th>Icon</th>
+              <th>Class</th>
+              <th>Variable</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="icon-chevron-down"></span></td>
+                <td><code>.icon-chevron-down</code></td>
+                <td><code>$icon-chevron-down</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-chevron-left"></span></td>
+                <td><code>.icon-chevron-left</code></td>
+                <td><code>$icon-chevron-left</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-chevron-left"></span></td>
+                <td><code>.icon-chevron-right</code></td>
+                <td><code>$icon-chevron-right</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-chevron-left"></span></td>
+                <td><code>.icon-chevron-up</code></td>
+                <td><code>$icon-chevron-up</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-arrow-up"></span></td>
+                <td><code>.icon-arrow-up</code></td>
+                <td><code>$icon-arrow-up</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-arrow-down"></span></td>
+                <td><code>.icon-arrow-down</code></td>
+                <td><code>$icon-arrow-down</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-arrow-left"></span></td>
+                <td><code>.icon-arrow-left</code></td>
+                <td><code>$icon-arrow-left</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-arrow-right"></span></td>
+                <td><code>.icon-arrow-right</code></td>
+                <td><code>$icon-arrow-right</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-message-tail-right"></span></td>
+                <td><code>.icon-message-tail-right</code></td>
+                <td><code>$icon-message-tail-right</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-message-tail-left"></span></td>
+                <td><code>.icon-message-tail-left</code></td>
+                <td><code>$icon-message-tail-left</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-plus"></span></td>
+                <td><code>.icon-plus</code></td>
+                <td><code>$icon-plus</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-search"></span></td>
+                <td><code>.icon-search</code></td>
+                <td><code>$icon-search</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-eye"></span></td>
+                <td><code>.icon-eye</code></td>
+                <td><code>$icon-eye</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-paper-clip"></span></td>
+                <td><code>.icon-paper-clip</code></td>
+                <td><code>$icon-paper-clip</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-mail"></span></td>
+                <td><code>.icon-mail</code></td>
+                <td><code>$icon-mail</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-toggle"></span></td>
+                <td><code>.icon-toggle</code></td>
+                <td><code>$icon-toggle</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-layout"></span></td>
+                <td><code>.icon-layout</code></td>
+                <td><code>$icon-layout</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-link"></span></td>
+                <td><code>.icon-link</code></td>
+                <td><code>$icon-link</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-bell"></span></td>
+                <td><code>.icon-bell</code></td>
+                <td><code>$icon-bell</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-lock"></span></td>
+                <td><code>.icon-lock</code></td>
+                <td><code>$icon-lock</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-unlock"></span></td>
+                <td><code>.icon-unlock</code></td>
+                <td><code>$icon-unlock</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-ribbon"></span></td>
+                <td><code>.icon-ribbon</code></td>
+                <td><code>$icon-ribbon</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-image"></span></td>
+                <td><code>.icon-image</code></td>
+                <td><code>$icon-image</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-signal"></span></td>
+                <td><code>.icon-signal</code></td>
+                <td><code>$icon-signal</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-target"></span></td>
+                <td><code>.icon-target</code></td>
+                <td><code>$icon-target</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-clipboard"></span></td>
+                <td><code>.icon-clipboard</code></td>
+                <td><code>$icon-clipboard</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-clock"></span></td>
+                <td><code>.icon-clock</code></td>
+                <td><code>$icon-clock</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-watch"></span></td>
+                <td><code>.icon-watch</code></td>
+                <td><code>$icon-watch</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-air-play"></span></td>
+                <td><code>.icon-air-play</code></td>
+                <td><code>$icon-air-play</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-camera"></span></td>
+                <td><code>.icon-camera</code></td>
+                <td><code>$icon-camera</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-video"></span></td>
+                <td><code>.icon-video</code></td>
+                <td><code>$icon-video</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-disc"></span></td>
+                <td><code>.icon-disc</code></td>
+                <td><code>$icon-disc</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-printer"></span></td>
+                <td><code>.icon-printer</code></td>
+                <td><code>$icon-printer</code></td>
+              </tr>
+            </tbody>
+          </table>
+
         </article>
 
       </section>

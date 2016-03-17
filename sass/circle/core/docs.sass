@@ -1,6 +1,9 @@
 @import "../sass/variables"
+$icon-font-path: "../../../icons/"
+
 @import "../sass/circle/core"
 @import "../sass/circle/components"
+
 
 .logo
   width: 28px
@@ -27,6 +30,21 @@
     margin-bottom: 50px
     +clearfix
 
+.box
+  padding: 15px
+  border-radius: 8px
+  border: 2px solid #eee
+  &:after
+    content: $icon-arrow-right
+    font-size: 19px
+    color: $link
+    font-family: $icon-font
+
+table
+  [class^="icon-"],
+  [class*=" icon-"]
+    font-size: 24px
+
 pre
   &.prettyprint
     display: block
@@ -39,8 +57,6 @@ pre
     font-size: 1.4rem
     line-height: 1.5
     margin: 0 0 30px
-
-// Atelier Savanna Light by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/savanna)
 
 // plain text
 
