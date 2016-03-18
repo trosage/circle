@@ -7,7 +7,7 @@
     a
       display: block
       text-decoration: none
-    li
+    > li
       display: inline-block
       padding: 0 15px
       font-size: 1.6rem
@@ -155,3 +155,58 @@
           color: $primary
           left: auto
           right: -16px
+
+  // Dropdowns
+  &--dropdown
+    list-style: none
+    position: relative
+    display: inline-block
+    padding: 0
+    margin: 0
+    font-family: $display-font
+    &--trigger,
+    &--trigger:hover
+      padding: 10px 0
+      font-weight: bold
+      color: $display-color
+      cursor: pointer
+      &:after
+        content: $icon-chevron-down
+        color: $display-color
+        font-family: $icon-font
+        font-size: 18px
+        position: relative
+        top: 2px
+        margin-left: 5px
+    &--list
+      position: absolute
+      z-index: 2
+      left: -15px
+      top: 90%
+      opacity: 0
+      visibility: hidden
+      background: #fff
+      border-radius: 8px
+      padding: 0
+      margin: 0
+      box-shadow: 0 0 0 1px rgba(#000, .2)
+      min-width: 200px
+      +transition(top .2s, opacity .2s)
+      li
+        list-style: none
+        padding: 10px 15px
+        margin: 0
+        color: $link
+        white-space: nowrap
+        display: block
+      a
+        display: block
+
+    // Hover state
+    &:hover
+      .circle--dropdown--list
+        opacity: 1
+        top: 110%
+        visibility: visible
+      .circle--dropdown--trigger:after
+        content: $icon-chevron-up

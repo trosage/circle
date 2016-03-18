@@ -102,7 +102,7 @@
 
         <article class="docs--article" id="bounds">
           <h2>Bounds</h2>
-          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/variables.sass</em>.</p>
+          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/_variables.sass</em>.</p>
 <pre class="prettyprint">
 &lt;div class=&quot;bounds&quot;&gt;
   &lt;!-- Layout goes here --&gt;
@@ -112,7 +112,7 @@
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
-          <p>Circle's grid system is based on percentage widths columns available in incriments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can easily be modified by changing the variable <code>$gutter-width</code> in the <em>sass/variables.sass</em> file.</p>
+          <p>Circle's grid system is based on percentage widths columns available in incriments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can easily be modified by changing the variable <code>$gutter-width</code> in the <em>sass/_variables.sass</em> file.</p>
           <p>Columns in the grid system follow the following class naming pattern:</p>
 <pre class="prettyprint">
 // Pattern
@@ -228,9 +228,9 @@
           <h2>Typography</h2>
           <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. By default Circle never changes the <html> font-size, but it's there in case you need it for your project. All measurements are base 10 though so, an <code>&lt;h1&gt;</code> with <code>3.8rem</code> font-size just means <code>38px</code>.</p>
 
-          <p>The default typefaces used for Circle are <a>Cousine</a> for the default body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
+          <p>The default typefaces used for Circle are <a>Cousine</a> for the default body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/_variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
 
-          <p>Additionally, each heading's font size is defined by a variable in <em>sass/variables.sass</em> for easy modification. Default sizes are as follows.</p>
+          <p>Additionally, each heading's font size is defined by a variable in <em>sass/_variables.sass</em> for easy modification. Default sizes are as follows.</p>
           <div class="grid-parent">
             <div class="grid-60">
               <table class="full-width">
@@ -308,7 +308,7 @@
 
         <article class="docs--article" id="buttons">
           <h2>Buttons</h2>
-          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button is can be edited using the <code>$button-color</code> variable in <em>sass/variables.sass</em></p>
+          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button is can be edited using the <code>$button-color</code> variable in <em>sass/_variables.sass</em></p>
 
           <div class="grid-parent">
 
@@ -573,8 +573,8 @@
               <td>Makes the max width.</td>
             </tr>
             <tr>
-              <td><code>.hide-text</code></td>
-              <td>Hides text using <code>font-size: 0</code>.</td>
+              <td><code>.hide</code></td>
+              <td>Hides element using <code>display: none</code>.</td>
             </tr>
             <tr>
               <td><code>.hide-text</code></td>
@@ -616,7 +616,7 @@
         <hr />
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
-          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>sass/variables.sass</em>.</p>
+          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>sass/_variables.sass</em>.</p>
           <header class="circle--header">
             <h1><a>Title</a></h1>
             <nav>
@@ -833,6 +833,20 @@
             </div>
           </div>
 
+          <h3>Dropdowns</h3>
+
+          <ul class="circle--list--inline">
+            <li><a>Item</a></li>
+            <li><a>Item</a></li>
+            <li class="circle--dropdown">
+              <a class="circle--dropdown--trigger">Item List</a>
+              <ul class="circle--dropdown--list">
+                <li><a>List Item</a></li>
+                <li><a>List Item</a></li>
+                <li><a>List Item</a></li>
+              </ul>
+            </li>
+          </ul>
 
           <h3>Conversation</h3>
           <p>Circle provides styling for lists of messages for instances where you might want to display a chat.</p>
@@ -1045,7 +1059,7 @@
 
         <article class="docs--article" id="component-icons">
           <h2>Icons</h2>
-          <p>Circle uses an icon set based on <a href="http://colebemis.com/feather/">Feather</a> with some custom additions. Icons are embedded as a font so they can be used in CSS or embedded directly into HTML using the appropriate class. The following table supplies the Sass variables, which map to the character codes for each icon, and classes you'll need for depending on which method you choose. All the Sass variables for icons can be found in <em>_variables.sass</em></p>
+          <p>Circle uses an icon set based on <a href="http://colebemis.com/feather/">Feather</a> with some custom additions. Icons are embedded as a font so they can be used in CSS or embedded directly into HTML using the appropriate class. The following table supplies the Sass variables, which map to the character codes for each icon, and classes you'll need for depending on which method you choose. All the Sass variables for icons can be found in <em>sass/_variables.sass</em></p>
 
           <h3>CSS Embedding</h3>
 
@@ -1416,11 +1430,6 @@
                 <td><code>$icon-shuffle</code></td>
               </tr>
               <tr>
-                <td><span class="icon-shuffle"></span></td>
-                <td><code>.icon-shuffle</code></td>
-                <td><code>$icon-shuffle</code></td>
-              </tr>
-              <tr>
                 <td><span class="icon-repeat"></span></td>
                 <td><code>.icon-repeat</code></td>
                 <td><code>$icon-repeat</code></td>
@@ -1449,6 +1458,81 @@
                 <td><span class="icon-drop"></span></td>
                 <td><code>.icon-drop</code></td>
                 <td><code>$icon-drop</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-sun"></span></td>
+                <td><code>.icon-sun</code></td>
+                <td><code>$icon-sun</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-cloud"></span></td>
+                <td><code>.icon-cloud</code></td>
+                <td><code>$icon-cloud</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-cloud-upload"></span></td>
+                <td><code>.icon-cloud-upload</code></td>
+                <td><code>$icon-cloud-upload</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-cloud-download"></span></td>
+                <td><code>.icon-cloud-download</code></td>
+                <td><code>$icon-cloud-download</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-upload"></span></td>
+                <td><code>.icon-upload</code></td>
+                <td><code>$icon-upload</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-download"></span></td>
+                <td><code>.icon-download</code></td>
+                <td><code>$icon-download</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-location"></span></td>
+                <td><code>.icon-location</code></td>
+                <td><code>$icon-location</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-location-2"></span></td>
+                <td><code>.icon-location-2</code></td>
+                <td><code>$icon-location-2</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-map"></span></td>
+                <td><code>.icon-map</code></td>
+                <td><code>$icon-map</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-battery"></span></td>
+                <td><code>.icon-battery</code></td>
+                <td><code>$icon-battery</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-head"></span></td>
+                <td><code>.icon-head</code></td>
+                <td><code>$icon-head</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-briefcase"></span></td>
+                <td><code>.icon-briefcase</code></td>
+                <td><code>$icon-briefcase</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-speech-bubble"></span></td>
+                <td><code>.icon-speech-bubble</code></td>
+                <td><code>$icon-speech-bubble</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-anchor"></span></td>
+                <td><code>.icon-anchor</code></td>
+                <td><code>$icon-anchor</code></td>
+              </tr>
+              <tr>
+                <td><span class="icon-globe"></span></td>
+                <td><code>.icon-globe</code></td>
+                <td><code>$icon-globe</code></td>
               </tr>
             </tbody>
           </table>
