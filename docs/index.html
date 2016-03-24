@@ -102,7 +102,7 @@
 
         <article class="docs--article" id="bounds">
           <h2>Bounds</h2>
-          <p>Setting the outter bounds of your layout defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/_variables.sass</em>.</p>
+          <p>Setting the outer bounds of your layout is defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/_variables.sass</em>.</p>
 <pre class="prettyprint">
 &lt;div class=&quot;bounds&quot;&gt;
   &lt;!-- Layout goes here --&gt;
@@ -112,7 +112,7 @@
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
-          <p>Circle's grid system is based on percentage widths columns available in incriments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can easily be modified by changing the variable <code>$gutter-width</code> in the <em>sass/_variables.sass</em> file.</p>
+          <p>Circle's grid system is based on percentage widths columns available in increments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can be easily modified by changing the variable <code>$gutter-width</code> in the <em>sass/_variables.sass</em> file.</p>
           <p>Columns in the grid system follow the following class naming pattern:</p>
 <pre class="prettyprint">
 // Pattern
@@ -226,9 +226,9 @@
 
         <article class="docs--article" id="typography">
           <h2>Typography</h2>
-          <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. By default Circle never changes the <html> font-size, but it's there in case you need it for your project. All measurements are base 10 though so, an <code>&lt;h1&gt;</code> with <code>3.8rem</code> font-size just means <code>38px</code>.</p>
+          <p>Type is all set with <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. By default Circle never changes the <html> font-size, but it's there in case you need it for your project. All measurements are base 10 though so, an <code>&lt;h1&gt;</code> with <code>3.8rem</code> font-size just means <code>38px</code>.</p>
 
-          <p>The default typefaces used for Circle are <a>Cousine</a> for the default body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/_variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
+          <p>The default typefaces used for Circle are <a>Cousine</a> for body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/_variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
 
           <p>Additionally, each heading's font size is defined by a variable in <em>sass/_variables.sass</em> for easy modification. Default sizes are as follows.</p>
           <div class="grid-parent">
@@ -308,7 +308,7 @@
 
         <article class="docs--article" id="buttons">
           <h2>Buttons</h2>
-          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button is can be edited using the <code>$button-color</code> variable in <em>sass/_variables.sass</em></p>
+          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button can be edited using the <code>$button-color</code> variable in <em>sass/_variables.sass</em></p>
 
           <div class="grid-parent">
 
@@ -342,7 +342,7 @@
           </div>
 
           <h3>Buttons with Icons</h3>
-          <p>If you wish to put an icon inside your button you can add the <code>.position-icon-left</code> or <code>.position-icon-right</code> classes to the button to properly size and position the icon within.</p>
+          <p>If you wish to put an icon inside your button you can add the <code>.position-icon-left</code> or <code>.position-icon-right</code> classes to the button to properly size and position the icon within the button.</p>
 
           <div class="grid-parent">
             <div class="grid-60">
@@ -437,7 +437,7 @@
 </pre>
 
           <h3>Custom Select Menu</h3>
-          <p>If you wish to style <code>select</code> menus beyond whats possible with CSS alone, Circle provides an the following syntax. Simply wrap any select menu in an element with the <code>.circle-select</code> class.</p>
+          <p>If you wish to style <code>select</code> menus beyond whats possible with CSS alone, Circle provides the following syntax. Simply wrap any select menu in an element with the <code>.circle-select</code> class.</p>
           <div class="grid-parent">
             <div class="grid-60">
               <pre class="prettyprint">
@@ -463,7 +463,7 @@
 
         <h3>Custom File Input</h3>
 
-        <p>If you wish to style <code>input[type="file"]</code> fields beyond whats possible with CSS alone there are two methods. The first method is by adding the <code>.circle--input--file</code> class on to the file input you wish to customize. Additionally you'll need to add the <code>data-text</code> attribute with a value of the text you'd like for the button. There also is the option to give the button additional classes, such as <code>button-primary</code>, by applying that value to the <code>data-state</code> attribute. This method uses Javascript to wrap the input and assign the values assigned in the <code>data-text</code> and <code>data-state</code> attributes.</p>
+        <p>If you wish to style <code>input[type="file"]</code> fields beyond what’s possible with CSS alone there are two methods. The first method is by adding the <code>.circle--input--file</code> class on to the file input you wish to customize. Additionally you’ll need to add the <code>data-text</code> attribute with a value of the text you’d like for the button. There also is the option to give the button additional classes, such as <code>button-primary</code>, by applying that value to the <code>data-state</code> attribute. This method uses Javascript to wrap the input and assign the values assigned in the <code>data-text</code> and <code>data-state</code> attributes.</p>
         <h4>Syntax</h4>
 <pre class="prettyprint">
 &lt;input type=&quot;file&quot; class=&quot;circle--input--file&quot; data-text=&quot;Upload File&quot; data-state=&quot;button-primary&quot; /&gt;
@@ -484,7 +484,7 @@
           </div>
         </div>
 
-        <p>The second method is for if you wish to further customize your button with additonal elements such as an image or icon. Simply wrap the <code>&lt;input type=&quot;file&quot; /&gt;</code> element in an element with the <code>button</code> class applied.</p>
+        <p>The second method is if you wish to further customize your button with additonal elements such as an image or icon. Simply wrap the <code>&lt;input type=&quot;file&quot; /&gt;</code> element in an element with the <code>button</code> class applied.</p>
 
         <div class="grid-parent">
           <div class="grid-60">
@@ -551,7 +551,7 @@
 
         <article class="docs--article" id="utilities">
         <h2>Utilities</h2>
-        <p>The following are some basic utlity momdifier classes that be helpful in a number of situations.</p>
+        <p>The following are some basic utlity modifier classes that may be helpful in a number of situations.</p>
 
         <table class="full-width align-top">
           <thead>
@@ -566,11 +566,11 @@
             </tr>
             <tr>
               <td><code>.full-width</code></td>
-              <td>Makes the element go full width.</td>
+              <td>Makes the element full width.</td>
             </tr>
             <tr>
               <td><code>.max-full-width</code></td>
-              <td>Makes the max width.</td>
+              <td>Makes the element max width.</td>
             </tr>
             <tr>
               <td><code>.hide</code></td>
@@ -612,7 +612,7 @@
 
       <section id="components">
         <h1>Components</h1>
-        <p>Circle additionally includes numberous common components for you might want to use. All components use the <code>.circle</code> prefix to deliniate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>sass/global.sass</em>. You can be easily include or exclude these using <code>@import "circle/components"</code>.</p>
+        <p>Circle additionally includes numerous common components you might want to use. All components use the <code>.circle</code> prefix to delineate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>sass/global.sass</em>. You can easily include or exclude these using <code>@import "circle/components"</code>.</p>
         <hr />
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
@@ -688,7 +688,7 @@
 
         <article class="docs--article" id="component-fluid-sandwich">
           <h2>Fluid Sandwich</h2>
-          <p>Circle's fluid sandwich component offers a table layout-like structure for situations where you want two sides of a layout fixed to the width of their contents (the bread) while a middle column flexes to fill the difference (the meat). The group of classes includes <code>.circle--fluid</code> for the parent element, with the <code>.circle--fluid--cell</code> used for each child column, with the modifier class <code>.circle--fluid--primary</code> which can be added to whatever cell you want to be the column to fill in the difference.</p>
+          <p>Circle's fluid sandwich component offers a table layout-like structure for situations where you want two sides of a layout fixed to the width of their contents (the bread) while a middle column flexes to fill the difference (the meat). The group of classes includes <code>.circle--fluid</code> for the parent element, <code>.circle--fluid--cell</code> for each child column, and <code>.circle--fluid--primary</code> for the column that flexes to fill in the difference.</p>
 
           <header class="circle--header">
             <div class="circle--fluid">
@@ -786,7 +786,7 @@
           </div>
 
           <h3>Clone Lists</h3>
-          <p>Clone lists are lists that provide the functionality to add and/or remove list items. Common use cases are with forms where you have a form that builds lists item by item. Clone lists use the <code>.circle--clone--list</code> class applied to a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>. Additionally, an anchor with the class <code>.circle--clone--add</code> needs to be nested inside the children <code>&lt;li&gt;</code> elements. Optionally, there can be an achor to remove the list item using the <code>.circle--clone--remove</code> class. Remove links are hidden by default in the case that there is only one list item.</p>
+          <p>Clone lists are lists that let users add and/or remove list items dynamically. One common use case is a form that builds lists item by item -- a to-do list application, for example. Clone lists use the <code>.circle--clone--list</code> class applied to a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>. Additionally, an anchor with the class <code>.circle--clone--add</code> needs to be nested inside the children <code>&lt;li&gt;</code> elements. Optionally, there can be an achor to remove the list item using the <code>.circle--clone--remove</code> class. Remove links are hidden by default in the case that there is only one list item.</p>
 
           <div class="grid-parent">
             <div class="grid-60">
@@ -812,7 +812,7 @@
           </div>
 
           <h3>Pilled List</h3>
-          <p>Pilled lists are lists of links which one item has a selected state. Common uses could be page tabs or filters.</p>
+          <p>Pilled lists are lists of links where one item has a selected state. Common uses could be page tabs or filters.</p>
 
           <div class="grid-parent">
             <div class="grid-60">
@@ -1038,7 +1038,7 @@
           </div>
 
           <h3>Search Input</h3>
-          <p>Circle offers a component for search fields with an combined button.</p>
+          <p>Circle offers a component for search fields with a combined button.</p>
           <div class="grid-parent">
             <div class="grid-60">
 <pre class="prettyprint">
