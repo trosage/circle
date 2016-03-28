@@ -10,7 +10,6 @@
     > li
       display: inline-block
       padding: 0 15px
-      font-size: 1.6rem
       &:first-child
         padding-left: 0
       &:last-child
@@ -161,15 +160,15 @@
     list-style: none
     position: relative
     display: inline-block
-    padding: 0
+    padding: 0 15px 1rem !important
     margin: 0
     font-family: $display-font
     &--trigger,
     &--trigger:hover
-      padding: 10px 0
       font-weight: bold
       color: $display-color
       cursor: pointer
+      line-height: 1
       &:after
         content: $icon-chevron-down
         color: $display-color
@@ -181,7 +180,7 @@
     &--list
       position: absolute
       z-index: 2
-      left: -15px
+      left: 0px
       top: 90%
       opacity: 0
       visibility: hidden
@@ -191,22 +190,25 @@
       margin: 0
       box-shadow: 0 0 0 1px rgba(#000, .2)
       min-width: 200px
+      overflow: hidden
       +transition(top .2s, opacity .2s)
       li
         list-style: none
-        padding: 10px 15px
         margin: 0
         color: $link
         white-space: nowrap
         display: block
       a
+        padding: 10px 15px
         display: block
+        &:hover
+          background: lighten($link, 45%)
 
     // Hover state
     &:hover
       .circle--dropdown--list
         opacity: 1
-        top: 110%
+        top: 100%
         visibility: visible
       .circle--dropdown--trigger:after
         content: $icon-chevron-up

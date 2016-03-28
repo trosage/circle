@@ -1348,54 +1348,53 @@ hr {
 .circle--list--inline > li, .circle--header ul > li {
   display: inline-block;
   padding: 0 15px;
-  font-size: 1.6rem;
 }
-/* line 14, ../sass/circle/components/_lists.sass */
+/* line 13, ../sass/circle/components/_lists.sass */
 .circle--list--inline > li:first-child, .circle--header ul > li:first-child {
   padding-left: 0;
 }
-/* line 16, ../sass/circle/components/_lists.sass */
+/* line 15, ../sass/circle/components/_lists.sass */
 .circle--list--inline > li:last-child, .circle--header ul > li:last-child {
   padding-right: 0;
 }
-/* line 20, ../sass/circle/components/_lists.sass */
+/* line 19, ../sass/circle/components/_lists.sass */
 .circle--link--list {
   list-style-type: none;
 }
-/* line 22, ../sass/circle/components/_lists.sass */
+/* line 21, ../sass/circle/components/_lists.sass */
 .circle--link--list a {
   text-decoration: none;
 }
-/* line 26, ../sass/circle/components/_lists.sass */
+/* line 25, ../sass/circle/components/_lists.sass */
 .circle--filter--list {
   list-style-type: none;
 }
-/* line 28, ../sass/circle/components/_lists.sass */
+/* line 27, ../sass/circle/components/_lists.sass */
 .circle--filter--list a {
   text-decoration: none;
   color: rgba(34, 34, 34, 0.5);
   text-decoration: none;
 }
-/* line 32, ../sass/circle/components/_lists.sass */
+/* line 31, ../sass/circle/components/_lists.sass */
 .circle--filter--list a:hover {
   color: #a5c4c2;
 }
-/* line 34, ../sass/circle/components/_lists.sass */
+/* line 33, ../sass/circle/components/_lists.sass */
 .circle--filter--list a.selected {
   color: #222;
   font-weight: bold;
 }
-/* line 39, ../sass/circle/components/_lists.sass */
+/* line 38, ../sass/circle/components/_lists.sass */
 .circle--group--list {
   border-top: 1px solid #e1e1e1;
   list-style: none;
 }
-/* line 42, ../sass/circle/components/_lists.sass */
+/* line 41, ../sass/circle/components/_lists.sass */
 .circle--group--list li {
   border-bottom: 1px solid #e1e1e1;
   padding: 2rem 0 2rem 3rem;
 }
-/* line 45, ../sass/circle/components/_lists.sass */
+/* line 44, ../sass/circle/components/_lists.sass */
 .circle--group--list li:before {
   content: "";
   float: left;
@@ -1406,45 +1405,45 @@ hr {
   border-radius: 10px;
   display: block;
 }
-/* line 56, ../sass/circle/components/_lists.sass */
+/* line 55, ../sass/circle/components/_lists.sass */
 .circle--clone--list {
   list-style-type: none;
 }
-/* line 58, ../sass/circle/components/_lists.sass */
+/* line 57, ../sass/circle/components/_lists.sass */
 .circle--clone--list a {
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: bold;
 }
-/* line 62, ../sass/circle/components/_lists.sass */
+/* line 61, ../sass/circle/components/_lists.sass */
 .circle--clone--add, .circle--clone--remove {
   cursor: pointer;
 }
-/* line 65, ../sass/circle/components/_lists.sass */
+/* line 64, ../sass/circle/components/_lists.sass */
 .circle--clone--remove {
   float: right;
   color: #a5c4c2;
 }
-/* line 68, ../sass/circle/components/_lists.sass */
+/* line 67, ../sass/circle/components/_lists.sass */
 .circle--clone--remove:hover {
   color: #537d7b;
 }
-/* line 70, ../sass/circle/components/_lists.sass */
+/* line 69, ../sass/circle/components/_lists.sass */
 li:only-child .circle--clone--remove {
   display: none;
 }
-/* line 74, ../sass/circle/components/_lists.sass */
+/* line 73, ../sass/circle/components/_lists.sass */
 .circle--pill--list {
   margin: 0;
   white-space: nowrap;
   padding: 0 15px;
 }
-/* line 78, ../sass/circle/components/_lists.sass */
+/* line 77, ../sass/circle/components/_lists.sass */
 .circle--pill--list li {
   display: inline-block;
   margin: 0 15px 0 0;
 }
-/* line 81, ../sass/circle/components/_lists.sass */
+/* line 80, ../sass/circle/components/_lists.sass */
 .circle--pill--list a {
   padding: 12px 20px;
   font-family: "Work Sans", sans-serif;
@@ -1461,36 +1460,36 @@ li:only-child .circle--clone--remove {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-/* line 92, ../sass/circle/components/_lists.sass */
+/* line 91, ../sass/circle/components/_lists.sass */
 .circle--pill--list a:hover {
   background: #eee;
 }
-/* line 94, ../sass/circle/components/_lists.sass */
+/* line 93, ../sass/circle/components/_lists.sass */
 .circle--pill--list a:active {
   background: #444;
 }
-/* line 96, ../sass/circle/components/_lists.sass */
+/* line 95, ../sass/circle/components/_lists.sass */
 .circle--pill--list a:active,
 .circle--pill--list .selected,
 .circle--pill--list .selected:hover {
   background: #444;
   color: #fff;
 }
-/* line 102, ../sass/circle/components/_lists.sass */
+/* line 101, ../sass/circle/components/_lists.sass */
 .circle--message {
   list-style: none;
 }
-/* line 104, ../sass/circle/components/_lists.sass */
+/* line 103, ../sass/circle/components/_lists.sass */
 .circle--message .circle--avatar {
   position: absolute;
   bottom: 0;
   margin: 0;
 }
-/* line 110, ../sass/circle/components/_lists.sass */
+/* line 109, ../sass/circle/components/_lists.sass */
 .circle--message--list > li {
   margin-bottom: 20px;
 }
-/* line 113, ../sass/circle/components/_lists.sass */
+/* line 112, ../sass/circle/components/_lists.sass */
 .circle--message--text {
   background-color: #7c689b;
   color: #fff;
@@ -1502,7 +1501,7 @@ li:only-child .circle--clone--remove {
   position: relative;
   font-family: "Work Sans", sans-serif;
 }
-/* line 123, ../sass/circle/components/_lists.sass */
+/* line 122, ../sass/circle/components/_lists.sass */
 .circle--message--text:after {
   content: "";
   font-family: "Circle";
@@ -1513,61 +1512,61 @@ li:only-child .circle--clone--remove {
   color: #7c689b;
   font-size: 24px;
 }
-/* line 133, ../sass/circle/components/_lists.sass */
+/* line 132, ../sass/circle/components/_lists.sass */
 .circle--message--timestamp {
   font-size: 1.2rem;
   color: #999;
   margin: 0;
   line-height: 1;
 }
-/* line 139, ../sass/circle/components/_lists.sass */
+/* line 138, ../sass/circle/components/_lists.sass */
 .circle--message {
   padding-left: 70px;
   position: relative;
 }
-/* line 142, ../sass/circle/components/_lists.sass */
+/* line 141, ../sass/circle/components/_lists.sass */
 .circle--message .circle--avatar {
   left: 0;
 }
-/* line 144, ../sass/circle/components/_lists.sass */
+/* line 143, ../sass/circle/components/_lists.sass */
 .circle--message--author {
   padding-right: 70px;
   text-align: right;
   position: relative;
 }
-/* line 148, ../sass/circle/components/_lists.sass */
+/* line 147, ../sass/circle/components/_lists.sass */
 .circle--message--author .circle--avatar {
   right: 0;
   left: auto;
 }
-/* line 151, ../sass/circle/components/_lists.sass */
+/* line 150, ../sass/circle/components/_lists.sass */
 .circle--message--author .circle--message--text {
   background: #689b98;
 }
-/* line 153, ../sass/circle/components/_lists.sass */
+/* line 152, ../sass/circle/components/_lists.sass */
 .circle--message--author .circle--message--text:after {
   content: "";
   color: #689b98;
   left: auto;
   right: -16px;
 }
-/* line 160, ../sass/circle/components/_lists.sass */
+/* line 159, ../sass/circle/components/_lists.sass */
 .circle--dropdown {
   list-style: none;
   position: relative;
   display: inline-block;
-  padding: 0;
+  padding: 0 15px 1rem !important;
   margin: 0;
   font-family: "Work Sans", sans-serif;
 }
-/* line 167, ../sass/circle/components/_lists.sass */
+/* line 166, ../sass/circle/components/_lists.sass */
 .circle--dropdown--trigger, .circle--dropdown--trigger:hover {
-  padding: 10px 0;
   font-weight: bold;
   color: #222;
   cursor: pointer;
+  line-height: 1;
 }
-/* line 173, ../sass/circle/components/_lists.sass */
+/* line 172, ../sass/circle/components/_lists.sass */
 .circle--dropdown--trigger:after, .circle--dropdown--trigger:hover:after {
   content: "";
   color: #222;
@@ -1577,11 +1576,11 @@ li:only-child .circle--clone--remove {
   top: 2px;
   margin-left: 5px;
 }
-/* line 181, ../sass/circle/components/_lists.sass */
+/* line 180, ../sass/circle/components/_lists.sass */
 .circle--dropdown--list {
   position: absolute;
   z-index: 2;
-  left: -15px;
+  left: 0px;
   top: 90%;
   opacity: 0;
   visibility: hidden;
@@ -1591,6 +1590,7 @@ li:only-child .circle--clone--remove {
   margin: 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   min-width: 200px;
+  overflow: hidden;
   -webkit-transition: top 0.2s, opacity 0.2s;
   -moz-transition: top 0.2s, opacity 0.2s;
   -ms-transition: top 0.2s, opacity 0.2s;
@@ -1600,23 +1600,27 @@ li:only-child .circle--clone--remove {
 /* line 195, ../sass/circle/components/_lists.sass */
 .circle--dropdown--list li {
   list-style: none;
-  padding: 10px 15px;
   margin: 0;
   color: #689b98;
   white-space: nowrap;
   display: block;
 }
-/* line 202, ../sass/circle/components/_lists.sass */
+/* line 201, ../sass/circle/components/_lists.sass */
 .circle--dropdown--list a {
+  padding: 10px 15px;
   display: block;
 }
-/* line 207, ../sass/circle/components/_lists.sass */
+/* line 204, ../sass/circle/components/_lists.sass */
+.circle--dropdown--list a:hover {
+  background: #f2f6f6;
+}
+/* line 209, ../sass/circle/components/_lists.sass */
 .circle--dropdown:hover .circle--dropdown--list {
   opacity: 1;
-  top: 110%;
+  top: 100%;
   visibility: visible;
 }
-/* line 211, ../sass/circle/components/_lists.sass */
+/* line 213, ../sass/circle/components/_lists.sass */
 .circle--dropdown:hover .circle--dropdown--trigger:after {
   content: "";
 }
