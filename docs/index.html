@@ -59,6 +59,14 @@
 
     <div class="grid-25">
       <div class="circle--filter circle--secondary--module">
+        <h4>Introduction</h4>
+        <ul class="circle--link--list">
+          <li><a href="#">Getting Started</a></li>
+          <li><a href="#org">Organization</a></li>
+        </ul>
+      </div>
+
+      <div class="circle--filter circle--secondary--module">
         <h4>Core</h4>
         <ul class="circle--link--list">
           <li><a href="#grid">Grids</a></li>
@@ -95,6 +103,21 @@
     </div>
 
     <div class="grid-70 grid-push-5">
+      <section class="circle--section">
+        <h1>Getting Started</h1>
+        <p>To get started with Circle first you need to get Sass up and running on your working directory. To make setup easier, Circle uses <a href="https://github.com/Compass/compass">Compass</a> to watch for changed Sass files and configure settings around compiled CSS output. If you don't have Compass installed you can do this by running <code>gem install compass</code>.</p>
+
+        <p>Once installed go to the root directory of your Circle project and run <code>compass watch</code>. Circle comes pre-configured with the correct paths to compile CSS files to the <em>/CSS</em> directory. This configuration also sets the default Sass syntax to <em>.sass</em> as opposed to <em>.scss</em>. To change this configuration you can edit <em>config.rb</em> according to your preferences.</p>
+
+        <hr />
+        <article class="docs--article">
+          <h2>Organization</h2>
+          <p>Circle was designed to be highly modular with the expressed purpose of allowing you to easily get started with the basics, with the option to exclude what might be uncesscesary for your project without problematic dependencies. To best make use of this organziation, Circle was divided into two parts, <em>Core</em> and <em>Components</em>. Circle Core provides basic boilerplate styling for HTML elements  with the addition of a grid framework for basic layouts. Circle Components is an extended library of classes and patterns that can be used to construct common interface elements and styling.</p>
+
+          <p>By default, Circle comes pre-configured to include both <em>Core</em> and <em>Components</em>. If you wish to only work with Circle's boilerplate styling you can remove <code>@import "circle/components"</code> on line 3 of  <em>/sass/global.sass</em>.</p>
+        </article>
+      </section>
+
       <section class="circle--section">
         <h1>Core</h1>
         <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#components">Components</a> section of the documentation.</p>
