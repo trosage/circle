@@ -3055,12 +3055,18 @@ a:hover .circle--avatar {
 }
 
 /* line 44, ../../../sass/circle/core/docs.sass */
+a em {
+  text-decoration: none;
+  color: #689b98;
+}
+
+/* line 49, ../../../sass/circle/core/docs.sass */
 table [class^="icon-"],
 table [class*=" icon-"] {
   font-size: 24px;
 }
 
-/* line 49, ../../../sass/circle/core/docs.sass */
+/* line 54, ../../../sass/circle/core/docs.sass */
 pre.prettyprint {
   display: block;
   border: 0;
@@ -3074,123 +3080,123 @@ pre.prettyprint {
   margin: 0 0 30px;
 }
 
-/* line 63, ../../../sass/circle/core/docs.sass */
+/* line 68, ../../../sass/circle/core/docs.sass */
 .pln {
   color: #171c19;
 }
 
 @media screen {
-  /* line 68, ../../../sass/circle/core/docs.sass */
+  /* line 73, ../../../sass/circle/core/docs.sass */
   .str {
     color: #489963;
   }
 
-  /* line 71, ../../../sass/circle/core/docs.sass */
+  /* line 76, ../../../sass/circle/core/docs.sass */
   .kwd {
     color: #55859b;
   }
 
-  /* line 74, ../../../sass/circle/core/docs.sass */
+  /* line 79, ../../../sass/circle/core/docs.sass */
   .com {
     color: #78877d;
   }
 
-  /* line 77, ../../../sass/circle/core/docs.sass */
+  /* line 82, ../../../sass/circle/core/docs.sass */
   .typ {
     color: #478c90;
   }
 
-  /* line 80, ../../../sass/circle/core/docs.sass */
+  /* line 85, ../../../sass/circle/core/docs.sass */
   .lit {
     color: #9f713c;
   }
 
-  /* line 83, ../../../sass/circle/core/docs.sass */
+  /* line 88, ../../../sass/circle/core/docs.sass */
   .pun, .opn, .clo {
     color: #171c19;
   }
 
-  /* line 88, ../../../sass/circle/core/docs.sass */
+  /* line 93, ../../../sass/circle/core/docs.sass */
   .tag {
     color: #b16139;
   }
 
-  /* line 91, ../../../sass/circle/core/docs.sass */
+  /* line 96, ../../../sass/circle/core/docs.sass */
   .atn {
     color: #9f713c;
   }
 
-  /* line 94, ../../../sass/circle/core/docs.sass */
+  /* line 99, ../../../sass/circle/core/docs.sass */
   .atv {
     color: #689b98;
   }
 
-  /* line 97, ../../../sass/circle/core/docs.sass */
+  /* line 102, ../../../sass/circle/core/docs.sass */
   .dec {
     color: #9f713c;
   }
 
-  /* line 100, ../../../sass/circle/core/docs.sass */
+  /* line 105, ../../../sass/circle/core/docs.sass */
   .var {
     color: #b16139;
   }
 
-  /* line 103, ../../../sass/circle/core/docs.sass */
+  /* line 108, ../../../sass/circle/core/docs.sass */
   .fun {
     color: #478c90;
   }
 }
 @media print, projection {
-  /* line 108, ../../../sass/circle/core/docs.sass */
+  /* line 113, ../../../sass/circle/core/docs.sass */
   .str {
     color: #006600;
   }
 
-  /* line 110, ../../../sass/circle/core/docs.sass */
+  /* line 115, ../../../sass/circle/core/docs.sass */
   .kwd {
     color: #006;
     font-weight: bold;
   }
 
-  /* line 113, ../../../sass/circle/core/docs.sass */
+  /* line 118, ../../../sass/circle/core/docs.sass */
   .com {
     color: #600;
     font-style: italic;
   }
 
-  /* line 116, ../../../sass/circle/core/docs.sass */
+  /* line 121, ../../../sass/circle/core/docs.sass */
   .typ {
     color: #404;
     font-weight: bold;
   }
 
-  /* line 119, ../../../sass/circle/core/docs.sass */
+  /* line 124, ../../../sass/circle/core/docs.sass */
   .lit {
     color: #004444;
   }
 
-  /* line 121, ../../../sass/circle/core/docs.sass */
+  /* line 126, ../../../sass/circle/core/docs.sass */
   .pun, .opn, .clo {
     color: #444400;
   }
 
-  /* line 123, ../../../sass/circle/core/docs.sass */
+  /* line 128, ../../../sass/circle/core/docs.sass */
   .tag {
     color: #006;
     font-weight: bold;
   }
 
-  /* line 126, ../../../sass/circle/core/docs.sass */
+  /* line 131, ../../../sass/circle/core/docs.sass */
   .atn {
     color: #440044;
   }
 
-  /* line 128, ../../../sass/circle/core/docs.sass */
+  /* line 133, ../../../sass/circle/core/docs.sass */
   .atv {
     color: #006600;
   }
 }
-/* line 133, ../../../sass/circle/core/docs.sass */
+/* line 138, ../../../sass/circle/core/docs.sass */
 ol.linenums {
   margin-top: 0;
   margin-bottom: 0;

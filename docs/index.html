@@ -62,6 +62,7 @@
         <h4>Introduction</h4>
         <ul class="circle--link--list">
           <li><a href="#">Getting Started</a></li>
+          <li><a href="#working-with">Working with Circle</a></li>
           <li><a href="#org">Organization</a></li>
         </ul>
       </div>
@@ -107,25 +108,36 @@
         <h1>Getting Started</h1>
         <p>To get started with Circle first you need to get Sass up and running on your working directory. To make setup easier, Circle uses <a href="https://github.com/Compass/compass">Compass</a> to watch for changed Sass files and configure settings around compiled CSS output. If you don't have Compass installed you can do this by running <code>gem install compass</code>.</p>
 
-        <p>Once installed go to the root directory of your Circle project and run <code>compass watch</code>. Circle comes pre-configured with the correct paths to compile CSS files to the <em>/CSS</em> directory. This configuration also sets the default Sass syntax to <em>.sass</em> as opposed to <em>.scss</em>. To change this configuration you can edit <em>config.rb</em> according to your preferences.</p>
+        <p>Once installed go to the root directory of your Circle project and run <code>compass watch</code>. Circle comes pre-configured with the correct paths to compile CSS files to the <a href="https://github.com/treehouse/circle/tree/master/css"><em>/CSS</em></a> directory. This configuration also sets the default Sass syntax to <em>.sass</em> as opposed to <em>.scss</em>. To change this configuration you can edit <a href="https://github.com/treehouse/circle/blob/master/config.rb"><em>config.rb</em></a> according to your preferences.</p>
 
         <hr />
-        <article class="docs--article">
-          <h2>Organization</h2>
-          <p>Circle was designed to be highly modular with the expressed purpose of allowing you to easily get started with the basics, with the option to exclude what might be uncesscesary for your project without problematic dependencies. To best make use of this organziation, Circle was divided into two parts, <em>Core</em> and <em>Components</em>. Circle Core provides basic boilerplate styling for HTML elements  with the addition of a grid framework for basic layouts. Circle Components is an extended library of classes and patterns that can be used to construct common interface elements and styling.</p>
 
-          <p>By default, Circle comes pre-configured to include both <em>Core</em> and <em>Components</em>. If you wish to only work with Circle's boilerplate styling you can remove <code>@import "circle/components"</code> on line 3 of  <em>/sass/global.sass</em>.</p>
+        <article class="docs--article" id="working-with">
+          <h2>Working with Circle</h2>
+          <p>If you wish to work off of what Circle provides out of the box it is as easy as just styling from the <a href="https://github.com/treehouse/circle/blob/master/sass/global.sass"><em>/sass/global.sass</em></a> file or create new Sass files as needed.</p>
+
+          <h3>Disclaimer</h3>
+          <p>It is highly recommended to keep any additional Sass files separate from Circle's Core and Components library. The best way to do this is to avoid modifying any files in the <a href="https://github.com/treehouse/circle/tree/master/sass/circle"><em>/sass/circle</em></a> directory. The primary reason to keep this directory unmodified is so upgrading to new releases of Circle doesn't compromise your project in the future.</p>
+        </article>
+
+        <article class="docs--article" id="org">
+          <h2>Organization</h2>
+          <p>Circle was designed to be highly modular with the expressed purpose of allowing you to easily get started with the basics, with the option to exclude what might be uncesscesary for your project without problematic dependencies. To best make use of this organziation, Circle was divided into two parts, <a href="#core"><em>Core</em></a> and <a href="#components"><em>Components</em></a>. Circle Core provides basic boilerplate styling for HTML elements  with the addition of a grid framework for basic layouts. Circle Components is an extended library of classes and patterns that can be used to construct common interface elements and styling.</p>
+
+          <p>By default, Circle comes pre-configured to include both <em>Core</em> and <em>Components</em>. If you wish to only work with Circle's boilerplate styling you can remove <code>@import "circle/components"</code> on line 3 of  <a href="https://github.com/treehouse/circle/tree/master/sass/global.sass"><em>/sass/global.sass</em></a>.</p>
+
+          <p>If you wish to further customize what parts of the Components library you may wish to exclude, you can reference the <a href="https://github.com/treehouse/circle/tree/master/sass/circle/components"><em>/sass/circle/components</em></a> directory to see the pieces broken out.</p>
         </article>
       </section>
 
-      <section class="circle--section">
+      <section class="circle--section" id="core">
         <h1>Core</h1>
         <p>The core of Circle includes styles for grids, standard elements, buttons, and forms. All other constructions using these elements are organized under the <a href="#components">Components</a> section of the documentation.</p>
         <hr />
 
         <article class="docs--article" id="bounds">
           <h2>Bounds</h2>
-          <p>Setting the outer bounds of your layout is defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <em>sass/_variables.sass</em>.</p>
+          <p>Setting the outer bounds of your layout is defined using the <code>.bounds</code> class. By default the <code>.bounds</code> class applies centering with a max-width of <code>1080px</code> but can easily be edited using the <code>$layout-bounds</code> variable in <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a>.</p>
 <pre class="prettyprint">
 &lt;div class=&quot;bounds&quot;&gt;
   &lt;!-- Layout goes here --&gt;
@@ -135,7 +147,7 @@
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
-          <p>Circle's grid system is based on percentage widths columns available in increments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can be easily modified by changing the variable <code>$gutter-width</code> in the <em>sass/_variables.sass</em> file.</p>
+          <p>Circle's grid system is based on percentage widths columns available in increments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can be easily modified by changing the variable <code>$gutter-width</code> in the <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a> file.</p>
           <p>Columns in the grid system follow the following class naming pattern:</p>
 <pre class="prettyprint">
 // Pattern
@@ -251,9 +263,9 @@
           <h2>Typography</h2>
           <p>Type is all set with <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. By default Circle never changes the <html> font-size, but it's there in case you need it for your project. All measurements are base 10 though so, an <code>&lt;h1&gt;</code> with <code>3.8rem</code> font-size just means <code>38px</code>.</p>
 
-          <p>The default typefaces used for Circle are <a>Cousine</a> for body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <em>sass/_variables.sass</em> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
+          <p>The default typefaces used for Circle are <a>Cousine</a> for body type and <a>Work Sans</a> for display type. These typefaces can be edited from the <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a> file by modifying the values for <code>$display-font</code> and <code>$body-font</code>.</p>
 
-          <p>Additionally, each heading's font size is defined by a variable in <em>sass/_variables.sass</em> for easy modification. Default sizes are as follows.</p>
+          <p>Additionally, each heading's font size is defined by a variable in <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a> for easy modification. Default sizes are as follows.</p>
           <div class="grid-parent">
             <div class="grid-60">
               <table class="full-width">
@@ -331,7 +343,7 @@
 
         <article class="docs--article" id="buttons">
           <h2>Buttons</h2>
-          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button can be edited using the <code>$button-color</code> variable in <em>sass/_variables.sass</em></p>
+          <p>Circle provides two buttons styles. The standard <code>&lt;button&gt;</code> is a basic outlined button while adding the <code>.button-primary</code> class makes the button more prominent with a solid colored background. Button styles are applied to a number of appropriate form elements, but can also be attached to anchors with the <code>.button</code> class. The color of the button can be edited using the <code>$button-color</code> variable in <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a></p>
 
           <div class="grid-parent">
 
@@ -635,11 +647,11 @@
 
       <section id="components">
         <h1>Components</h1>
-        <p>Circle additionally includes numerous common components you might want to use. All components use the <code>.circle</code> prefix to delineate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <em>sass/global.sass</em>. You can easily include or exclude these using <code>@import "circle/components"</code>.</p>
+        <p>Circle additionally includes numerous common components you might want to use. All components use the <code>.circle</code> prefix to delineate them from other custom constructions you might want to create for your own purposes. These components are all optional and will be found at the top of the <a href="https://github.com/treehouse/circle/tree/master/sass/global.sass"><em>sass/global.sass</em></a>. You can easily include or exclude these using <code>@import "circle/components"</code>.</p>
         <hr />
         <article class="docs--article" id="header">
           <h2>Main Header</h2>
-          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <em>sass/_variables.sass</em>.</p>
+          <p>The main header component uses the <code>.circle--header</code> class and it's background color can be easily modified using the <code>$header-color</code> variable in <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a>.</p>
           <header class="circle--header">
             <h1><a>Title</a></h1>
             <nav>
@@ -1082,7 +1094,7 @@
 
         <article class="docs--article" id="component-icons">
           <h2>Icons</h2>
-          <p>Circle uses an icon set based on <a href="http://colebemis.com/feather/">Feather</a> with some custom additions. Icons are embedded as a font so they can be used in CSS or embedded directly into HTML using the appropriate class. The following table supplies the Sass variables, which map to the character codes for each icon, and classes you'll need for depending on which method you choose. All the Sass variables for icons can be found in <em>sass/_variables.sass</em></p>
+          <p>Circle uses an icon set based on <a href="http://colebemis.com/feather/">Feather</a> with some custom additions. Icons are embedded as a font so they can be used in CSS or embedded directly into HTML using the appropriate class. The following table supplies the Sass variables, which map to the character codes for each icon, and classes you'll need for depending on which method you choose. All the Sass variables for icons can be found in <a href="https://github.com/treehouse/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a></p>
 
           <h3>CSS Embedding</h3>
 
