@@ -32,7 +32,7 @@
           color: lighten($link, 20%)
         &.selected
           color: #222
-          font-weight: bold
+          font-weight: $bold
 
   &--group
     &--list
@@ -57,7 +57,7 @@
       a
         text-decoration: none
         font-family: $display-font
-        font-weight: bold
+        font-weight: $bold
     &--add,
     &--remove
       cursor: pointer
@@ -82,8 +82,8 @@
         font-family: $display-font
         font-size: 1.6rem
         display: inline-block
-        color: $display-color
-        font-weight: bold
+        color: $color-display
+        font-weight: $bold
         border-radius: 50px
         line-height: 1
         text-decoration: none
@@ -165,13 +165,13 @@
     font-family: $display-font
     &--trigger,
     &--trigger:hover
-      font-weight: bold
-      color: $display-color
+      font-weight: $bold
+      color: $color-display
       cursor: pointer
       line-height: 1
       &:after
         content: $icon-chevron-down
-        color: $display-color
+        color: $color-display
         font-family: $icon-font
         font-size: 18px
         position: relative

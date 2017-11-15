@@ -13,12 +13,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
-
-
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
@@ -31,9 +25,10 @@
   <link rel="stylesheet" href="../css/circle/core/docs.css">
 
 </head>
-<body>
-  <header class="circle--header">
-    <div class="bounds">
+<body id="docs">
+
+  <header class="circle--header" id="docs--header">
+    <div class="grid-100">
       <div class="circle--fluid">
         <div class="circle--fluid--cell circle--fluid--primary">
           <h1 class="hide-text"><a class="logo" href="index.html">Circle</a></h1>
@@ -50,60 +45,57 @@
     </div>
   </header>
 
-  <div class="bounds circle--page">
-    <div class="circle--page--header circle--fluid">
-      <div class="circle--fluid--cell circle--fluid--primary">
-        <h2>Documentation</h2>
-      </div>
+
+  <div id="docs--nav">
+    <h2>Documentation</h2>
+    <div class="circle--filter circle--secondary--module">
+      <h4>Introduction</h4>
+      <ul class="circle--link--list">
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#working-with">Working with Circle</a></li>
+        <li><a href="#org">Organization</a></li>
+      </ul>
     </div>
 
-    <div class="grid-25">
-      <div class="circle--filter circle--secondary--module">
-        <h4>Introduction</h4>
-        <ul class="circle--link--list">
-          <li><a href="#">Getting Started</a></li>
-          <li><a href="#working-with">Working with Circle</a></li>
-          <li><a href="#org">Organization</a></li>
-        </ul>
-      </div>
-
-      <div class="circle--filter circle--secondary--module">
-        <h4>Core</h4>
-        <ul class="circle--link--list">
-          <li><a href="#grid">Grids</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#lists">Lists</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#utilities">Utilities</a></li>
-        </ul>
-      </div>
-
-      <div class="circle--filter circle--secondary--module">
-        <h4>Components</h4>
-        <ul class="circle--link--list">
-          <li><a href="#component-fluid-sandwich">Fluid Sandwich</a></li>
-          <li><a href="#header">Main Header</a></li>
-          <li><a href="#page-header">Page Header</a></li>
-          <li><a href="#article-header">Article Header</a></li>
-          <li><a href="#component-lists">Lists</a></li>
-          <li><a href="#component-tables">Tables</a></li>
-          <li><a href="#component-icons">Icons</a></li>
-        </ul>
-      </div>
-
-      <div class="circle--filter circle--secondary--module">
-        <h4>Examples</h4>
-        <ul class="circle--link--list">
-          <li><a href="examples/project.html">Project</a></li>
-          <li><a href="examples/project_edit.html">Edit Project</a></li>
-        </ul>
-      </div>
+    <div class="circle--filter circle--secondary--module">
+      <h4>Core</h4>
+      <ul class="circle--link--list">
+        <li><a href="#grid">Grids</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#utilities">Utilities</a></li>
+      </ul>
     </div>
 
-    <div class="grid-70 grid-push-5">
+    <div class="circle--filter circle--secondary--module">
+      <h4>Components</h4>
+      <ul class="circle--link--list">
+        <li><a href="#component-fluid-sandwich">Fluid Sandwich</a></li>
+        <li><a href="#header">Main Header</a></li>
+        <li><a href="#page-header">Page Header</a></li>
+        <li><a href="#article-header">Article Header</a></li>
+        <li><a href="#component-lists">Lists</a></li>
+        <li><a href="#component-tables">Tables</a></li>
+        <li><a href="#component-icons">Icons</a></li>
+      </ul>
+    </div>
+
+    <div class="circle--filter circle--secondary--module">
+      <h4>Examples</h4>
+      <ul class="circle--link--list">
+        <li><a href="examples/project.html">Project</a></li>
+        <li><a href="examples/project_edit.html">Edit Project</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="circle--page">
+    <div class="grid-max-100 centered">
       <section class="circle--section">
         <h1>Getting Started</h1>
         <p>To get started with Circle first you need to get Sass up and running on your working directory. To make setup easier, Circle uses <a href="https://github.com/Compass/compass">Compass</a> to watch for changed Sass files and configure settings around compiled CSS output. If you don't have Compass installed you can do this by running <code>gem install compass</code>.</p>
@@ -147,7 +139,7 @@
 
         <article class="docs--article" id="grid">
           <h2>Grids</h2>
-          <p>Circle's grid system is based on percentage widths columns available in increments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can be easily modified by changing the variable <code>$gutter-width</code> in the <a href="https://github.com/trosage/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a> file.</p>
+          <p>Circle's grid system is based on percentage widths columns available in increments of <code>5%</code> as well as thirds. The default gutter width is <code>30px</code> between columns but can be easily modified by changing the variable <code>$grid-gutter</code> in the <a href="https://github.com/trosage/circle/tree/master/sass/_variables.sass"><em>/sass/_variables.sass</em></a> file.</p>
           <p>Columns in the grid system follow the following class naming pattern:</p>
 <pre class="prettyprint">
 // Pattern
@@ -715,7 +707,7 @@
               <div class="circle--article--header">
                 <h4 class="circle--article--section">Section Title</h4>
                 <h1 class="circle--article--title">Article Title</h1>
-                <p class="section--article--byline">Article by <a>Author Name</a></p>
+                <p class="circle--article--byline">Article by <a>Author Name</a></p>
               </div>
             </div>
           </div>

@@ -1,11 +1,14 @@
-$column-padding: $gutter-width / 2
-$columns: 5, 10, 15, 20, 25, 30, 33.333, 35, 40, 45, 50, 55, 60, 65, 66.666, 70, 75, 80, 90, 95, 100
+$column-padding: $grid-gutter / 2
+$mobile-column-padding: $column-padding / 2
+$columns: 0, 5, 10, 15, 20, 25, 30, 33.333, 35, 40, 45, 50, 55, 60, 65, 66.666, 70, 75, 80, 85, 90, 95, 100
 
 
 // Grid
 .bounds
   max-width: $layout-bounds
   margin: 0 auto
+  @media screen and (max-width: $mobile-breakpoint)
+    padding: 0
 
 .grid
   float: left
@@ -27,17 +30,97 @@ $columns: 5, 10, 15, 20, 25, 30, 33.333, 35, 40, 45, 50, 55, 60, 65, 66.666, 70,
       &-#{floor(nth($proportion, 1))}
         left: #{percentage($proportion/100)}
 
-    // Grid Breakpoint
+    // All go 100% at mobile breakpoint
     &-#{floor(nth($proportion, 1))}
       @extend .grid
       @media screen and (max-width: $mobile-breakpoint)
         width: 100%
         left: 0
+        padding: 0 $mobile-column-padding
+
+    // Mobile Breakpoint Classes
+    &-mobile
+      &-#{floor(nth($proportion, 1))}
+        @media screen and (max-width: $mobile-breakpoint)
+          width: percentage($proportion/100)
+      // Pull
+      &-pull
+        &-#{floor(nth($proportion, 1))}
+          @media screen and (max-width: $mobile-breakpoint)
+            left: -#{percentage($proportion/100)} !important
+
+      // Push
+      &-push
+        &-#{floor(nth($proportion, 1))}
+          @media screen and (max-width: $mobile-breakpoint)
+            left: #{percentage($proportion/100)} !important
+
+
+    // Tablet Breakpoint Classes
+    &-tablet
+      &-#{floor(nth($proportion, 1))}
+        @media screen and (max-width: $tablet-breakpoint)
+          width: percentage($proportion/100)
+          @media screen and (max-width: $mobile-breakpoint)
+            width: 100%
+            left: 0
+            padding: 0 $mobile-column-padding
+
+      // Pull
+      &-pull
+        &-#{floor(nth($proportion, 1))}
+          @media screen and (max-width: $tablet-breakpoint)
+            left: -#{percentage($proportion/100)} !important
+
+      // Push
+      &-push
+        &-#{floor(nth($proportion, 1))}
+          @media screen and (max-width: $tablet-breakpoint)
+            left: #{percentage($proportion/100)} !important
+
+  // Grids for buttons (smaller gutter)
+  @each $proportion in $columns
+    &-form-#{floor(nth($proportion, 1))}
+      @extend .grid
+      width: percentage($proportion/100)
+      padding: 0 $form-gutter
+      @media screen and (max-width: $mobile-breakpoint)
+        width: 100%
+        left: 0
+
+    // Form grid for tablet
+    &-form-tablet
+      &-#{floor(nth($proportion, 1))}
+        @media screen and (max-width: $tablet-breakpoint)
+          width: percentage($proportion/100)
+
+    // Form grid for mobile
+    &-form-mobile
+      &-#{floor(nth($proportion, 1))}
+        @media screen and (max-width: $mobile-breakpoint)
+          width: percentage($proportion/100)
+
+  &-form-parent
+    margin: 0
+    margin-right: -$form-gutter
+    margin-left: -$form-gutter
+    +clearfix
+
+  // Percentage to pixels
+  @each $proportion in $columns
+    $percentage-px: ($layout-bounds * ($proportion/100))
+    &-max-#{floor(nth($proportion, 1))}
+      max-width: $percentage-px
+      padding: 0 $column-padding
+      box-sizing: border-box
+      @media screen and (max-width: $mobile-breakpoint)
+        padding: 0 $mobile-column-padding
 
   &-parent
     margin: 0
     margin-right: -$column-padding
     margin-left: -$column-padding
     +clearfix
-
-
+    @media screen and (max-width: $mobile-breakpoint)
+      margin-right: -$mobile-column-padding
+      margin-left: -$mobile-column-padding

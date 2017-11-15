@@ -1,7 +1,8 @@
 // Layout
 
 $layout-bounds: 1080px
-$gutter-width: 30px
+$grid-gutter: 30px
+$form-gutter: 15px
 
 $mobile-breakpoint: 640px
 $tablet-breakpoint: 1200px
@@ -9,8 +10,8 @@ $tablet-breakpoint: 1200px
 
 // Type
 
-$display-font: 'Work Sans', sans-serif
-$body-font: "Cousine"
+$bold: 500
+$font-path: "../fonts"
 
 $headers: h1,h2,h3,h4,h5,h6
 $headers-array: ($headers)
@@ -22,13 +23,31 @@ $h4: 1.6rem
 $h5: 1.4rem
 $h6: 1.4rem
 
+@font-face
+  font-family: 'Maison Neue'
+  src: url('$font-path/MaisonNeue-Book.eot')
+  src: url('$font-path/MaisonNeue-Book.eot?#iefix') format('embedded-opentype'), url('$font-path/MaisonNeue-Book.woff2') format('woff2'), url('$font-path/MaisonNeue-Book.woff') format('woff'), url('$font-path/MaisonNeue-Book.ttf') format('truetype'), url('$font-path/MaisonNeue-Book.svg#MaisonNeue-Book') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Maison Neue'
+  src: url('$font-path/MaisonNeue-Medium.eot')
+  src: url('$font-path/MaisonNeue-Medium.eot?#iefix') format('embedded-opentype'), url('$font-path/MaisonNeue-Medium.woff2') format('woff2'), url('$font-path/MaisonNeue-Medium.woff') format('woff'), url('$font-path/MaisonNeue-Medium.ttf') format('truetype'), url('$font-path/MaisonNeue-Medium.svg#MaisonNeue-Medium') format('svg')
+  font-weight: $bold
+  font-style: normal
+
+$display-font: "Maison Neue", sans-serif
+$body-font: "Maison Neue", sans-serif
+
+
 // Colors
 
-$display-color: #222
-$body-color: #666
+$color-display: #29313E
+$color-body: #777
 
-$primary: #689b98
-$secondary: #7c689b
+$primary: #947EFF
+$secondary: #BBACFF
 
 $link: $primary
 $link-hover: darken($link, 10%)
@@ -42,9 +61,10 @@ $negative: #ed5a5a
 
 $button-color: $link
 
-$header-color: darken($link, 10%)
+$header-color: $primary
 $background-color: #fff
 
+$field-border-color: #cccccc
 $border-color: #e1e1e1
 
 
@@ -190,4 +210,3 @@ $icon-file-subtract: "\e126"
 $icon-help: "\e127"
 $icon-open: "\e128"
 $icon-ellipsis: "\e129"
-

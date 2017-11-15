@@ -4,6 +4,23 @@ $icon-font-path: "../../../icons/"
 @import "../sass/circle/core"
 @import "../sass/circle/components"
 
+#docs
+  padding: 150px 0 0 280px
+  &--header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 1
+  &--nav
+    position: fixed
+    left: 0
+    top: 68px
+    bottom: 0
+    width: 250px
+    box-sizing: border-box
+    padding: 30px 30px 0
+    overflow-y: scroll
 
 .logo
   width: 28px
@@ -56,7 +73,7 @@ pre
     border: 0
     padding: 20px
     border-radius: 8px
-    background: lighten($link, 44%)
+    background: #F1F1F1
     color: #87928a
     font-family: Menlo, Consolas, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, monospace
     font-size: 1.4rem
@@ -91,10 +108,10 @@ pre
   // lisp close bracket
   // a markup tag name
   .tag
-    color: #b16139
+    color: #999
   // a markup attribute name
   .atn
-    color: #9f713c
+    color: #999
   // a markup attribute value
   .atv
     color: $link
@@ -114,20 +131,20 @@ pre
     color: #006600
   .kwd
     color: #006
-    font-weight: bold
+    font-weight: $bold
   .com
     color: #600
     font-style: italic
   .typ
     color: #404
-    font-weight: bold
+    font-weight: $bold
   .lit
     color: #004444
   .pun, .opn, .clo
     color: #444400
   .tag
     color: #006
-    font-weight: bold
+    font-weight: $bold
   .atn
     color: #440044
   .atv

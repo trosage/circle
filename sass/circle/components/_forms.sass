@@ -24,11 +24,11 @@
   &--input
     @each $header in ($headers)
       &--#{$header}
-        font-weight: bold
-        color: $display-color
+        font-weight: $bold
+        color: $color-display
         font-family: $display-font
         +placeholder
-          font-weight: bold
+          font-weight: $bold
     &--h1
       font-size: $h1
     &--h2
