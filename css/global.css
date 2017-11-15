@@ -2667,7 +2667,7 @@ body {
 /* line 4, ../sass/circle/core/_type.sass */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 500;
   font-family: "Maison Neue", sans-serif;
   color: #29313E;
@@ -4122,7 +4122,7 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
 }
 /* line 24, ../sass/circle/components/_containers.sass */
 .circle--secondary--module {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 /* line 2, ../sass/circle/core/_mixins.sass */
 .circle--secondary--module:before, .circle--secondary--module:after {
