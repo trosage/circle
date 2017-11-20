@@ -4974,7 +4974,7 @@ a:hover .circle--avatar {
 @media screen and (max-width: 860px) {
   /* line 7, ../../../sass/circle/core/docs.sass */
   #docs {
-    padding-left: 0;
+    padding: 80px 0 0;
   }
 }
 /* line 12, ../../../sass/circle/core/docs.sass */
