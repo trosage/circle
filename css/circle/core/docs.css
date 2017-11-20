@@ -4969,6 +4969,7 @@ a:hover .circle--avatar {
 /* line 7, ../../../sass/circle/core/docs.sass */
 #docs {
   padding: 150px 0 0 280px;
+  transition: 0.2s;
 }
 @media screen and (max-width: 860px) {
   /* line 7, ../../../sass/circle/core/docs.sass */
@@ -4976,7 +4977,7 @@ a:hover .circle--avatar {
     padding-left: 0;
   }
 }
-/* line 11, ../../../sass/circle/core/docs.sass */
+/* line 12, ../../../sass/circle/core/docs.sass */
 #docs--header {
   position: fixed;
   top: 0;
@@ -4984,7 +4985,7 @@ a:hover .circle--avatar {
   right: 0;
   z-index: 1;
 }
-/* line 17, ../../../sass/circle/core/docs.sass */
+/* line 18, ../../../sass/circle/core/docs.sass */
 #docs--nav {
   position: fixed;
   left: 0;
@@ -4997,13 +4998,13 @@ a:hover .circle--avatar {
   transition: 0.2s;
 }
 @media screen and (max-width: 860px) {
-  /* line 17, ../../../sass/circle/core/docs.sass */
+  /* line 18, ../../../sass/circle/core/docs.sass */
   #docs--nav {
     left: -250px;
   }
 }
 
-/* line 30, ../../../sass/circle/core/docs.sass */
+/* line 31, ../../../sass/circle/core/docs.sass */
 .logo {
   width: 28px;
   height: 28px;
@@ -5017,12 +5018,12 @@ a:hover .circle--avatar {
   -o-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
-/* line 38, ../../../sass/circle/core/docs.sass */
+/* line 39, ../../../sass/circle/core/docs.sass */
 .logo:hover {
   box-shadow: 0 0 0 15px #fff inset;
 }
 
-/* line 43, ../../../sass/circle/core/docs.sass */
+/* line 44, ../../../sass/circle/core/docs.sass */
 .docs--grid--column {
   background: rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
@@ -5032,7 +5033,7 @@ a:hover .circle--avatar {
   font-size: 1.2rem;
   color: #999;
 }
-/* line 51, ../../../sass/circle/core/docs.sass */
+/* line 52, ../../../sass/circle/core/docs.sass */
 .docs--article {
   margin-bottom: 50px;
 }
@@ -5046,13 +5047,13 @@ a:hover .circle--avatar {
   clear: both;
 }
 
-/* line 55, ../../../sass/circle/core/docs.sass */
+/* line 56, ../../../sass/circle/core/docs.sass */
 .box {
   padding: 15px;
   border-radius: 8px;
   border: 2px solid #eee;
 }
-/* line 59, ../../../sass/circle/core/docs.sass */
+/* line 60, ../../../sass/circle/core/docs.sass */
 .box:after {
   content: "";
   font-size: 19px;
@@ -5060,19 +5061,19 @@ a:hover .circle--avatar {
   font-family: "Circle";
 }
 
-/* line 66, ../../../sass/circle/core/docs.sass */
+/* line 67, ../../../sass/circle/core/docs.sass */
 a em {
   text-decoration: none;
   color: #947EFF;
 }
 
-/* line 71, ../../../sass/circle/core/docs.sass */
+/* line 72, ../../../sass/circle/core/docs.sass */
 table [class^="icon-"],
 table [class*=" icon-"] {
   font-size: 24px;
 }
 
-/* line 76, ../../../sass/circle/core/docs.sass */
+/* line 77, ../../../sass/circle/core/docs.sass */
 pre.prettyprint {
   display: block;
   border: 0;
@@ -5086,123 +5087,123 @@ pre.prettyprint {
   margin: 0 0 30px;
 }
 
-/* line 90, ../../../sass/circle/core/docs.sass */
+/* line 91, ../../../sass/circle/core/docs.sass */
 .pln {
   color: #171c19;
 }
 
 @media screen {
-  /* line 95, ../../../sass/circle/core/docs.sass */
+  /* line 96, ../../../sass/circle/core/docs.sass */
   .str {
     color: #489963;
   }
 
-  /* line 98, ../../../sass/circle/core/docs.sass */
+  /* line 99, ../../../sass/circle/core/docs.sass */
   .kwd {
     color: #55859b;
   }
 
-  /* line 101, ../../../sass/circle/core/docs.sass */
+  /* line 102, ../../../sass/circle/core/docs.sass */
   .com {
     color: #78877d;
   }
 
-  /* line 104, ../../../sass/circle/core/docs.sass */
+  /* line 105, ../../../sass/circle/core/docs.sass */
   .typ {
     color: #478c90;
   }
 
-  /* line 107, ../../../sass/circle/core/docs.sass */
+  /* line 108, ../../../sass/circle/core/docs.sass */
   .lit {
     color: #9f713c;
   }
 
-  /* line 110, ../../../sass/circle/core/docs.sass */
+  /* line 111, ../../../sass/circle/core/docs.sass */
   .pun, .opn, .clo {
     color: #171c19;
   }
 
-  /* line 115, ../../../sass/circle/core/docs.sass */
+  /* line 116, ../../../sass/circle/core/docs.sass */
   .tag {
     color: #999;
   }
 
-  /* line 118, ../../../sass/circle/core/docs.sass */
+  /* line 119, ../../../sass/circle/core/docs.sass */
   .atn {
     color: #999;
   }
 
-  /* line 121, ../../../sass/circle/core/docs.sass */
+  /* line 122, ../../../sass/circle/core/docs.sass */
   .atv {
     color: #947EFF;
   }
 
-  /* line 124, ../../../sass/circle/core/docs.sass */
+  /* line 125, ../../../sass/circle/core/docs.sass */
   .dec {
     color: #9f713c;
   }
 
-  /* line 127, ../../../sass/circle/core/docs.sass */
+  /* line 128, ../../../sass/circle/core/docs.sass */
   .var {
     color: #b16139;
   }
 
-  /* line 130, ../../../sass/circle/core/docs.sass */
+  /* line 131, ../../../sass/circle/core/docs.sass */
   .fun {
     color: #478c90;
   }
 }
 @media print, projection {
-  /* line 135, ../../../sass/circle/core/docs.sass */
+  /* line 136, ../../../sass/circle/core/docs.sass */
   .str {
     color: #006600;
   }
 
-  /* line 137, ../../../sass/circle/core/docs.sass */
+  /* line 138, ../../../sass/circle/core/docs.sass */
   .kwd {
     color: #006;
     font-weight: 500;
   }
 
-  /* line 140, ../../../sass/circle/core/docs.sass */
+  /* line 141, ../../../sass/circle/core/docs.sass */
   .com {
     color: #600;
     font-style: italic;
   }
 
-  /* line 143, ../../../sass/circle/core/docs.sass */
+  /* line 144, ../../../sass/circle/core/docs.sass */
   .typ {
     color: #404;
     font-weight: 500;
   }
 
-  /* line 146, ../../../sass/circle/core/docs.sass */
+  /* line 147, ../../../sass/circle/core/docs.sass */
   .lit {
     color: #004444;
   }
 
-  /* line 148, ../../../sass/circle/core/docs.sass */
+  /* line 149, ../../../sass/circle/core/docs.sass */
   .pun, .opn, .clo {
     color: #444400;
   }
 
-  /* line 150, ../../../sass/circle/core/docs.sass */
+  /* line 151, ../../../sass/circle/core/docs.sass */
   .tag {
     color: #006;
     font-weight: 500;
   }
 
-  /* line 153, ../../../sass/circle/core/docs.sass */
+  /* line 154, ../../../sass/circle/core/docs.sass */
   .atn {
     color: #440044;
   }
 
-  /* line 155, ../../../sass/circle/core/docs.sass */
+  /* line 156, ../../../sass/circle/core/docs.sass */
   .atv {
     color: #006600;
   }
 }
-/* line 160, ../../../sass/circle/core/docs.sass */
+/* line 161, ../../../sass/circle/core/docs.sass */
 ol.linenums {
   margin-top: 0;
   margin-bottom: 0;
