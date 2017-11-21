@@ -3627,7 +3627,7 @@ li:only-child .circle--clone--remove {
 /* line 17, ../sass/circle/components/_headers.sass */
 .circle--header input {
   background: rgba(255, 255, 255, 0.3);
-  border-color: #5532ff;
+  border-color: #0b0d10;
   color: #fff;
 }
 /* line 62, ../sass/circle/core/_mixins.sass */
