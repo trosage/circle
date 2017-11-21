@@ -16,6 +16,7 @@ $icon-font-path: "../../../icons/"
     right: 0
     z-index: 1
   &--nav
+    background: #fff
     position: fixed
     left: 0
     top: 68px
@@ -24,9 +25,17 @@ $icon-font-path: "../../../icons/"
     box-sizing: border-box
     padding: 30px 30px 0
     overflow-y: scroll
+    box-sizing: border-box
     transition: .2s
     @media screen and (max-width: $tablet-breakpoint)
-      left: -250px
+      left: -300px
+      padding: 15px 15px 0
+      top: 0
+      width: 300px
+      z-index: 2
+      box-shadow: 1px 0 4px rgba(#000,.1)
+      .mobile--nav--show &
+        left: 0
 
 .logo
   width: 28px
@@ -38,6 +47,34 @@ $icon-font-path: "../../../icons/"
   +transition(box-shadow .2s)
   &:hover
     box-shadow: 0 0 0 15px #fff inset
+  @media screen and (max-width: $tablet-breakpoint)
+    display: none
+
+.mobile
+  &--nav
+    &--trigger,
+    &--kill
+      display: none
+      float: left
+      font-size: 2.4rem
+      line-height: 1
+      cursor: pointer
+      &:hover
+        .icon-menu
+          color: rgba(#fff,.5)
+        .icon-cross
+          color: $color-body
+      .icon-menu
+        color: #fff
+      .icon-cross
+        color: $color-inactive
+      @media screen and (max-width: $tablet-breakpoint)
+        display: block
+    &--kill
+      float: right
+      font-size: 2rem
+      margin-top: 1rem
+
 
 .docs
   &--grid
@@ -57,6 +94,9 @@ $icon-font-path: "../../../icons/"
       display: block
       height: 98px
       margin: -98px 0 0
+      @media screen and (max-width: $tablet-breakpoint)
+        height: 83px
+        margin: -83px 0 0
 
 .box
   padding: 15px

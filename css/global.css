@@ -3595,7 +3595,7 @@ li:only-child .circle--clone--remove {
 
 /* line 2, ../sass/circle/components/_headers.sass */
 .circle--header {
-  background: #947EFF;
+  background: #29313E;
   padding: 20px 0;
   margin-bottom: 30px;
 }
@@ -4096,31 +4096,37 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
   vertical-align: middle;
   box-sizing: border-box;
 }
-/* line 10, ../sass/circle/components/_containers.sass */
+@media screen and (max-width: 860px) {
+  /* line 5, ../sass/circle/components/_containers.sass */
+  .circle--fluid--cell {
+    padding: 0;
+  }
+}
+/* line 12, ../sass/circle/components/_containers.sass */
 .circle--fluid--cell input {
   margin: 0;
 }
-/* line 12, ../sass/circle/components/_containers.sass */
+/* line 14, ../sass/circle/components/_containers.sass */
 .circle--fluid--cell .button {
   margin: 0;
 }
-/* line 14, ../sass/circle/components/_containers.sass */
+/* line 16, ../sass/circle/components/_containers.sass */
 .circle--fluid--cell ul {
   white-space: nowrap;
 }
-/* line 16, ../sass/circle/components/_containers.sass */
+/* line 18, ../sass/circle/components/_containers.sass */
 .circle--fluid--primary {
   width: 100%;
 }
-/* line 18, ../sass/circle/components/_containers.sass */
+/* line 20, ../sass/circle/components/_containers.sass */
 .circle--fluid--primary ul {
   white-space: wrap;
 }
-/* line 20, ../sass/circle/components/_containers.sass */
+/* line 22, ../sass/circle/components/_containers.sass */
 .circle--fluid--secondary {
   text-align: right;
 }
-/* line 24, ../sass/circle/components/_containers.sass */
+/* line 26, ../sass/circle/components/_containers.sass */
 .circle--secondary--module {
   margin-bottom: 30px;
 }
@@ -4133,37 +4139,37 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
 .circle--secondary--module:after {
   clear: both;
 }
-/* line 28, ../sass/circle/components/_containers.sass */
+/* line 30, ../sass/circle/components/_containers.sass */
 .circle--secondary--module > h1, .circle--secondary--module > h2, .circle--secondary--module > h3, .circle--secondary--module > h4, .circle--secondary--module > h5, .circle--secondary--module > h6 {
   font-family: "Maison Neue", sans-serif;
   color: rgba(34, 34, 34, 0.3);
   font-size: 1.4rem;
   font-weight: normal;
 }
-/* line 33, ../sass/circle/components/_containers.sass */
+/* line 35, ../sass/circle/components/_containers.sass */
 .circle--secondary--module > h1 a, .circle--secondary--module > h2 a, .circle--secondary--module > h3 a, .circle--secondary--module > h4 a, .circle--secondary--module > h5 a, .circle--secondary--module > h6 a {
   color: #e9e4ff;
 }
-/* line 35, ../sass/circle/components/_containers.sass */
+/* line 37, ../sass/circle/components/_containers.sass */
 .circle--secondary--module p {
   font-size: 1.4rem;
   color: #aaaaaa;
 }
-/* line 39, ../sass/circle/components/_containers.sass */
+/* line 41, ../sass/circle/components/_containers.sass */
 .circle--secondary--module .circle--clone--list li {
   margin-bottom: 30px;
 }
-/* line 41, ../sass/circle/components/_containers.sass */
+/* line 43, ../sass/circle/components/_containers.sass */
 .circle--secondary--module textarea,
 .circle--secondary--module input,
 .circle--secondary--module select {
   font-size: 1.4rem;
 }
-/* line 45, ../sass/circle/components/_containers.sass */
+/* line 47, ../sass/circle/components/_containers.sass */
 .circle--secondary--module .circle--textarea--input {
   height: 48px;
 }
-/* line 48, ../sass/circle/components/_containers.sass */
+/* line 50, ../sass/circle/components/_containers.sass */
 .circle--page {
   margin-bottom: 100px;
 }
@@ -4176,16 +4182,16 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
 .circle--page:after {
   clear: both;
 }
-/* line 52, ../sass/circle/components/_containers.sass */
+/* line 54, ../sass/circle/components/_containers.sass */
 .circle--article {
   padding-top: 30px;
 }
-/* line 54, ../sass/circle/components/_containers.sass */
+/* line 56, ../sass/circle/components/_containers.sass */
 .circle--article--body {
   line-height: 1.8;
   margin-bottom: 50px;
 }
-/* line 59, ../sass/circle/components/_containers.sass */
+/* line 61, ../sass/circle/components/_containers.sass */
 .circle--actions--bar {
   margin: -30px 0 30px;
   background: #f9f9f9;
@@ -4200,11 +4206,11 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
 .circle--actions--bar:after {
   clear: both;
 }
-/* line 64, ../sass/circle/components/_containers.sass */
+/* line 66, ../sass/circle/components/_containers.sass */
 .circle--actions--bar .button {
   margin-bottom: 0;
 }
-/* line 68, ../sass/circle/components/_containers.sass */
+/* line 70, ../sass/circle/components/_containers.sass */
 .circle--primary--avatar {
   width: 100%;
   border-radius: 8px;
@@ -4230,7 +4236,7 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
   right: 0;
   bottom: 0;
 }
-/* line 77, ../sass/circle/components/_containers.sass */
+/* line 79, ../sass/circle/components/_containers.sass */
 .circle--primary--avatar .button {
   position: absolute;
   left: 50%;
@@ -4241,13 +4247,13 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 84, ../sass/circle/components/_containers.sass */
+/* line 86, ../sass/circle/components/_containers.sass */
 .circle--section > p {
   font-size: 1.8rem;
   font-family: "Maison Neue", sans-serif;
   line-height: 2;
 }
-/* line 89, ../sass/circle/components/_containers.sass */
+/* line 91, ../sass/circle/components/_containers.sass */
 .circle--avatar {
   background-repeat: no-repeat;
   background-size: cover;
@@ -4256,11 +4262,11 @@ input[type="email"].circle--input--h6, input[type="number"].circle--input--h6, i
   overflow: hidden;
   border-radius: 8px;
 }
-/* line 96, ../sass/circle/components/_containers.sass */
+/* line 98, ../sass/circle/components/_containers.sass */
 a:hover .circle--avatar {
   box-shadow: 0 0 0 4px #947EFF inset;
 }
-/* line 98, ../sass/circle/components/_containers.sass */
+/* line 100, ../sass/circle/components/_containers.sass */
 .circle--avatar img {
   width: 100%;
 }

@@ -1,5 +1,12 @@
 $( document ).ready(function() {
 
+  $(".mobile--nav--trigger").click(function() {
+    $("body").addClass("mobile--nav--show");
+  });
+  $(".mobile--nav--kill, #docs--nav a").click(function() {
+    $("body").removeClass("mobile--nav--show");
+  });
+
   $('textarea').autogrow({onInitialize: true});
 
 
